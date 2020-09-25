@@ -1,0 +1,18 @@
+@import "~normalize.css";
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  background-color: blue;
+}
+
+section {
+  background-color: red;
+}
+
+footer{
+  background-color: green;
+}
