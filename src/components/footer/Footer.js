@@ -2,8 +2,8 @@ import React from "react"
 
 export const Footer = () => {
   return(
-    <footer>
+    <div className="footer">
       Footer
-    </footer>
+    </div>
   )
 }
