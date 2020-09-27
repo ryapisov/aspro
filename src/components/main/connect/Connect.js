@@ -2,8 +2,10 @@ import React from "react"
 
 export const Connect = () => {
   return (
-    <section>
-      Connect
+    <section id="connect">
+      <div className="content">
+        Connect
+      </div>
     </section>
   )
 }

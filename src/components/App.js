@@ -2,32 +2,59 @@ import React from 'react'
 import {Header} from "./header/Header"
 import {Footer} from "./footer/Footer"
 import {About, Banner, Blog, Connect, GetInTouch, OurWork, Pricing,
-  Services, Stats, StatsVideo, Team, Testimonial} from "./content/index"
+  Services, Stats, StatsVideo, Team, Testimonial} from "./main/index"
 
-export default () => {
-  return (
-    <div className="app">
-      <div className="wrapper-header">
-        <Header />
+  export default () => {
+    return (
+      <div className="app">
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Banner />
+          <About />
+          <Connect />
+          <Blog />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
-      <div className="wrapper-content">
-        <About />
-        <Banner />
-        <Blog />
-        <Connect />
-        <GetInTouch />
-        <OurWork />
-        <Pricing />
-        <Services />
-        <Stats />
-        <StatsVideo />
-        <Team />
-        <Testimonial />
-      </div>
-      <div className="wrapper-footer">
-        <Footer />
-      </div>
-    </div>
-  )
-}
+    )
+  }
+
+
+
+
+
+//export default () => {
+//  return (
+//    <>
+//      <header>
+//        <Header />
+//      </header>
+
+//    <div className="app">
+//      <main>
+//        <About />
+//        <Banner />
+//        <Blog />
+//        <Connect />
+//        <GetInTouch />
+//        <OurWork />
+//        <Pricing />
+//        <Services />
+//        <Stats />
+//        <StatsVideo />
+//        <Team />
+//        <Testimonial />
+//      </main>
+//      <footer>
+//        <Footer />
+//      </footer>
+//    </div>
+
+//    </>
+//  )
+//}
 
