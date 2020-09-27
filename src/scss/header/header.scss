@@ -1,18 +1,25 @@
 
-.header{
+.header {
   display: flex;
+  justify-content: space-between;
   height: 100%;
   background-color: rgba(0,0,0, 1.0);
   &-brand {
     display: flex;
     align-items: center;
-    padding-left: 18%;
+    padding-left: 16%;
     background:rgba(205, 54, 54, 1.0);
     font-family: 'Raleway', sans-serif;
     font-size: 45px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 1.0);
-    &::after{
+    box-shadow: -18px 14px 0px -8px rgba(34, 60, 80, 0.5);
+    text-transform: uppercase;
+    & a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 1.0);
+      cursor: pointer;
+    }
+    &::after {
       content:'';
       width: 80px;
       background: #000;
@@ -21,41 +28,26 @@
    }
   }
   &-menu {
-
+    padding-right: 16%;
+    display: flex;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1.0);
+    & .btn {
+      display: flex;
+      align-items: center;
+      height: 100px;
+      padding: 0 24px;
+      cursor:pointer;
+      -webkit-user-select: none;
+      &:hover{
+        background: #111111;
+        color: rgba(205, 54, 54, 1.0);
+        box-sizing: content-box;
+        border-bottom: 2px solid rgba(205, 54, 54, 1.0);
+        border-radius: 0 0 4px 4px;
+      }
+    }
   }
 }
-
-
-
-
-
-
-//.header {
-//  display: flex;
-//  height: 100%;
-//  background-color: rgba(0,0,0, 1.0);
-//  &__section-brand {
-//    display: flex;
-//    align-items: center;
-//    padding-left: 18%;
-//    background:rgba(205, 54, 54, 1.0);
-//    font-family: 'Raleway', sans-serif;
-//    font-size: 45px;
-//    font-weight: 700;
-//    color: #fff;
-//    box-shadow: -18px 14px 0px -6px rgba(34, 60, 80, 1);
-//    &::after {
-//      content:'';
-//      width: 80px;
-//      background: #000;
-//      border-top: 100px solid rgba(205, 54, 54, 1.0);
-//      border-right: transparent solid 24px;
-//    }
-//  }
-
-//  &__section-menu {
-//    display: flex;
-//    align-items: center;
-//    color: rgba(255, 255, 255, 1.0);
-//  }
-//}
