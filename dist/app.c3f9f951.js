@@ -195,11 +195,83 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/app.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/aspro_min.jpg":[function(require,module,exports) {
+module.exports = "/aspro_min.6d443116.jpg";
+},{}],"js/components/header/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.header = void 0;
+
+var _aspro_min = _interopRequireDefault(require("../../../img/aspro_min.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var header = function header() {
+  var elem = document.createElement('header');
+  elem.insertAdjacentHTML("afterBegin", "\n    <div class=".concat('header__logo', ">\n      <img srcs=", _aspro_min.default, " alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  "));
+  return elem;
+};
+
+exports.header = header;
+},{"../../../img/aspro_min.jpg":"img/aspro_min.jpg"}],"js/components/footer/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.footer = void 0;
+
+var footer = function footer() {
+  var elem = document.createElement('footer');
+  return elem;
+};
+
+exports.footer = footer;
+},{}],"js/components/main/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.main = void 0;
+
+var main = function main() {
+  var elem = document.createElement('main');
+  var fragment = document.createDocumentFragment();
+  fragment.appendChild(section());
+  fragment.appendChild(section());
+  fragment.appendChild(section());
+  elem.appendChild(fragment);
+  return elem;
+};
+
+exports.main = main;
+
+var section = function section() {
+  var section = document.createElement('section');
+  return section;
+};
+},{}],"js/app.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/index.scss");
-},{"../scss/index.scss":"scss/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+var _index2 = require("./components/header/index");
+
+var _index3 = require("./components/footer/index");
+
+var _index4 = require("./components/main/index");
+
+var appEl = document.querySelector('#root');
+var fragment = document.createDocumentFragment();
+fragment.appendChild((0, _index2.header)());
+fragment.appendChild((0, _index4.main)());
+fragment.appendChild((0, _index3.footer)());
+appEl.appendChild(fragment);
+},{"../scss/index.scss":"scss/index.scss","./components/header/index":"js/components/header/index.js","./components/footer/index":"js/components/footer/index.js","./components/main/index":"js/components/main/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -227,7 +299,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44877" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44741" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
