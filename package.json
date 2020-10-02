@@ -1,39 +1,15 @@
 {
   "name": "aspro",
-  "version": "0.1.0",
-  "private": true,
-  "repository": "https://github.com/tealikes/aspro",
-  "author": "Alexey V.Ryapisov <tealikes@yandex.ru>",
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
-  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tealikes/aspro.git",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.11"
   }
 }
