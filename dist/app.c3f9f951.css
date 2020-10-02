@@ -348,9 +348,44 @@ template {
   display: none;
 }
 
-.app {
-  background-color: gold;
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
+header {
+  background-color: green;
   height: 100vh;
 }
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
+section {
+  background-color: yellowgreen;
+  height: 100vh;
+}
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
+footer {
+  background-color: yellow;
+  height: 100vh;
+}
+
+.app {
+  background-color: gold;
+}
+
+/* Large desktops and laptops */
+/* Portrait tablets and medium desktops */
+/* Portrait tablets and small desktops */
+/* Landscape phones and portrait tablets */
+/* Landscape phones and smaller */
 
 /*# sourceMappingURL=/app.c3f9f951.css.map */
