@@ -1,7 +1,9 @@
 @import 'normalize.css';
 
 // HEADER
-@import './header/header.scss';
+@import './header/index.scss';
+@import './header/content.scss';
+@import './header/heading.scss';
 @import './header/media.scss';
 
 // MAIN
@@ -12,6 +14,7 @@
 @import './footer/footer.scss';
 @import './footer/media.scss';
 
+* { box-sizing: border-box; }
 
 .app {
   display: flex;
@@ -19,47 +22,47 @@
 }
 
 .root {
-  width: 1200px;
+  width: 992px;
 }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .root {
-    width: 1200px;
+   // width: 992px;
   }
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .root {
-    width: 992;
+   // width: 992;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .root {
-    width: 768px;
+   // width: 768px;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .root {
-    width: 767;
+   // width: 767;
   }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .root {
-    width: 480;
-    background-color: red;
+    // width: 480;
+  //  background-color: red;
   }
 }
 
 @media (max-width: 650px) {
   .root {
-    width: 650;
+   // width: 650;
   }
 }

@@ -1,0 +1,12 @@
+.heading {
+  height: 120px;
+  position: relative;
+  & img.logo { 
+    z-index: 10;
+    position: absolute;
+    width: 280px;
+    left: 50%;
+    bottom: -35px;
+    margin-left: -150px;
+  }
+}

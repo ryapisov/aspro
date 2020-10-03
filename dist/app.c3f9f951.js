@@ -197,6 +197,8 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/aspro_min.jpg":[function(require,module,exports) {
 module.exports = "/aspro_min.6d443116.jpg";
+},{}],"img/banner_min.jpg":[function(require,module,exports) {
+module.exports = "/banner_min.577f4dd5.jpg";
 },{}],"js/components/header/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -207,16 +209,18 @@ exports.header = void 0;
 
 var _aspro_min = _interopRequireDefault(require("../../../img/aspro_min.jpg"));
 
+var _banner_min = _interopRequireDefault(require("../../../img/banner_min.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var header = function header() {
-  var elem = document.createElement('header');
-  elem.insertAdjacentHTML("afterBegin", "\n    <div class=".concat('header__logo', ">\n      <img srcs=", _aspro_min.default, " alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  "));
-  return elem;
+  var $elem = document.createElement('header');
+  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n      </div>\n    </div>\n  "));
+  return $elem;
 };
 
 exports.header = header;
-},{"../../../img/aspro_min.jpg":"img/aspro_min.jpg"}],"js/components/footer/index.js":[function(require,module,exports) {
+},{"../../../img/aspro_min.jpg":"img/aspro_min.jpg","../../../img/banner_min.jpg":"img/banner_min.jpg"}],"js/components/footer/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -265,12 +269,12 @@ var _index3 = require("./components/footer/index");
 
 var _index4 = require("./components/main/index");
 
-var appEl = document.querySelector('#root');
+var $elem = document.querySelector('#root');
 var fragment = document.createDocumentFragment();
 fragment.appendChild((0, _index2.header)());
 fragment.appendChild((0, _index4.main)());
 fragment.appendChild((0, _index3.footer)());
-appEl.appendChild(fragment);
+$elem.appendChild(fragment);
 },{"../scss/index.scss":"scss/index.scss","./components/header/index":"js/components/header/index.js","./components/footer/index":"js/components/footer/index.js","./components/main/index":"js/components/main/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -299,7 +303,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44741" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34305" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
