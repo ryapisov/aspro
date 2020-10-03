@@ -17,6 +17,8 @@ export const header = () => {
         <div class=${'lower-triangle'}></div>
         <div class=${'right-triangle'}></div>
         <div class=${'left-triangle'}></div>
+        <div class=${'long-line'}></div>
+        <div class=${'short-line'}></div>
       </div>
     </div>
   `)

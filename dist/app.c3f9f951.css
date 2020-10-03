@@ -348,6 +348,7 @@ template {
   display: none;
 }
 
+@charset "UTF-8";
 header {
   height: 100vh;
 }
@@ -372,7 +373,7 @@ header {
   position: absolute;
   max-height: 100%;
   max-width: 100%;
-  top: -55px;
+  top: -61px;
   left: 0;
 }
 
@@ -421,6 +422,35 @@ header {
   border-left: 560px solid #272e38;
   border-top: 150px solid transparent;
   border-bottom: 315px solid transparent;
+}
+.content .triangles .long-line {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 492px;
+  /* длинна полосы */
+  width: 640px;
+  /* поворот линии */
+  transform: skewY(14deg);
+  /* ширина полосы */
+  border-bottom: 30px solid #9a0007;
+  /* угол на конце линии*/
+  border-left: 36px solid transparent;
+}
+.content .triangles .short-line {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  /* отступы от нижней линии*/
+  top: 555px;
+  /* длинна полосы */
+  width: 460px;
+  /* поворот линии */
+  transform: skewY(14deg);
+  /* ширина полосы #272e38 */
+  border-bottom: 18px solid #272e38;
+  /* угол на конце линии*/
+  border-left: 20px solid transparent;
 }
 
 .heading {

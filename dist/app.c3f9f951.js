@@ -215,7 +215,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var header = function header() {
   var $elem = document.createElement('header');
-  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n      </div>\n    </div>\n  "));
+  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n    </div>\n  "));
   return $elem;
 };
 
@@ -303,7 +303,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34305" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40381" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
