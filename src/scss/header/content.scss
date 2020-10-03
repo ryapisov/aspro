@@ -22,7 +22,7 @@
   }
 }
 
-/* TRIANGLES */
+/* DISING */
 .content .triangles {
   z-index: 2; // ====== Второй слой
   overflow: hidden;
@@ -63,7 +63,7 @@
   }
   // треугольник слева
   & .left-triangle {
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     left: 0px;
     top: 165px;
@@ -103,21 +103,43 @@
     border-left: 20px solid transparent;
   }
 }
+ 
+/* TEXT */
+.content .text {
+  z-index: 5; // ====== Второй слой
+  overflow: hidden;
+  position: absolute;  // .content relative
+  position: relative;
+  height: 100%;
+  top: -200%;
+  left: 0;
+  border: 2px solid #000;
+  & .adress {
+    top: 250px;
+    left: 30px;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    & .title {
+      transform: skew(-15deg, 0deg);
+    }
+    & .street{
+      font-size: 18px;
+      margin-top: -12px;
+      margin-bottom: 38px;
+    }
+    & .email{
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    & .phone{
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
 
-// /* LINES */
-// .content .lines {
-//   z-index: 3; // ====== Второй слой
-//   overflow: hidden;
-//   position: absolute;  // .content relative
-//   position: relative;
-//   height: 100%;
-//   top: -200%;
-//   left: 0;
-//   border: 2px solid #000;
-// }
+  }
 
+  & .munu{
 
-.content .text {}
-
-// text
-// menu
+  }
+}

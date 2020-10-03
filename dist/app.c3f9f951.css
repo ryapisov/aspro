@@ -377,7 +377,7 @@ header {
   left: 0;
 }
 
-/* TRIANGLES */
+/* DISING */
 .content .triangles {
   z-index: 2;
   overflow: hidden;
@@ -415,7 +415,7 @@ header {
   border-bottom: 110px solid transparent;
 }
 .content .triangles .left-triangle {
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   left: 0px;
   top: 165px;
@@ -453,6 +453,40 @@ header {
   border-left: 20px solid transparent;
 }
 
+/* TEXT */
+.content .text {
+  z-index: 5;
+  overflow: hidden;
+  position: absolute;
+  position: relative;
+  height: 100%;
+  top: -200%;
+  left: 0;
+  border: 2px solid #000;
+}
+.content .text .adress {
+  top: 250px;
+  left: 30px;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.content .text .adress .title {
+  transform: skew(-15deg, 0deg);
+}
+.content .text .adress .street {
+  font-size: 18px;
+  margin-top: -12px;
+  margin-bottom: 38px;
+}
+.content .text .adress .email {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.content .text .adress .phone {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
 .heading {
   height: 120px;
   position: relative;

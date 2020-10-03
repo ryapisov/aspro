@@ -215,7 +215,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var header = function header() {
   var $elem = document.createElement('header');
-  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n    </div>\n  "));
+  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n      <div class=", 'text', ">\n        <div class=", 'adress', ">\n          <div class=\"title\">\n            <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n            <div class=\"street\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </div>\n          </div>\n          <div class=\"phone\"> +7(499) 964-46-70 </div>\n          <div class=\"email\"> info@sk-aspro.ru </div>\n        </div>\n        <div class=", 'menu', "></div>\n      </div>\n    </div>\n  "));
   return $elem;
 };
 
@@ -303,7 +303,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40381" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44809" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
