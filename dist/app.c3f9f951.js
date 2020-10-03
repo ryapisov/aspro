@@ -199,7 +199,58 @@ module.hot.accept(reloadCSS);
 module.exports = "/aspro_min.6d443116.jpg";
 },{}],"img/banner_min.jpg":[function(require,module,exports) {
 module.exports = "/banner_min.577f4dd5.jpg";
-},{}],"js/components/header/index.js":[function(require,module,exports) {
+},{}],"img/phone.svg":[function(require,module,exports) {
+module.exports = "/phone.564ed6d2.svg";
+},{}],"img/email.svg":[function(require,module,exports) {
+module.exports = "/email.d035182d.svg";
+},{}],"js/components/header/templates.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.content = exports.heading = void 0;
+
+var _aspro_min = _interopRequireDefault(require("../../../img/aspro_min.jpg"));
+
+var _banner_min = _interopRequireDefault(require("../../../img/banner_min.jpg"));
+
+var _phone = _interopRequireDefault(require("../../../img/phone.svg"));
+
+var _email = _interopRequireDefault(require("../../../img/email.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var heading = function heading() {
+  return "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
+};
+
+exports.heading = heading;
+
+var content = function content() {
+  var $divElem = document.createElement('div');
+  $divElem.classList.add('content');
+  $divElem.insertAdjacentHTML('beforeend', showLayerBanner());
+  $divElem.insertAdjacentHTML('beforeend', showLayerTriangles());
+  $divElem.insertAdjacentHTML('beforeend', showLayerText());
+
+  function showLayerBanner() {
+    return "\n      <div class=".concat('layer-banner', ">\n        <img src=", _banner_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n      </div>\n    ");
+  }
+
+  function showLayerTriangles() {
+    return "\n      <div class=".concat('layer-triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n    ");
+  }
+
+  function showLayerText() {
+    return "\n      <div class=".concat('layer-text', ">\n        <div class=", 'contact', ">\n          <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n          <span class=\"address\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </span>\n          <div class=\"phone\">\n            <img src=\"", _phone.default, "\" alt=\"\" />\n            +7(499) 964-46-70 \n          </div>\n          <div class=\"email\">\n            <img src=\"").concat(_email.default, "\" alt=\"\" />\n            info@sk-aspro.ru \n          </div>\n        </div>\n        <div class=", 'menu', "></div>\n      </div>\n    ");
+  }
+
+  return $divElem.outerHTML;
+};
+
+exports.content = content;
+},{"../../../img/aspro_min.jpg":"img/aspro_min.jpg","../../../img/banner_min.jpg":"img/banner_min.jpg","../../../img/phone.svg":"img/phone.svg","../../../img/email.svg":"img/email.svg"}],"js/components/header/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -207,20 +258,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.header = void 0;
 
-var _aspro_min = _interopRequireDefault(require("../../../img/aspro_min.jpg"));
-
-var _banner_min = _interopRequireDefault(require("../../../img/banner_min.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _templates = require("./templates");
 
 var header = function header() {
-  var $elem = document.createElement('header');
-  $elem.insertAdjacentHTML('beforeend', "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n    <div class=\"content\">\n      <div class=", 'banner', ">\n        <img src=").concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />\n      </div>\n      <div class=", 'triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n      <div class=", 'text', ">\n        <div class=", 'adress', ">\n          <div class=\"title\">\n            <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n            <div class=\"street\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </div>\n          </div>\n          <div class=\"phone\"> +7(499) 964-46-70 </div>\n          <div class=\"email\"> info@sk-aspro.ru </div>\n        </div>\n        <div class=", 'menu', "></div>\n      </div>\n    </div>\n  "));
-  return $elem;
+  var elem = document.createElement('header');
+  elem.insertAdjacentHTML('beforeend', (0, _templates.heading)());
+  elem.insertAdjacentHTML('beforeend', (0, _templates.content)());
+  return elem;
 };
 
 exports.header = header;
-},{"../../../img/aspro_min.jpg":"img/aspro_min.jpg","../../../img/banner_min.jpg":"img/banner_min.jpg"}],"js/components/footer/index.js":[function(require,module,exports) {
+},{"./templates":"js/components/header/templates.js"}],"js/components/footer/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -303,7 +351,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44809" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42231" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

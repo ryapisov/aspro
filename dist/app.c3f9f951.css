@@ -359,7 +359,7 @@ header {
 }
 
 /* BANNER */
-.content .banner {
+.content .layer-banner {
   z-index: 1;
   overflow: hidden;
   position: absolute;
@@ -368,7 +368,7 @@ header {
   top: 0;
   left: 0;
 }
-.content .banner img {
+.content .layer-banner img {
   z-index: 0;
   position: absolute;
   max-height: 100%;
@@ -378,7 +378,7 @@ header {
 }
 
 /* DISING */
-.content .triangles {
+.content .layer-triangles {
   z-index: 2;
   overflow: hidden;
   position: absolute;
@@ -387,7 +387,7 @@ header {
   top: -100%;
   left: 0;
 }
-.content .triangles .upper-triangle {
+.content .layer-triangles .upper-triangle {
   z-index: 1;
   position: absolute;
   top: 0px;
@@ -396,7 +396,7 @@ header {
   border-top: 0px solid transparent;
   border-bottom: 250px solid transparent;
 }
-.content .triangles .lower-triangle {
+.content .layer-triangles .lower-triangle {
   z-index: 1;
   position: absolute;
   left: 0px;
@@ -405,7 +405,7 @@ header {
   border-top: 250px solid transparent;
   border-bottom: 0px solid transparent;
 }
-.content .triangles .right-triangle {
+.content .layer-triangles .right-triangle {
   z-index: 2;
   position: absolute;
   top: 0;
@@ -414,7 +414,7 @@ header {
   border-top: 125px solid transparent;
   border-bottom: 110px solid transparent;
 }
-.content .triangles .left-triangle {
+.content .layer-triangles .left-triangle {
   z-index: 3;
   position: absolute;
   left: 0px;
@@ -423,7 +423,7 @@ header {
   border-top: 150px solid transparent;
   border-bottom: 315px solid transparent;
 }
-.content .triangles .long-line {
+.content .layer-triangles .long-line {
   z-index: 2;
   position: absolute;
   right: 0;
@@ -437,7 +437,7 @@ header {
   /* угол на конце линии*/
   border-left: 36px solid transparent;
 }
-.content .triangles .short-line {
+.content .layer-triangles .short-line {
   z-index: 2;
   position: absolute;
   right: 0;
@@ -454,7 +454,7 @@ header {
 }
 
 /* TEXT */
-.content .text {
+.content .layer-text {
   z-index: 5;
   overflow: hidden;
   position: absolute;
@@ -464,28 +464,38 @@ header {
   left: 0;
   border: 2px solid #000;
 }
-.content .text .adress {
+.content .layer-text .contact {
   top: 250px;
   left: 30px;
   position: absolute;
   font-family: "Open Sans", sans-serif;
   color: #fff;
 }
-.content .text .adress .title {
+.content .layer-text .contact h1 {
   transform: skew(-15deg, 0deg);
 }
-.content .text .adress .street {
+.content .layer-text .contact span {
+  display: block;
   font-size: 18px;
   margin-top: -12px;
   margin-bottom: 38px;
 }
-.content .text .adress .email {
-  font-size: 18px;
-  margin-bottom: 6px;
+.content .layer-text .contact .contact-phone {
+  position: relative;
+  /* font-weight: 700; */
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
-.content .text .adress .phone {
-  font-size: 18px;
-  margin-bottom: 6px;
+.content .layer-text .contact img {
+  width: 22px;
+}
+.content .layer-text .contact .contact-phone::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  padding-left: 36px;
 }
 .heading {
   height: 120px;

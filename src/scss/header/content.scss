@@ -4,7 +4,7 @@
 }
 
 /* BANNER */
-.content .banner {
+.content .layer-banner {
   z-index: 1; // ====== Первый слой
   overflow: hidden;
   position: absolute; // .content relative
@@ -23,7 +23,7 @@
 }
 
 /* DISING */
-.content .triangles {
+.content .layer-triangles {
   z-index: 2; // ====== Второй слой
   overflow: hidden;
   position: absolute;  // .content relative
@@ -105,7 +105,7 @@
 }
  
 /* TEXT */
-.content .text {
+.content .layer-text {
   z-index: 5; // ====== Второй слой
   overflow: hidden;
   position: absolute;  // .content relative
@@ -114,32 +114,45 @@
   top: -200%;
   left: 0;
   border: 2px solid #000;
-  & .adress {
+  & .contact {
     top: 250px;
     left: 30px;
     position: absolute;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
-    & .title {
+    & h1 {
       transform: skew(-15deg, 0deg);
     }
-    & .street{
+    & span{
+      display: block;
       font-size: 18px;
       margin-top: -12px;
       margin-bottom: 38px;
     }
-    & .email{
-      font-size: 18px;
-      margin-bottom: 6px;
+    
+    .contact-phone {
+      position: relative;
+      /* font-weight: 700; */
+      letter-spacing: 1px;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 10px;
+      margin-left: 30px;
     }
-    & .phone{
-      font-size: 18px;
-      margin-bottom: 6px;
+    
+    img{
+      width: 22px;
+    }
+    .contact-phone::before {
+      content: '';
+      width: 34px;
+      height: 34px;
+      padding-left: 36px;
+     // background: url(../../img/phone.svg) no-repeat left center;
     }
 
   }
 
-  & .munu{
+  & .mеnu{
 
   }
 }
