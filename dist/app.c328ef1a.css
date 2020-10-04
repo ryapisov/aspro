@@ -349,54 +349,31 @@ template {
 }
 
 @charset "UTF-8";
-.header {
+.main-header {
   height: 120px;
   position: relative;
 }
-.header img.logo {
-  z-index: 10;
+.main-header img {
   position: absolute;
-  width: 280px;
+  width: 300px;
   left: 50%;
   bottom: -35px;
   margin-left: -150px;
 }
 
-.content {
+.main-body {
   height: calc(100vh - 120px);
-  position: relative;
-}
-
-/* BANNER */
-.content .layer-banner {
-  z-index: 1;
   overflow: hidden;
-  position: absolute;
   position: relative;
-  height: 100%;
-  top: 0;
-  left: 0;
+  z-index: -5;
 }
-.content .layer-banner img {
-  z-index: 0;
+.main-body img {
   position: absolute;
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   top: -61px;
   left: 0;
 }
-
-/* DISING */
-.content .layer-triangles {
-  z-index: 2;
-  overflow: hidden;
-  position: absolute;
-  position: relative;
-  height: 100%;
-  top: -100%;
-  left: 0;
-}
-.content .layer-triangles .upper-triangle {
+.main-body .upper-triangle {
   z-index: 1;
   position: absolute;
   top: 0px;
@@ -405,7 +382,7 @@ template {
   border-top: 0px solid transparent;
   border-bottom: 250px solid transparent;
 }
-.content .layer-triangles .lower-triangle {
+.main-body .lower-triangle {
   z-index: 1;
   position: absolute;
   left: 0px;
@@ -414,7 +391,7 @@ template {
   border-top: 250px solid transparent;
   border-bottom: 0px solid transparent;
 }
-.content .layer-triangles .right-triangle {
+.main-body .right-triangle {
   z-index: 2;
   position: absolute;
   top: 0;
@@ -423,8 +400,8 @@ template {
   border-top: 125px solid transparent;
   border-bottom: 110px solid transparent;
 }
-.content .layer-triangles .left-triangle {
-  z-index: 3;
+.main-body .left-triangle {
+  z-index: 2;
   position: absolute;
   left: 0px;
   top: 165px;
@@ -432,85 +409,114 @@ template {
   border-top: 150px solid transparent;
   border-bottom: 315px solid transparent;
 }
-.content .layer-triangles .long-line {
-  z-index: 2;
+.main-body .long-line {
+  z-index: 1;
   position: absolute;
   right: 0;
   top: 492px;
-  /* длинна полосы */
   width: 640px;
-  /* поворот линии */
   transform: skewY(14deg);
-  /* ширина полосы */
   border-bottom: 30px solid #9a0007;
   /* угол на конце линии*/
   border-left: 36px solid transparent;
 }
-.content .layer-triangles .short-line {
-  z-index: 2;
+.main-body .short-line {
+  z-index: 1;
   position: absolute;
   right: 0;
-  /* отступы от нижней линии*/
   top: 555px;
-  /* длинна полосы */
   width: 460px;
-  /* поворот линии */
   transform: skewY(14deg);
-  /* ширина полосы #272e38 */
   border-bottom: 18px solid #272e38;
   /* угол на конце линии*/
   border-left: 20px solid transparent;
 }
-
-/* TEXT */
-.content .layer-text {
-  z-index: 5;
-  overflow: hidden;
-  position: absolute;
-  position: relative;
-  height: 100%;
-  top: -200%;
-  left: 0;
-  border: 2px solid #000;
-}
-.content .layer-text .contact {
-  top: 250px;
-  left: 30px;
+.main-body .contact-text {
+  z-index: 3;
   position: absolute;
   font-family: "Open Sans", sans-serif;
-  color: #fff;
-}
-.content .layer-text .contact h1 {
-  transform: skew(-15deg, 0deg);
-}
-.content .layer-text .contact span {
-  display: block;
   font-size: 18px;
-  margin-top: -12px;
-  margin-bottom: 38px;
+  color: #fff;
+  top: 250px;
+  left: 40px;
 }
-.content .layer-text .contact .contact-phone {
+.main-body .contact-text h1 {
+  font-weight: 700;
+  transform: skew(-15deg, 0deg);
+  margin-bottom: 4px;
+}
+.main-body .contact-text .address {
+  margin-bottom: 52px;
+}
+.main-body .contact-text .phone {
+  margin-bottom: 18px;
   position: relative;
-  /* font-weight: 700; */
-  letter-spacing: 1px;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 10px;
-  margin-left: 30px;
+  padding-left: 30px;
 }
-.content .layer-text .contact img {
-  width: 22px;
+.main-body .contact-text .phone img {
+  left: 0;
+  top: -10px;
+  width: 20px;
+  display: inline-block;
 }
-.content .layer-text .contact .contact-phone::before {
-  content: "";
-  width: 34px;
-  height: 34px;
-  padding-left: 36px;
+.main-body .contact-text .email {
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 30px;
 }
+.main-body .contact-text .email img {
+  top: 0px;
+  left: 0;
+  width: 20px;
+  display: inline-block;
+}
+
 /* Large desktops and laptops */
 /* Portrait tablets and medium desktops */
 /* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .upper-triangle {
+    display: none;
+  }
+
+  .lower-triangle {
+    display: none;
+  }
+
+  .main-header img {
+    bottom: 10px;
+  }
+}
 /* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .upper-triangle {
+    display: none;
+  }
+
+  .lower-triangle {
+    display: none;
+  }
+
+  .main-header img {
+    bottom: 10px;
+  }
+}
 /* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .upper-triangle {
+    display: none;
+  }
+
+  .lower-triangle {
+    display: none;
+  }
+
+  .main-header img {
+    bottom: 10px;
+    width: 200px;
+    margin-left: -100px;
+  }
+}
 * {
   box-sizing: border-box;
 }
