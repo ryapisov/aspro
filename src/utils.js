@@ -10,7 +10,7 @@ export const createTag = (tag, classes, ...elems) => {
 }
 
 // === CREATE SELECTOR
-export const createSection = (...htmls) => {
+export const createSectionFrom = (...htmls) => {
   const section = document.createElement('section')
   htmls.forEach((html) => section.insertAdjacentHTML('beforeend', html ))
   return section

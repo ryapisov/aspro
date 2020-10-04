@@ -1,27 +1,17 @@
+import {createSectionFrom, createTag} from '../utils'
 import {
-   showImageLogo,
-   showLayerBanner,
-   showLayerTriangles,
-   showLayerTextual
+   showImageLogo, showLayerBanner,showLayerTriangles, showLayerTextual
 }  from './templates' 
 
-import {createSection, createTag} from '../utils'
+// Creating a section
+export const main = () => createSectionFrom( header(), body())
 
-export const header = () => {
-   return createSection(head(), body())
-}
+// upper part of the section
+const header = () => createTag('div', 'header', showImageLogo() )
 
-function head(){
-   return createTag('div', 'header',
-     showImageLogo(),
-   )
-}
-
-
-function body(){
-   return createTag('div', 'content',
+// down part of the section
+const body = () => createTag('div', 'content', 
      showLayerBanner(),
      showLayerTriangles(),
-     showLayerTextual()
+     showLayerTextual() 
    )
-}

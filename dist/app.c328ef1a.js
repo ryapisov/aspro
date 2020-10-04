@@ -201,7 +201,7 @@ module.hot.accept(reloadCSS);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.unite = exports.createSection = exports.createTag = void 0;
+exports.unite = exports.createSectionFrom = exports.createTag = void 0;
 
 // === CREATE TAG
 var createTag = function createTag(tag, classes) {
@@ -223,7 +223,7 @@ var createTag = function createTag(tag, classes) {
 
 exports.createTag = createTag;
 
-var createSection = function createSection() {
+var createSectionFrom = function createSectionFrom() {
   var section = document.createElement('section');
 
   for (var _len2 = arguments.length, htmls = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
@@ -237,7 +237,7 @@ var createSection = function createSection() {
 }; // === UNITE
 
 
-exports.createSection = createSection;
+exports.createSectionFrom = createSectionFrom;
 
 var unite = function unite() {
   var fragment = document.createDocumentFragment();
@@ -308,26 +308,29 @@ exports.showLayerTextual = showLayerTextual;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.header = void 0;
-
-var _templates = require("./templates");
+exports.main = void 0;
 
 var _utils = require("../utils");
 
+var _templates = require("./templates");
+
+// Creating a section
+var main = function main() {
+  return (0, _utils.createSectionFrom)(header(), body());
+}; // upper part of the section
+
+
+exports.main = main;
+
 var header = function header() {
-  return (0, _utils.createSection)(head(), body());
-};
-
-exports.header = header;
-
-function head() {
   return (0, _utils.createTag)('div', 'header', (0, _templates.showImageLogo)());
-}
+}; // down part of the section
 
-function body() {
+
+var body = function body() {
   return (0, _utils.createTag)('div', 'content', (0, _templates.showLayerBanner)(), (0, _templates.showLayerTriangles)(), (0, _templates.showLayerTextual)());
-}
-},{"./templates":"sectionMain/templates.js","../utils":"utils.js"}],"sectionAbout/index.js":[function(require,module,exports) {
+};
+},{"../utils":"utils.js","./templates":"sectionMain/templates.js"}],"sectionAbout/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -394,7 +397,7 @@ var _sectionPartners = require("./sectionPartners");
 var _sectionContacts = require("./sectionContacts");
 
 var elem = document.querySelector('#root');
-var html = (0, _utils.unite)((0, _sectionMain.header)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
+var html = (0, _utils.unite)((0, _sectionMain.main)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
 elem.appendChild(html);
 },{"./app.scss":"app.scss","./utils":"utils.js","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -424,7 +427,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46231" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38613" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
