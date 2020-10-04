@@ -1,6 +1,6 @@
 import {createSectionFrom, createTag} from '../utils'
 import {
-   showImageLogo, showLayerBanner,showLayerTriangles, showLayerTextual
+   showImageLogo, showBanner,showTriangles, showTextual
 }  from './templates' 
 
 // Creating a section
@@ -11,7 +11,7 @@ const header = () => createTag('div', 'header', showImageLogo() )
 
 // down part of the section
 const body = () => createTag('div', 'content', 
-     showLayerBanner(),
-     showLayerTriangles(),
-     showLayerTextual() 
+     showBanner(),
+     showTriangles(),
+     showTextual() 
    )

@@ -267,7 +267,7 @@ module.exports = "/email.ee5e6050.svg";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.showLayerTextual = exports.showLayerTriangles = exports.showLayerBanner = exports.showImageLogo = void 0;
+exports.showTextual = exports.showTriangles = exports.showBanner = exports.showImageLogo = void 0;
 
 var _aspro_min = _interopRequireDefault(require("../images/aspro_min.jpg"));
 
@@ -280,28 +280,28 @@ var _email = _interopRequireDefault(require("../images/email.svg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var showImageLogo = function showImageLogo() {
-  return "\n    <div class=\"header\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
+  return "\n    <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n  ");
 };
 
 exports.showImageLogo = showImageLogo;
 
-var showLayerBanner = function showLayerBanner() {
+var showBanner = function showBanner() {
   return "\n    <div class=".concat('layer-banner', ">\n      <img src=", _banner_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
 };
 
-exports.showLayerBanner = showLayerBanner;
+exports.showBanner = showBanner;
 
-var showLayerTriangles = function showLayerTriangles() {
+var showTriangles = function showTriangles() {
   return "\n    <div class=".concat('layer-triangles', ">\n      <div class=", 'upper-triangle', "></div>\n      <div class=", 'lower-triangle', "></div>\n      <div class=", 'right-triangle', "></div>\n      <div class=", 'left-triangle', "></div>\n      <div class=", 'long-line', "></div>\n      <div class=", 'short-line', "></div>\n    </div>\n  ");
 };
 
-exports.showLayerTriangles = showLayerTriangles;
+exports.showTriangles = showTriangles;
 
-var showLayerTextual = function showLayerTextual() {
+var showTextual = function showTextual() {
   return "\n    <div class=".concat('layer-text', ">\n      <div class=", 'contact', ">\n        <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n        <span class=\"address\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </span>\n        <div class=\"phone\">\n          <img src=\"", _phone.default, "\" alt=\"\" />\n          +7(499) 964-46-70 \n        </div>\n        <div class=\"email\">\n          <img src=\"").concat(_email.default, "\" alt=\"\" />\n          info@sk-aspro.ru \n        </div>\n      </div>\n      <div class=", 'menu', "></div>\n    </div>\n  ");
 };
 
-exports.showLayerTextual = showLayerTextual;
+exports.showTextual = showTextual;
 },{"../images/aspro_min.jpg":"images/aspro_min.jpg","../images/banner_min.jpg":"images/banner_min.jpg","../images/phone.svg":"images/phone.svg","../images/email.svg":"images/email.svg"}],"sectionMain/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -328,7 +328,7 @@ var header = function header() {
 
 
 var body = function body() {
-  return (0, _utils.createTag)('div', 'content', (0, _templates.showLayerBanner)(), (0, _templates.showLayerTriangles)(), (0, _templates.showLayerTextual)());
+  return (0, _utils.createTag)('div', 'content', (0, _templates.showBanner)(), (0, _templates.showTriangles)(), (0, _templates.showTextual)());
 };
 },{"../utils":"utils.js","./templates":"sectionMain/templates.js"}],"sectionAbout/index.js":[function(require,module,exports) {
 "use strict";
@@ -427,7 +427,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38613" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38137" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

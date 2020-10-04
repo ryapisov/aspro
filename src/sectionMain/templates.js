@@ -5,13 +5,11 @@ import iconEmail from '../images/email.svg'
 
 export const showImageLogo = () => {
   return `
-    <div class="header">
-      <img src=${logo} class="logo" alt="${'строительная компания aspro'}" />
-    </div>
+    <img src=${logo} class="logo" alt="${'строительная компания aspro'}" />
   `
 }
 
-export const showLayerBanner = () => {
+export const showBanner = () => {
   return `
     <div class=${'layer-banner'}>
       <img src=${banner} class="logo" alt="${'строительная компания aspro'}" />
@@ -19,7 +17,7 @@ export const showLayerBanner = () => {
   `
 }
 
-export const showLayerTriangles = () => {
+export const showTriangles = () => {
   return `
     <div class=${'layer-triangles'}>
       <div class=${'upper-triangle'}></div>
@@ -32,7 +30,7 @@ export const showLayerTriangles = () => {
   `
 }
 
-export const showLayerTextual = () => {
+export const showTextual = () => {
   return `
     <div class=${'layer-text'}>
       <div class=${'contact'}>
