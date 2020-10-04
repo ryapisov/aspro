@@ -93,7 +93,7 @@
     /* угол на конце линии*/
     border-left: 20px solid transparent;
   }
-
+  // контакты
   & .contact-text{
     z-index: 3;
     position: absolute;
@@ -115,7 +115,8 @@
 
     // телефон
     & .phone{
-      margin-bottom: 18px;
+      margin: 0 0 20px 25px;
+      margin-bottom: 20px;
       position: relative;
       padding-left: 30px;
       img {
@@ -128,7 +129,7 @@
 
     // электронный ящик
     & .email{
-      margin-bottom: 18px;
+      margin: 0 0 20px 25px;
       position: relative;
       padding-left: 30px;
       & img {
@@ -139,7 +140,6 @@
       }
     }
   }
-
 }
 
 

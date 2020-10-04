@@ -4,10 +4,10 @@ import iconPhone from '../images/phone.svg'
 import iconEmail from '../images/email.svg'
 
 export const showImageLogo = () =>
-  `<img src=${logo} alt="${'строительная компания aspro'}" />`
+  `<img src=${logo} alt="${'строительная компания aspro'}" /> `
 
 export const showBanner = () =>
-   `<img src=${banner} alt="${'строительная компания aspro'}" />`
+   `<img src=${banner} alt="${'строительная компания aspro'}" />` 
  
 export const showTriangles = () => {
   return `
@@ -40,8 +40,4 @@ export const showContacts = () => {
       </div>
     </div>
   `
-}
-
-export const showMenu = () => {
-  return `<div class=${'menu'}></div>`
 }

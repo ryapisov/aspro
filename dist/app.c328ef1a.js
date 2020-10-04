@@ -267,7 +267,7 @@ module.exports = "/email.ee5e6050.svg";
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.showMenu = exports.showContacts = exports.showTriangles = exports.showBanner = exports.showImageLogo = void 0;
+exports.showContacts = exports.showTriangles = exports.showBanner = exports.showImageLogo = void 0;
 
 var _aspro_min = _interopRequireDefault(require("../images/aspro_min.jpg"));
 
@@ -280,7 +280,7 @@ var _email = _interopRequireDefault(require("../images/email.svg"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var showImageLogo = function showImageLogo() {
-  return "<img src=".concat(_aspro_min.default, " alt=\"", 'строительная компания aspro', "\" />");
+  return "<img src=".concat(_aspro_min.default, " alt=\"", 'строительная компания aspro', "\" /> ");
 };
 
 exports.showImageLogo = showImageLogo;
@@ -302,12 +302,6 @@ var showContacts = function showContacts() {
 };
 
 exports.showContacts = showContacts;
-
-var showMenu = function showMenu() {
-  return "<div class=".concat('menu', "></div>");
-};
-
-exports.showMenu = showMenu;
 },{"../images/aspro_min.jpg":"images/aspro_min.jpg","../images/banner_min.jpg":"images/banner_min.jpg","../images/phone.svg":"images/phone.svg","../images/email.svg":"images/email.svg"}],"sectionMain/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -387,7 +381,76 @@ var contacts = function contacts() {
 };
 
 exports.contacts = contacts;
-},{}],"app.js":[function(require,module,exports) {
+},{}],"menu/templates.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.showMenu = void 0;
+
+var showMenu = function showMenu() {
+  return "\n      <ul>\n        <li><a href=\"#about\" id=\"about\">".concat('о нас', "</a></li>\n        <li><a href=\"#partners\">", 'партнёры', "</a></li>\n        <li><a href=\"#objects\">", 'объекты', "</a></li>\n        <li><a href=\"#contacts\">", 'контакты', "</a></li>\n      </ul>\n  ");
+};
+
+exports.showMenu = showMenu;
+{
+  /* <nav class=${'response-menu'}>
+  <ul>
+   <li><a href="">${'о нас'}</a></li>
+   <li><a href="">${'партнёры'}</a></li>
+   <li><a href="">${'объекты'}</a></li>
+   <li><a href="">${'контакты'}</a></li>
+  </ul>
+  </nav> */
+}
+},{}],"menu/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.menu = void 0;
+
+var _utils = require("../utils");
+
+var _templates = require("./templates");
+
+// Creating a section
+var menu = function menu() {
+  return createSectionFrom(menu_());
+}; // upper part of the section
+
+
+exports.menu = menu;
+
+var menu_ = function menu_() {
+  return (0, _utils.createTag)('nav', 'menu', (0, _templates.showMenu)());
+}; // === CREATE SELECTOR
+
+
+var createSectionFrom = function createSectionFrom() {
+  var section = document.createElement('section');
+
+  for (var _len = arguments.length, htmls = new Array(_len), _key = 0; _key < _len; _key++) {
+    htmls[_key] = arguments[_key];
+  }
+
+  htmls.forEach(function (html) {
+    section.insertAdjacentHTML('beforeend', html);
+    section.classList.add('menu-section');
+  });
+  return section;
+}; // // Creating 
+// export const menu = () => createDivFrom (  menu1()   )
+// const menu1 = () => createTag('nav', 'menu',  showMenu() )
+// // === 
+// export const createDivFrom = (...htmls) => {
+//   const div = document.createElement('span')
+//   htmls.forEach((html) => div.insertAdjacentHTML('beforeend', html ))
+//   return div
+// }
+},{"../utils":"utils.js","./templates":"menu/templates.js"}],"app.js":[function(require,module,exports) {
 "use strict";
 
 require("./app.scss");
@@ -402,10 +465,12 @@ var _sectionPartners = require("./sectionPartners");
 
 var _sectionContacts = require("./sectionContacts");
 
+var _menu = require("./menu");
+
 var elem = document.querySelector('#root');
-var html = (0, _utils.unite)((0, _sectionMain.main)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
+var html = (0, _utils.unite)((0, _menu.menu)(), (0, _sectionMain.main)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
 elem.appendChild(html);
-},{"./app.scss":"app.scss","./utils":"utils.js","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./app.scss":"app.scss","./utils":"utils.js","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js","./menu":"menu/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -433,7 +498,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39473" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37337" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

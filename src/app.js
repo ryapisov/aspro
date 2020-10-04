@@ -4,7 +4,9 @@ import { main } from './sectionMain'
 import { about } from './sectionAbout'
 import { partners} from './sectionPartners'
 import { contacts } from './sectionContacts'
+import { menu } from './menu'
+
 
 const elem = document.querySelector('#root')
-const html = unite(main(), about(), partners(), contacts())
+const html = unite( menu(), main(), about(), partners(), contacts())
 elem.appendChild(html)

@@ -13,5 +13,5 @@ const header = () => createTag('div', 'main-header', showImageLogo() )
 const body = () => createTag('div', 'main-body', 
      showBanner(),
      showTriangles(),
-     showContacts() 
+     showContacts()
    )

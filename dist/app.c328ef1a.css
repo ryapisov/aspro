@@ -349,6 +349,38 @@ template {
 }
 
 @charset "UTF-8";
+.menu-section {
+  position: relative;
+  height: 0;
+}
+
+.menu {
+  z-index: 50;
+  top: 170px;
+  right: 0;
+  width: 170px;
+  position: absolute;
+}
+.menu ul {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.menu li {
+  padding-bottom: 16px;
+}
+.menu li::before {
+  content: "»";
+  color: #fff;
+  padding-right: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .main-header {
   height: 120px;
   position: relative;
@@ -449,7 +481,8 @@ template {
   margin-bottom: 52px;
 }
 .main-body .contact-text .phone {
-  margin-bottom: 18px;
+  margin: 0 0 20px 25px;
+  margin-bottom: 20px;
   position: relative;
   padding-left: 30px;
 }
@@ -460,7 +493,7 @@ template {
   display: inline-block;
 }
 .main-body .contact-text .email {
-  margin-bottom: 18px;
+  margin: 0 0 20px 25px;
   position: relative;
   padding-left: 30px;
 }
@@ -527,7 +560,11 @@ template {
 }
 
 .root {
+  margin-top: 20px;
   width: 992px;
+  box-shadow: 3px 5px 8px 7px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 3px 5px 8px 7px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 3px 5px 8px 7px rgba(0, 0, 0, 0.32);
 }
 
 section {
