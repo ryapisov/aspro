@@ -319,7 +319,7 @@ var contacts = function contacts() {
 };
 
 exports.contacts = contacts;
-},{}],"js/app.js":[function(require,module,exports) {
+},{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/index.scss");
@@ -552,5 +552,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.00a46daa.js.map

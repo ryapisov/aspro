@@ -1,18 +1,7 @@
 @import 'normalize.css';
 
-// HEADER
-@import './header/index.scss';
-@import './header/content.scss';
-@import './header/heading.scss';
-@import './header/media.scss';
-
-// MAIN
-@import './main/main.scss';
-@import './main/media.scss';
-
-// FOOTER
-@import './footer/footer.scss';
-@import './footer/media.scss';
+@import './sectionMain/main.scss';
+@import './sectionAbout/about.scss';
 
 * { box-sizing: border-box; }
 
@@ -24,6 +13,11 @@
 .root {
   width: 992px;
 }
+
+section {
+  height: 100vh;
+}
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {

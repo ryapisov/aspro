@@ -519,21 +519,6 @@ header {
 /* Portrait tablets and small desktops */
 /* Landscape phones and portrait tablets */
 /* Landscape phones and smaller */
-/* Large desktops and laptops */
-/* Portrait tablets and medium desktops */
-/* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
-/* Landscape phones and smaller */
-footer {
-  background-color: yellow;
-  height: 100vh;
-}
-
-/* Large desktops and laptops */
-/* Portrait tablets and medium desktops */
-/* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
-/* Landscape phones and smaller */
 * {
   box-sizing: border-box;
 }
@@ -557,4 +542,4 @@ section {
 /* Landscape phones and portrait tablets */
 /* Landscape phones and smaller */
 
-/*# sourceMappingURL=/app.c3f9f951.css.map */
+/*# sourceMappingURL=/js.00a46daa.css.map */

@@ -190,67 +190,127 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scss/index.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/aspro_min.jpg":[function(require,module,exports) {
-module.exports = "/aspro_min.6d443116.jpg";
-},{}],"img/banner_min.jpg":[function(require,module,exports) {
-module.exports = "/banner_min.577f4dd5.jpg";
-},{}],"img/phone.svg":[function(require,module,exports) {
-module.exports = "/phone.564ed6d2.svg";
-},{}],"img/email.svg":[function(require,module,exports) {
-module.exports = "/email.d035182d.svg";
-},{}],"js/sectionMain/templates.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/aspro_min.jpg":[function(require,module,exports) {
+module.exports = "/aspro_min.71a2b036.jpg";
+},{}],"sectionMain/blocks/head.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.content = exports.heading = void 0;
+exports.head = void 0;
 
-var _aspro_min = _interopRequireDefault(require("../../img/aspro_min.jpg"));
-
-var _banner_min = _interopRequireDefault(require("../../img/banner_min.jpg"));
-
-var _phone = _interopRequireDefault(require("../../img/phone.svg"));
-
-var _email = _interopRequireDefault(require("../../img/email.svg"));
+var _aspro_min = _interopRequireDefault(require("../../images/aspro_min.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var heading = function heading() {
-  return "\n    <div class=\"heading\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
+var head = function head() {
+  return "\n    <div class=\"header\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
 };
 
-exports.heading = heading;
+exports.head = head;
+},{"../../images/aspro_min.jpg":"images/aspro_min.jpg"}],"images/banner_min.jpg":[function(require,module,exports) {
+module.exports = "/banner_min.34a5add3.jpg";
+},{}],"images/phone.svg":[function(require,module,exports) {
+module.exports = "/phone.b979c70b.svg";
+},{}],"images/email.svg":[function(require,module,exports) {
+module.exports = "/email.ee5e6050.svg";
+},{}],"utils.js":[function(require,module,exports) {
+"use strict";
 
-var content = function content() {
-  var $divElem = document.createElement('div');
-  $divElem.classList.add('content');
-  $divElem.insertAdjacentHTML('beforeend', showLayerBanner());
-  $divElem.insertAdjacentHTML('beforeend', showLayerTriangles());
-  $divElem.insertAdjacentHTML('beforeend', showLayerText());
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.unite = exports.createSection = exports.createTagAndAddItems = void 0;
 
-  function showLayerBanner() {
-    return "\n      <div class=".concat('layer-banner', ">\n        <img src=", _banner_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n      </div>\n    ");
+var createTagAndAddItems = function createTagAndAddItems(tag, classes) {
+  if (!tag || !isNaN(tag)) return null;
+  var elemTag = document.createElement(tag);
+  if (classes && isNaN(classes)) elemTag.classList.add(classes);
+
+  for (var _len = arguments.length, elems = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    elems[_key - 2] = arguments[_key];
   }
 
-  function showLayerTriangles() {
-    return "\n      <div class=".concat('layer-triangles', ">\n        <div class=", 'upper-triangle', "></div>\n        <div class=", 'lower-triangle', "></div>\n        <div class=", 'right-triangle', "></div>\n        <div class=", 'left-triangle', "></div>\n        <div class=", 'long-line', "></div>\n        <div class=", 'short-line', "></div>\n      </div>\n    ");
-  }
-
-  function showLayerText() {
-    return "\n      <div class=".concat('layer-text', ">\n        <div class=", 'contact', ">\n          <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n          <span class=\"address\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </span>\n          <div class=\"phone\">\n            <img src=\"", _phone.default, "\" alt=\"\" />\n            +7(499) 964-46-70 \n          </div>\n          <div class=\"email\">\n            <img src=\"").concat(_email.default, "\" alt=\"\" />\n            info@sk-aspro.ru \n          </div>\n        </div>\n        <div class=", 'menu', "></div>\n      </div>\n    ");
-  }
-
-  return $divElem.outerHTML;
+  if (elems.length == 0) return elemTag;
+  elems.forEach(function (elem) {
+    return elemTag.insertAdjacentHTML('beforeend', elem);
+  });
+  return elemTag.outerHTML;
 };
 
-exports.content = content;
-},{"../../img/aspro_min.jpg":"img/aspro_min.jpg","../../img/banner_min.jpg":"img/banner_min.jpg","../../img/phone.svg":"img/phone.svg","../../img/email.svg":"img/email.svg"}],"js/sectionMain/index.js":[function(require,module,exports) {
+exports.createTagAndAddItems = createTagAndAddItems;
+
+var createSection = function createSection() {
+  var section = document.createElement('section');
+
+  for (var _len2 = arguments.length, htmls = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+    htmls[_key2] = arguments[_key2];
+  }
+
+  htmls.forEach(function (html) {
+    return section.insertAdjacentHTML('beforeend', html);
+  });
+  return section;
+};
+
+exports.createSection = createSection;
+
+var unite = function unite() {
+  var fragment = document.createDocumentFragment();
+
+  for (var _len3 = arguments.length, slices = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+    slices[_key3] = arguments[_key3];
+  }
+
+  slices.forEach(function (slice) {
+    return fragment.appendChild(slice);
+  });
+  return fragment;
+};
+
+exports.unite = unite;
+},{}],"sectionMain/blocks/body.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.body = void 0;
+
+var _banner_min = _interopRequireDefault(require("../../images/banner_min.jpg"));
+
+var _phone = _interopRequireDefault(require("../../images/phone.svg"));
+
+var _email = _interopRequireDefault(require("../../images/email.svg"));
+
+var _utils = require("../../utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var body = function body() {
+  return (0, _utils.createTagAndAddItems)('div', 'content', showLayerBanner(), showLayerTriangles(), showLayerText());
+};
+
+exports.body = body;
+
+function showLayerBanner() {
+  return "\n    <div class=".concat('layer-banner', ">\n      <img src=", _banner_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
+}
+
+function showLayerTriangles() {
+  return "\n    <div class=".concat('layer-triangles', ">\n      <div class=", 'upper-triangle', "></div>\n      <div class=", 'lower-triangle', "></div>\n      <div class=", 'right-triangle', "></div>\n      <div class=", 'left-triangle', "></div>\n      <div class=", 'long-line', "></div>\n      <div class=", 'short-line', "></div>\n    </div>\n  ");
+}
+
+function showLayerText() {
+  return "\n    <div class=".concat('layer-text', ">\n      <div class=", 'contact', ">\n        <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n        <span class=\"address\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </span>\n        <div class=\"phone\">\n          <img src=\"", _phone.default, "\" alt=\"\" />\n          +7(499) 964-46-70 \n        </div>\n        <div class=\"email\">\n          <img src=\"").concat(_email.default, "\" alt=\"\" />\n          info@sk-aspro.ru \n        </div>\n      </div>\n      <div class=", 'menu', "></div>\n    </div>\n  ");
+}
+},{"../../images/banner_min.jpg":"images/banner_min.jpg","../../images/phone.svg":"images/phone.svg","../../images/email.svg":"images/email.svg","../../utils":"utils.js"}],"sectionMain/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -258,17 +318,18 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.header = void 0;
 
-var _templates = require("./templates");
+var _head = require("./blocks/head");
+
+var _body = require("./blocks/body");
+
+var _utils = require("../utils");
 
 var header = function header() {
-  var elem = document.createElement('header');
-  elem.insertAdjacentHTML('beforeend', (0, _templates.heading)());
-  elem.insertAdjacentHTML('beforeend', (0, _templates.content)());
-  return elem;
+  return (0, _utils.createSection)((0, _head.head)(), (0, _body.body)());
 };
 
 exports.header = header;
-},{"./templates":"js/sectionMain/templates.js"}],"js/sectionAbout/index.js":[function(require,module,exports) {
+},{"./blocks/head":"sectionMain/blocks/head.js","./blocks/body":"sectionMain/blocks/body.js","../utils":"utils.js"}],"sectionAbout/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -279,13 +340,13 @@ exports.about = void 0;
 // import {heading, content} from './templates'
 var about = function about() {
   var elem = document.createElement('section'); // elem.insertAdjacentHTML('beforeend', heading() )
-  // elem.insertAdjacentHTML('beforeend', content() )
+  // elem.insertAdjacentHTML('beforeend', '<p> 222223</p>')
 
   return elem;
 };
 
 exports.about = about;
-},{}],"js/sectionPartners/index.js":[function(require,module,exports) {
+},{}],"sectionPartners/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -302,7 +363,7 @@ var partners = function partners() {
 };
 
 exports.partners = partners;
-},{}],"js/sectionContacts/index.js":[function(require,module,exports) {
+},{}],"sectionContacts/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -319,10 +380,10 @@ var contacts = function contacts() {
 };
 
 exports.contacts = contacts;
-},{}],"js/app.js":[function(require,module,exports) {
+},{}],"app.js":[function(require,module,exports) {
 "use strict";
 
-require("../scss/index.scss");
+require("./app.scss");
 
 var _sectionMain = require("./sectionMain");
 
@@ -348,7 +409,7 @@ function unite() {
   });
   return fragment;
 }
-},{"../scss/index.scss":"scss/index.scss","./sectionMain":"js/sectionMain/index.js","./sectionAbout":"js/sectionAbout/index.js","./sectionPartners":"js/sectionPartners/index.js","./sectionContacts":"js/sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./app.scss":"app.scss","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -376,7 +437,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34979" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45237" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -552,5 +613,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
-//# sourceMappingURL=/app.c3f9f951.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+//# sourceMappingURL=/app.c328ef1a.js.map

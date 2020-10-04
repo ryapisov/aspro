@@ -349,12 +349,17 @@ template {
 }
 
 @charset "UTF-8";
-section {
-  background-color: aquamarine;
+.header {
+  height: 120px;
+  position: relative;
 }
-
-header {
-  height: 100vh;
+.header img.logo {
+  z-index: 10;
+  position: absolute;
+  width: 280px;
+  left: 50%;
+  bottom: -35px;
+  margin-left: -150px;
 }
 
 .content {
@@ -501,34 +506,6 @@ header {
   height: 34px;
   padding-left: 36px;
 }
-.heading {
-  height: 120px;
-  position: relative;
-}
-.heading img.logo {
-  z-index: 10;
-  position: absolute;
-  width: 280px;
-  left: 50%;
-  bottom: -35px;
-  margin-left: -150px;
-}
-
-/* Large desktops and laptops */
-/* Portrait tablets and medium desktops */
-/* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
-/* Landscape phones and smaller */
-/* Large desktops and laptops */
-/* Portrait tablets and medium desktops */
-/* Portrait tablets and small desktops */
-/* Landscape phones and portrait tablets */
-/* Landscape phones and smaller */
-footer {
-  background-color: yellow;
-  height: 100vh;
-}
-
 /* Large desktops and laptops */
 /* Portrait tablets and medium desktops */
 /* Portrait tablets and small desktops */
@@ -557,4 +534,4 @@ section {
 /* Landscape phones and portrait tablets */
 /* Landscape phones and smaller */
 
-/*# sourceMappingURL=/app.c3f9f951.css.map */
+/*# sourceMappingURL=/app.c328ef1a.css.map */
