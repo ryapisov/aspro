@@ -195,9 +195,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/aspro_min.jpg":[function(require,module,exports) {
-module.exports = "/aspro_min.71a2b036.jpg";
-},{}],"utils.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"utils.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -205,6 +203,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.unite = exports.createSection = exports.createTag = void 0;
 
+// === CREATE TAG
 var createTag = function createTag(tag, classes) {
   if (!tag || !isNaN(tag)) return null;
   var elemTag = document.createElement(tag);
@@ -219,7 +218,8 @@ var createTag = function createTag(tag, classes) {
     return elemTag.insertAdjacentHTML('beforeend', elem);
   });
   return elemTag.outerHTML;
-};
+}; // === CREATE SELECTOR
+
 
 exports.createTag = createTag;
 
@@ -234,7 +234,8 @@ var createSection = function createSection() {
     return section.insertAdjacentHTML('beforeend', html);
   });
   return section;
-};
+}; // === UNITE
+
 
 exports.createSection = createSection;
 
@@ -252,6 +253,8 @@ var unite = function unite() {
 };
 
 exports.unite = unite;
+},{}],"images/aspro_min.jpg":[function(require,module,exports) {
+module.exports = "/aspro_min.71a2b036.jpg";
 },{}],"sectionMain/blocks/head.js":[function(require,module,exports) {
 "use strict";
 
@@ -391,6 +394,8 @@ exports.contacts = contacts;
 
 require("./app.scss");
 
+var _utils = require("./utils");
+
 var _sectionMain = require("./sectionMain");
 
 var _sectionAbout = require("./sectionAbout");
@@ -400,22 +405,9 @@ var _sectionPartners = require("./sectionPartners");
 var _sectionContacts = require("./sectionContacts");
 
 var elem = document.querySelector('#root');
-var html = unite((0, _sectionMain.header)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
+var html = (0, _utils.unite)((0, _sectionMain.header)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
 elem.appendChild(html);
-
-function unite() {
-  var fragment = document.createDocumentFragment();
-
-  for (var _len = arguments.length, slices = new Array(_len), _key = 0; _key < _len; _key++) {
-    slices[_key] = arguments[_key];
-  }
-
-  slices.forEach(function (slice) {
-    fragment.appendChild(slice);
-  });
-  return fragment;
-}
-},{"./app.scss":"app.scss","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./app.scss":"app.scss","./utils":"utils.js","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -443,7 +435,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40417" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38775" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

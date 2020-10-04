@@ -1,4 +1,5 @@
 
+// === CREATE TAG
 export const createTag = (tag, classes, ...elems) => {
   if(!tag || !isNaN(tag)) return null
   const elemTag = document.createElement(tag)
@@ -8,12 +9,14 @@ export const createTag = (tag, classes, ...elems) => {
   return elemTag.outerHTML
 }
 
+// === CREATE SELECTOR
 export const createSection = (...htmls) => {
   const section = document.createElement('section')
   htmls.forEach((html) => section.insertAdjacentHTML('beforeend', html ))
   return section
 }
 
+// === UNITE
 export const unite = (...slices) => {
   const fragment = document.createDocumentFragment()
   slices.forEach(slice => fragment.appendChild(slice))
