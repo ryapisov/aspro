@@ -255,71 +255,54 @@ var unite = function unite() {
 exports.unite = unite;
 },{}],"images/aspro_min.jpg":[function(require,module,exports) {
 module.exports = "/aspro_min.71a2b036.jpg";
-},{}],"sectionMain/blocks/head.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.head = void 0;
-
-var _aspro_min = _interopRequireDefault(require("../../images/aspro_min.jpg"));
-
-var _utils = require("../../utils");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var head = function head() {
-  return (0, _utils.createTag)('div', 'header', showImageLogo(_aspro_min.default));
-};
-
-exports.head = head;
-
-function showImageLogo(logo) {
-  return "\n    <div class=\"header\">\n      <img src=".concat(logo, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
-}
-},{"../../images/aspro_min.jpg":"images/aspro_min.jpg","../../utils":"utils.js"}],"images/banner_min.jpg":[function(require,module,exports) {
+},{}],"images/banner_min.jpg":[function(require,module,exports) {
 module.exports = "/banner_min.34a5add3.jpg";
 },{}],"images/phone.svg":[function(require,module,exports) {
 module.exports = "/phone.b979c70b.svg";
 },{}],"images/email.svg":[function(require,module,exports) {
 module.exports = "/email.ee5e6050.svg";
-},{}],"sectionMain/blocks/body.js":[function(require,module,exports) {
+},{}],"sectionMain/templates.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.body = void 0;
+exports.showLayerTextual = exports.showLayerTriangles = exports.showLayerBanner = exports.showImageLogo = void 0;
 
-var _banner_min = _interopRequireDefault(require("../../images/banner_min.jpg"));
+var _aspro_min = _interopRequireDefault(require("../images/aspro_min.jpg"));
 
-var _phone = _interopRequireDefault(require("../../images/phone.svg"));
+var _banner_min = _interopRequireDefault(require("../images/banner_min.jpg"));
 
-var _email = _interopRequireDefault(require("../../images/email.svg"));
+var _phone = _interopRequireDefault(require("../images/phone.svg"));
 
-var _utils = require("../../utils");
+var _email = _interopRequireDefault(require("../images/email.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var body = function body() {
-  return (0, _utils.createTag)('div', 'content', showLayerBanner(), showLayerTriangles(), showLayerText());
+var showImageLogo = function showImageLogo() {
+  return "\n    <div class=\"header\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
 };
 
-exports.body = body;
+exports.showImageLogo = showImageLogo;
 
-function showLayerBanner() {
+var showLayerBanner = function showLayerBanner() {
   return "\n    <div class=".concat('layer-banner', ">\n      <img src=", _banner_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
-}
+};
 
-function showLayerTriangles() {
+exports.showLayerBanner = showLayerBanner;
+
+var showLayerTriangles = function showLayerTriangles() {
   return "\n    <div class=".concat('layer-triangles', ">\n      <div class=", 'upper-triangle', "></div>\n      <div class=", 'lower-triangle', "></div>\n      <div class=", 'right-triangle', "></div>\n      <div class=", 'left-triangle', "></div>\n      <div class=", 'long-line', "></div>\n      <div class=", 'short-line', "></div>\n    </div>\n  ");
-}
+};
 
-function showLayerText() {
+exports.showLayerTriangles = showLayerTriangles;
+
+var showLayerTextual = function showLayerTextual() {
   return "\n    <div class=".concat('layer-text', ">\n      <div class=", 'contact', ">\n        <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n        <span class=\"address\">109382, \u0433.\u041C\u043E\u0441\u043A\u0432\u0430, \u0443\u043B. \u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u0430\u044F, \u0434.141, \u043E\u0444.424 </span>\n        <div class=\"phone\">\n          <img src=\"", _phone.default, "\" alt=\"\" />\n          +7(499) 964-46-70 \n        </div>\n        <div class=\"email\">\n          <img src=\"").concat(_email.default, "\" alt=\"\" />\n          info@sk-aspro.ru \n        </div>\n      </div>\n      <div class=", 'menu', "></div>\n    </div>\n  ");
-}
-},{"../../images/banner_min.jpg":"images/banner_min.jpg","../../images/phone.svg":"images/phone.svg","../../images/email.svg":"images/email.svg","../../utils":"utils.js"}],"sectionMain/index.js":[function(require,module,exports) {
+};
+
+exports.showLayerTextual = showLayerTextual;
+},{"../images/aspro_min.jpg":"images/aspro_min.jpg","../images/banner_min.jpg":"images/banner_min.jpg","../images/phone.svg":"images/phone.svg","../images/email.svg":"images/email.svg"}],"sectionMain/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -327,18 +310,24 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.header = void 0;
 
-var _head = require("./blocks/head");
-
-var _body = require("./blocks/body");
+var _templates = require("./templates");
 
 var _utils = require("../utils");
 
 var header = function header() {
-  return (0, _utils.createSection)((0, _head.head)(), (0, _body.body)());
+  return (0, _utils.createSection)(head(), body());
 };
 
 exports.header = header;
-},{"./blocks/head":"sectionMain/blocks/head.js","./blocks/body":"sectionMain/blocks/body.js","../utils":"utils.js"}],"sectionAbout/index.js":[function(require,module,exports) {
+
+function head() {
+  return (0, _utils.createTag)('div', 'header', (0, _templates.showImageLogo)());
+}
+
+function body() {
+  return (0, _utils.createTag)('div', 'content', (0, _templates.showLayerBanner)(), (0, _templates.showLayerTriangles)(), (0, _templates.showLayerTextual)());
+}
+},{"./templates":"sectionMain/templates.js","../utils":"utils.js"}],"sectionAbout/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -435,7 +424,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38775" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39633" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

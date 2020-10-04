@@ -1,5 +1,5 @@
 import './app.scss'
-import {unite} from './utils'
+import { unite } from './utils'
 import { header } from './sectionMain'
 import { about } from './sectionAbout'
 import { partners} from './sectionPartners'
