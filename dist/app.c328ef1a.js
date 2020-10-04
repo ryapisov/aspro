@@ -197,38 +197,15 @@ module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"images/aspro_min.jpg":[function(require,module,exports) {
 module.exports = "/aspro_min.71a2b036.jpg";
-},{}],"sectionMain/blocks/head.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.head = void 0;
-
-var _aspro_min = _interopRequireDefault(require("../../images/aspro_min.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var head = function head() {
-  return "\n    <div class=\"header\">\n      <img src=".concat(_aspro_min.default, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
-};
-
-exports.head = head;
-},{"../../images/aspro_min.jpg":"images/aspro_min.jpg"}],"images/banner_min.jpg":[function(require,module,exports) {
-module.exports = "/banner_min.34a5add3.jpg";
-},{}],"images/phone.svg":[function(require,module,exports) {
-module.exports = "/phone.b979c70b.svg";
-},{}],"images/email.svg":[function(require,module,exports) {
-module.exports = "/email.ee5e6050.svg";
 },{}],"utils.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.unite = exports.createSection = exports.createTagAndAddItems = void 0;
+exports.unite = exports.createSection = exports.createTag = void 0;
 
-var createTagAndAddItems = function createTagAndAddItems(tag, classes) {
+var createTag = function createTag(tag, classes) {
   if (!tag || !isNaN(tag)) return null;
   var elemTag = document.createElement(tag);
   if (classes && isNaN(classes)) elemTag.classList.add(classes);
@@ -244,7 +221,7 @@ var createTagAndAddItems = function createTagAndAddItems(tag, classes) {
   return elemTag.outerHTML;
 };
 
-exports.createTagAndAddItems = createTagAndAddItems;
+exports.createTag = createTag;
 
 var createSection = function createSection() {
   var section = document.createElement('section');
@@ -275,6 +252,35 @@ var unite = function unite() {
 };
 
 exports.unite = unite;
+},{}],"sectionMain/blocks/head.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.head = void 0;
+
+var _aspro_min = _interopRequireDefault(require("../../images/aspro_min.jpg"));
+
+var _utils = require("../../utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var head = function head() {
+  return (0, _utils.createTag)('div', 'header', showImageLogo(_aspro_min.default));
+};
+
+exports.head = head;
+
+function showImageLogo(logo) {
+  return "\n    <div class=\"header\">\n      <img src=".concat(logo, " class=\"logo\" alt=\"", 'строительная компания aspro', "\" />\n    </div>\n  ");
+}
+},{"../../images/aspro_min.jpg":"images/aspro_min.jpg","../../utils":"utils.js"}],"images/banner_min.jpg":[function(require,module,exports) {
+module.exports = "/banner_min.34a5add3.jpg";
+},{}],"images/phone.svg":[function(require,module,exports) {
+module.exports = "/phone.b979c70b.svg";
+},{}],"images/email.svg":[function(require,module,exports) {
+module.exports = "/email.ee5e6050.svg";
 },{}],"sectionMain/blocks/body.js":[function(require,module,exports) {
 "use strict";
 
@@ -294,7 +300,7 @@ var _utils = require("../../utils");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var body = function body() {
-  return (0, _utils.createTagAndAddItems)('div', 'content', showLayerBanner(), showLayerTriangles(), showLayerText());
+  return (0, _utils.createTag)('div', 'content', showLayerBanner(), showLayerTriangles(), showLayerText());
 };
 
 exports.body = body;
@@ -437,7 +443,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45237" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40417" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

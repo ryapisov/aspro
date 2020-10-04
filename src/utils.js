@@ -1,5 +1,5 @@
 
-export const createTagAndAddItems = (tag, classes, ...elems) => {
+export const createTag = (tag, classes, ...elems) => {
   if(!tag || !isNaN(tag)) return null
   const elemTag = document.createElement(tag)
   if (classes && isNaN(classes)) elemTag.classList.add(classes)

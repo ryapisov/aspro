@@ -1,10 +1,10 @@
 import banner from '../../images/banner_min.jpg'
 import iconPhone from '../../images/phone.svg'
 import iconEmail from '../../images/email.svg'
-import {createTagAndAddItems} from '../../utils'
+import {createTag} from '../../utils'
 
 export const body = () => {
-  return createTagAndAddItems('div', 'content', 
+  return createTag('div', 'content',
     showLayerBanner(),
     showLayerTriangles(),
     showLayerText()
