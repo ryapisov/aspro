@@ -1,0 +1,73 @@
+section.contacts-section {
+  color: #000;
+  overflow: hidden;
+  background: '';
+}
+
+section.contacts-section h2 {
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  letter-spacing: 1px;
+  font-size: 38px;
+}
+
+section.contacts-section .znak {
+  position: absolute;
+  background: url(../images/znak.png) no-repeat;
+  top: 150px;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+}
+
+section.contacts-section .contacts {
+  position: absolute;
+  background: rgba(200, 200, 200, .2);
+  top: 150px;
+  right: 0;
+  width: 680px;
+  height: 500px;
+  z-index: 1;
+  padding: 55px 0 0 55px;
+  & h3 {
+    font-family: 'Play', sans-serif;
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  & .line {
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+  }
+
+  & .line-bottom {
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    margin-top: 22px;
+    margin-left: 16px;
+  }
+}
+
+section.contacts-section .text-buttom {
+  position: absolute;
+  z-index: 51;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  padding: 90px;
+  line-height: 1.8;
+  &::before{
+    content:'';
+    background: url(../images/check-mark-box.svg) no-repeat;
+    margin-right: 28px;
+    background-size: 100%;
+    padding: 18px;
+  }
+}
+
+

@@ -522,6 +522,76 @@ section.main-section .menu a:hover {
   font-weight: 700;
 }
 
+section.contacts-section {
+  color: #000;
+  overflow: hidden;
+  background: "";
+}
+
+section.contacts-section h2 {
+  text-align: center;
+  font-family: "Play", sans-serif;
+  letter-spacing: 1px;
+  font-size: 38px;
+}
+
+section.contacts-section .znak {
+  position: absolute;
+  background: url(/znak.326511ea.png) no-repeat;
+  top: 150px;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+}
+
+section.contacts-section .contacts {
+  position: absolute;
+  background: rgba(200, 200, 200, 0.2);
+  top: 150px;
+  right: 0;
+  width: 680px;
+  height: 500px;
+  z-index: 1;
+  padding: 55px 0 0 55px;
+}
+section.contacts-section .contacts h3 {
+  font-family: "Play", sans-serif;
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+section.contacts-section .contacts .line {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+}
+section.contacts-section .contacts .line-bottom {
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  margin-top: 22px;
+  margin-left: 16px;
+}
+
+section.contacts-section .text-buttom {
+  position: absolute;
+  z-index: 51;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  padding: 90px;
+  line-height: 1.8;
+}
+section.contacts-section .text-buttom::before {
+  content: "";
+  background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+  margin-right: 28px;
+  background-size: 100%;
+  padding: 18px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -539,6 +609,7 @@ html {
 
 .main-container {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 992px;
   box-shadow: 3px 5px 8px 7px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 3px 5px 8px 7px rgba(0, 0, 0, 0.32);
@@ -564,7 +635,6 @@ section.partners-section {
 }
 
 section.contacts-section {
-  background-color: #155;
   position: relative;
 }
 

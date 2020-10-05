@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import './main-section.scss';
+@import './contacts-section.scss';
 
 * { box-sizing: border-box; }
 
@@ -15,6 +16,7 @@ html {
 
 .main-container {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 992px;
   box-shadow:3px 5px 8px 7px rgba(0,0,0,0.32);
   -webkit-box-shadow:3px 5px 8px 7px rgba(0,0,0,0.32);
@@ -40,7 +42,6 @@ section.partners-section{
 }
 
 section.contacts-section{
-  background-color:#155;
   position: relative;
 }
 
