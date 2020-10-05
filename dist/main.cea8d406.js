@@ -190,287 +190,16 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"app.scss":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/scss/main.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"utils.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.unite = exports.createSectionFrom = exports.createTag = void 0;
-
-// === CREATE TAG
-var createTag = function createTag(tag, classes) {
-  if (!tag || !isNaN(tag)) return null;
-  var elemTag = document.createElement(tag);
-  if (classes && isNaN(classes)) elemTag.classList.add(classes);
-
-  for (var _len = arguments.length, elems = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-    elems[_key - 2] = arguments[_key];
-  }
-
-  if (elems.length == 0) return elemTag;
-  elems.forEach(function (elem) {
-    return elemTag.insertAdjacentHTML('beforeend', elem);
-  });
-  return elemTag.outerHTML;
-}; // === CREATE SELECTOR
-
-
-exports.createTag = createTag;
-
-var createSectionFrom = function createSectionFrom() {
-  var section = document.createElement('section');
-
-  for (var _len2 = arguments.length, htmls = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    htmls[_key2] = arguments[_key2];
-  }
-
-  htmls.forEach(function (html) {
-    return section.insertAdjacentHTML('beforeend', html);
-  });
-  return section;
-}; // === UNITE
-
-
-exports.createSectionFrom = createSectionFrom;
-
-var unite = function unite() {
-  var fragment = document.createDocumentFragment();
-
-  for (var _len3 = arguments.length, slices = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
-    slices[_key3] = arguments[_key3];
-  }
-
-  slices.forEach(function (slice) {
-    return fragment.appendChild(slice);
-  });
-  return fragment;
-};
-
-exports.unite = unite;
-},{}],"images/aspro_min.jpg":[function(require,module,exports) {
-module.exports = "/aspro_min.71a2b036.jpg";
-},{}],"images/banner_min.jpg":[function(require,module,exports) {
-module.exports = "/banner_min.34a5add3.jpg";
-},{}],"images/phone.svg":[function(require,module,exports) {
-module.exports = "/phone.b979c70b.svg";
-},{}],"images/email.svg":[function(require,module,exports) {
-module.exports = "/email.ee5e6050.svg";
-},{}],"sectionMain/templates.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.showContacts = exports.showTriangles = exports.showBanner = exports.showImageLogo = void 0;
-
-var _aspro_min = _interopRequireDefault(require("../images/aspro_min.jpg"));
-
-var _banner_min = _interopRequireDefault(require("../images/banner_min.jpg"));
-
-var _phone = _interopRequireDefault(require("../images/phone.svg"));
-
-var _email = _interopRequireDefault(require("../images/email.svg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var showImageLogo = function showImageLogo() {
-  return "<img src=".concat(_aspro_min.default, " alt=\"", 'строительная компания aspro', "\" /> ");
-};
-
-exports.showImageLogo = showImageLogo;
-
-var showBanner = function showBanner() {
-  return "<img src=".concat(_banner_min.default, " alt=\"", 'строительная компания aspro', "\" />");
-};
-
-exports.showBanner = showBanner;
-
-var showTriangles = function showTriangles() {
-  return "\n    <div class=".concat('upper-triangle', "></div>\n    <div class=", 'lower-triangle', "></div>\n    <div class=", 'right-triangle', "></div>\n    <div class=", 'left-triangle', "></div>\n    <div class=", 'long-line', "></div>\n    <div class=", 'short-line', "></div>\n  ");
-};
-
-exports.showTriangles = showTriangles;
-
-var showContacts = function showContacts() {
-  return "\n    <div class=".concat('contact-text', ">\n      <h1>\u041E\u041E\u041E \"\u0421\u041A&nbsp; \u0410\u0421\u041F\u0420\u041E\"</h1>\n\n      <div class=\"address\">\n        ", '109382, г.Москва, ул. Люблинская, д.141, оф.424', "\n      </div>\n\n      <div class=\"phone\">\n        <img src=\"", _phone.default, "\" alt=\"", 'строительная компания aspro', "\" />\n        ", '+7(499) 964-46-70', " \n      </div>\n\n      <div class=\"email\">\n        <img src=\"").concat(_email.default, "\" alt=\"", 'строительная компания aspro', "\" />\n        ", 'info@sk-aspro.ru', " \n      </div>\n    </div>\n  ");
-};
-
-exports.showContacts = showContacts;
-},{"../images/aspro_min.jpg":"images/aspro_min.jpg","../images/banner_min.jpg":"images/banner_min.jpg","../images/phone.svg":"images/phone.svg","../images/email.svg":"images/email.svg"}],"sectionMain/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.main = void 0;
-
-var _utils = require("../utils");
-
-var _templates = require("./templates");
-
-// Creating a section
-var main = function main() {
-  return (0, _utils.createSectionFrom)(header(), body());
-}; // upper part of the section
-
-
-exports.main = main;
-
-var header = function header() {
-  return (0, _utils.createTag)('div', 'main-header', (0, _templates.showImageLogo)());
-}; // down part of the section
-
-
-var body = function body() {
-  return (0, _utils.createTag)('div', 'main-body', (0, _templates.showBanner)(), (0, _templates.showTriangles)(), (0, _templates.showContacts)());
-};
-},{"../utils":"utils.js","./templates":"sectionMain/templates.js"}],"sectionAbout/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.about = void 0;
-
-// import {heading, content} from './templates'
-var about = function about() {
-  var elem = document.createElement('section'); // elem.insertAdjacentHTML('beforeend', heading() )
-  // elem.insertAdjacentHTML('beforeend', '<p> 222223</p>')
-
-  return elem;
-};
-
-exports.about = about;
-},{}],"sectionPartners/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.partners = void 0;
-
-// import {heading, content} from './templates'
-var partners = function partners() {
-  var elem = document.createElement('section'); // elem.insertAdjacentHTML('beforeend', heading() )
-  // elem.insertAdjacentHTML('beforeend', content() )
-
-  return elem;
-};
-
-exports.partners = partners;
-},{}],"sectionContacts/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.contacts = void 0;
-
-// import {heading, content} from './templates'
-var contacts = function contacts() {
-  var elem = document.createElement('section'); // elem.insertAdjacentHTML('beforeend', heading() )
-  // elem.insertAdjacentHTML('beforeend', content() )
-
-  return elem;
-};
-
-exports.contacts = contacts;
-},{}],"menu/templates.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.showMenu = void 0;
-
-var showMenu = function showMenu() {
-  return "\n      <ul>\n        <li><a href=\"#about\" id=\"about\">".concat('о нас', "</a></li>\n        <li><a href=\"#partners\">", 'партнёры', "</a></li>\n        <li><a href=\"#objects\">", 'объекты', "</a></li>\n        <li><a href=\"#contacts\">", 'контакты', "</a></li>\n      </ul>\n  ");
-};
-
-exports.showMenu = showMenu;
-{
-  /* <nav class=${'response-menu'}>
-  <ul>
-   <li><a href="">${'о нас'}</a></li>
-   <li><a href="">${'партнёры'}</a></li>
-   <li><a href="">${'объекты'}</a></li>
-   <li><a href="">${'контакты'}</a></li>
-  </ul>
-  </nav> */
-}
-},{}],"menu/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.menu = void 0;
-
-var _utils = require("../utils");
-
-var _templates = require("./templates");
-
-// Creating a section
-var menu = function menu() {
-  return createSectionFrom(menu_());
-}; // upper part of the section
-
-
-exports.menu = menu;
-
-var menu_ = function menu_() {
-  return (0, _utils.createTag)('nav', 'menu', (0, _templates.showMenu)());
-}; // === CREATE SELECTOR
-
-
-var createSectionFrom = function createSectionFrom() {
-  var section = document.createElement('section');
-
-  for (var _len = arguments.length, htmls = new Array(_len), _key = 0; _key < _len; _key++) {
-    htmls[_key] = arguments[_key];
-  }
-
-  htmls.forEach(function (html) {
-    section.insertAdjacentHTML('beforeend', html);
-    section.classList.add('menu-section');
-  });
-  return section;
-}; // // Creating 
-// export const menu = () => createDivFrom (  menu1()   )
-// const menu1 = () => createTag('nav', 'menu',  showMenu() )
-// // === 
-// export const createDivFrom = (...htmls) => {
-//   const div = document.createElement('span')
-//   htmls.forEach((html) => div.insertAdjacentHTML('beforeend', html ))
-//   return div
-// }
-},{"../utils":"utils.js","./templates":"menu/templates.js"}],"app.js":[function(require,module,exports) {
-"use strict";
-
-require("./app.scss");
-
-var _utils = require("./utils");
-
-var _sectionMain = require("./sectionMain");
-
-var _sectionAbout = require("./sectionAbout");
-
-var _sectionPartners = require("./sectionPartners");
-
-var _sectionContacts = require("./sectionContacts");
-
-var _menu = require("./menu");
-
-var elem = document.querySelector('#root');
-var html = (0, _utils.unite)((0, _menu.menu)(), (0, _sectionMain.main)(), (0, _sectionAbout.about)(), (0, _sectionPartners.partners)(), (0, _sectionContacts.contacts)());
-elem.appendChild(html);
-},{"./app.scss":"app.scss","./utils":"utils.js","./sectionMain":"sectionMain/index.js","./sectionAbout":"sectionAbout/index.js","./sectionPartners":"sectionPartners/index.js","./sectionContacts":"sectionContacts/index.js","./menu":"menu/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("../scss/main.scss");
+},{"../scss/main.scss":"assets/scss/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -498,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44321" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -674,5 +403,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
-//# sourceMappingURL=/app.c328ef1a.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/javascript/main.js"], null)
+//# sourceMappingURL=/main.cea8d406.js.map

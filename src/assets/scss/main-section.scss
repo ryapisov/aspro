@@ -1,0 +1,182 @@
+section.main-section {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+section.main-section .header {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 160px;
+  z-index: 2;
+}
+
+section.main-section .logo {
+  height: 105px;
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -150px;
+  background: url(../images/aspro_min.png) no-repeat;
+  background-size: 100%;
+  z-index: 10;
+}
+
+section.main-section .banner {
+  position: absolute;
+  background: url(../images/banner_min.jpg) no-repeat;
+  background-size: 100%;
+  top: 100px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+section.main-section .upper-triangle {
+  position: absolute;
+  top: 160px;
+  right: 0px;
+  border-right: 992px solid #fff;
+  border-top: 0px solid transparent;
+  border-bottom: 250px solid transparent;
+  z-index: 2;
+}
+
+section.main-section .lower-triangle {
+  position: absolute;
+  left: 0px;
+  top: 466px;
+  border-left: 992px solid #fff;
+  border-top: 250px solid transparent;
+  border-bottom: 0px solid transparent;
+  z-index: 2;
+}
+section.main-section .right-triangle {
+  position: absolute;
+  top: 157px;
+  right: 0px;
+  border-right: 460px solid #9a0007;
+  border-top: 125px solid transparent;
+  border-bottom: 110px solid transparent;
+  z-index: 3;
+}
+
+section.main-section .right-triangle-opacity {
+  position: absolute;
+  top: 177px;
+  right: 0px;
+  border-right: 380px solid rgba(200, 200, 200, .3);
+  border-top: 105px solid transparent;
+  border-bottom: 90px solid transparent;
+  z-index: 4;
+}
+
+section.main-section .left-triangle {
+  position: absolute;
+  top: 330px;
+  left: 0px;
+  border-left: 560px solid #272e38;
+  border-top: 142px solid transparent;
+  border-bottom: 315px solid transparent;
+  z-index: 3;
+}
+
+section.main-section .long-line{
+  position: absolute;
+  right: 0;
+  top: 650px;
+  width: 636px;
+  transform: skewY(14deg);
+  border-bottom: 30px solid #9a0007;
+  /* угол на конце линии*/
+  border-left: 36px solid transparent;
+  z-index: 2;
+}
+
+section.main-section .short-line {
+  position: absolute;
+  right: 0;
+  top: 714px;
+  width: 460px;
+  transform: skewY(14deg);
+  border-bottom: 18px solid #272e38;
+  /* угол на конце линии*/
+  border-left: 20px solid transparent;
+  z-index: 2;
+}
+
+section.main-section .contact {
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  top: 420px;
+  left: 40px;
+  z-index: 4;
+  h1{
+    font-weight: 700;
+    transform: skew(-15deg, 0deg);
+    margin-bottom: 4px;
+  }
+  & .address{
+    margin-bottom: 60px;
+  }
+
+  & a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 14px;
+    margin-left: 20px;
+  }
+
+  & a.phone::before {
+    content: "";
+    background: url(../images/phone.svg) no-repeat;
+    background-size: 100%;
+    padding: 20px 22px 0 0;
+  }
+
+  & a.email::before {
+    content: "";
+    background: url(../images/email.svg) no-repeat;
+    background-size: 100%;
+    padding: 0px 22px 0 0;
+  }
+
+  & a span {
+    margin-left: 22px;
+  }
+
+}
+
+section.main-section .menu {
+  position: absolute;
+  top: 230px;
+  right: 0;
+  width: 200px;
+  text-transform: uppercase; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  z-index: 100;
+  & ul {}
+  & li {
+    // list-style-type: none;
+    padding-bottom: 10px;
+  }
+  & li::before {
+    //content: "";
+  }
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+      font-weight: 700;
+    }
+  }
+}
