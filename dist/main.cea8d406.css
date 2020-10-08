@@ -692,7 +692,6 @@ section.contacts-section .button-close:active {
 section.about-section {
   color: #000;
   overflow: hidden;
-  background: #155;
 }
 
 section.about-section h2 {
@@ -705,7 +704,6 @@ section.about-section h2 {
 section.partners-section {
   color: #000;
   overflow: hidden;
-  background: #551;
 }
 
 section.partners-section h2 {
@@ -752,7 +750,6 @@ section.about-section {
 }
 
 section.partners-section {
-  background-color: #555;
   position: relative;
 }
 
