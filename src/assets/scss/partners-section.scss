@@ -26,7 +26,7 @@ section.partners-section .text {
 
 section.partners-section .domodedovo{
   position: absolute;
-  top: 300px;
+  top: 240px;
   left: 35px;
   background: url(../images/domodedovo.png) no-repeat;
   background-size: 100%;
@@ -40,7 +40,7 @@ box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
 
 section.partners-section .plastika-okon {
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 35px;
   background: url(../images/plastika-okon.png) no-repeat;
   background-size: 100%;
@@ -54,7 +54,7 @@ section.partners-section .plastika-okon {
 
 section.partners-section .maxi-pro {
   position: absolute;
-  top: 470px;
+  top: 420px;
   left: 35px;
   background: url(../images/maxi_pro.jpg) no-repeat;
   background-size: 100%;
@@ -68,7 +68,7 @@ section.partners-section .maxi-pro {
 
 section.partners-section .stroy-holding {
   position: absolute;
-  top: 290px;
+  top: 240px;
   right: 35px;
   background: url(../images/stroy_holding.png) no-repeat;
   background-size: 100%;
@@ -82,7 +82,7 @@ section.partners-section .stroy-holding {
 
 section.partners-section .x5-retail {
   position: absolute;
-  top: 390px;
+  top: 350px;
   right: 185px;
   background: url(../images/x5_retail.png) no-repeat;
   background-size: 100%;
@@ -96,7 +96,7 @@ section.partners-section .x5-retail {
 
 section.partners-section .zergud {
   position: absolute;
-  top: 490px;
+  top: 440px;
   right: 35px;
   background: url(../images/zergud.png) no-repeat;
   background-size: 100%;
@@ -110,7 +110,7 @@ section.partners-section .zergud {
 
 section.partners-section .guov {
   position: absolute;
-  top: 610px;
+  top: 560px;
   right: 85px;
   background: url(../images/guov.jpg) no-repeat;
   background-size: 100%;
@@ -134,4 +134,49 @@ section.partners-section .etm {
   -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
   box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
   z-index: 4;
+}
+
+section.partners-section .thanks{
+  position: absolute;
+  background: #272e38;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+section.partners-section .thank-1{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
+}
+
+section.partners-section .thank-2{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
+}
+section.partners-section .thank-3{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
+}
+section.partners-section .thank-4{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
+}
+section.partners-section .thank-5{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
+}
+section.partners-section .thank-6{
+  background-color: #fff;
+  width: 100px;
+  height: 180px;
 }
