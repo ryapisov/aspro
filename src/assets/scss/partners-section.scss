@@ -155,6 +155,10 @@ section.partners-section .thank-1{
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }
 
 section.partners-section .thank-2{
@@ -163,6 +167,10 @@ section.partners-section .thank-2{
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }
 section.partners-section .thank-3{
   background: url(../images/mini/3-min.jpg) no-repeat;
@@ -170,13 +178,22 @@ section.partners-section .thank-3{
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }
+
 section.partners-section .thank-4{
   background: url(../images/mini/4-min.jpg) no-repeat;
   background-size: 100px 140px;
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }
 section.partners-section .thank-5{
   background: url(../images/mini/5-min.jpg) no-repeat;
@@ -184,6 +201,10 @@ section.partners-section .thank-5{
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }
 section.partners-section .thank-6{
   background: url(../images/mini/6-min.jpg) no-repeat;
@@ -191,4 +212,8 @@ section.partners-section .thank-6{
   background-color: #fff;
   width: 120px;
   height: 180px;
+  &:hover{
+    opacity: .3;
+    cursor: pointer;
+  }
 }

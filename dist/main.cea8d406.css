@@ -708,7 +708,7 @@ section.about-section .img {
   background: url(/men.a1ff0a09.jpg) no-repeat;
   background-size: 100%;
   z-index: 2;
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 section.about-section .text-1 {
@@ -734,7 +734,7 @@ section.about-section .text-2 {
   top: 700px;
   bottom: 0;
   z-index: 4;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 section.about-section .text-3 {
@@ -910,6 +910,10 @@ section.partners-section .thank-1 {
   width: 120px;
   height: 180px;
 }
+section.partners-section .thank-1:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
 
 section.partners-section .thank-2 {
   background: url(/2-min.8db0fc9c.jpg) no-repeat;
@@ -917,6 +921,10 @@ section.partners-section .thank-2 {
   background-color: #fff;
   width: 120px;
   height: 180px;
+}
+section.partners-section .thank-2:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 section.partners-section .thank-3 {
@@ -926,6 +934,10 @@ section.partners-section .thank-3 {
   width: 120px;
   height: 180px;
 }
+section.partners-section .thank-3:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
 
 section.partners-section .thank-4 {
   background: url(/4-min.33916697.jpg) no-repeat;
@@ -933,6 +945,10 @@ section.partners-section .thank-4 {
   background-color: #fff;
   width: 120px;
   height: 180px;
+}
+section.partners-section .thank-4:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 section.partners-section .thank-5 {
@@ -942,6 +958,10 @@ section.partners-section .thank-5 {
   width: 120px;
   height: 180px;
 }
+section.partners-section .thank-5:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
 
 section.partners-section .thank-6 {
   background: url(/6-min.3be6ca5e.jpg) no-repeat;
@@ -949,6 +969,10 @@ section.partners-section .thank-6 {
   background-color: #fff;
   width: 120px;
   height: 180px;
+}
+section.partners-section .thank-6:hover {
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 * {
