@@ -1,6 +1,8 @@
 @import 'normalize.css';
 @import './main-section.scss';
 @import './contacts-section.scss';
+@import './about-section.scss';
+@import './partners-section.scss';
 
 * { box-sizing: border-box; }
 
@@ -32,7 +34,6 @@ section.main-section {
 }
 
 section.about-section{
-  background-color:#115;
   position: relative;
 }
 
