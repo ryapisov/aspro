@@ -8,5 +8,130 @@ section.partners-section h2 {
   text-align: center;
   font-family: 'Play', sans-serif;
   letter-spacing: 1px;
-  font-size: 38px;
+  font-size: 32px;
+}
+
+section.partners-section .text {
+  // display: none;
+  position: absolute;
+  font-family: 'Play', sans-serif;
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 40px;
+  top:70px;
+  bottom: 0;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+section.partners-section .domodedovo{
+  position: absolute;
+  top: 300px;
+  left: 35px;
+  background: url(../images/domodedovo.png) no-repeat;
+  background-size: 100%;
+  width: 400px;
+  height: 90px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+-moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+ z-index: 4;
+}
+
+section.partners-section .plastika-okon {
+  position: absolute;
+  top: 400px;
+  left: 35px;
+  background: url(../images/plastika-okon.png) no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 60px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+ z-index: 4;
+}
+
+section.partners-section .maxi-pro {
+  position: absolute;
+  top: 470px;
+  left: 35px;
+  background: url(../images/maxi_pro.jpg) no-repeat;
+  background-size: 100%;
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
+}
+
+section.partners-section .stroy-holding {
+  position: absolute;
+  top: 290px;
+  right: 35px;
+  background: url(../images/stroy_holding.png) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 70px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
+}
+
+section.partners-section .x5-retail {
+  position: absolute;
+  top: 390px;
+  right: 185px;
+  background: url(../images/x5_retail.png) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 70px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
+}
+
+section.partners-section .zergud {
+  position: absolute;
+  top: 490px;
+  right: 35px;
+  background: url(../images/zergud.png) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
+}
+
+section.partners-section .guov {
+  position: absolute;
+  top: 610px;
+  right: 85px;
+  background: url(../images/guov.jpg) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 100px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
+}
+
+section.partners-section .etm {
+  position: absolute;
+  top: 490px;
+  right: 420px;
+  background: url(../images/etm.png) no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 120px;
+  -webkit-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  -moz-box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  box-shadow: 6px 5px 14px -5px rgba(0, 0, 0, 0.99);
+  z-index: 4;
 }
