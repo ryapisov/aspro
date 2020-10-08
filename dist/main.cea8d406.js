@@ -195,11 +195,26 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":"../node_modules/normalize.css/normalize.css","./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
+},{"normalize.css":"../node_modules/normalize.css/normalize.css","./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/form-submit.js":[function(require,module,exports) {
+var btn = document.querySelector('#btn-open-form');
+var btnClose = document.querySelector('#btn-close');
+var form = document.querySelector('#form');
+var constact = document.querySelector('#contact');
+btn.addEventListener('click', function () {
+  form.style.display = 'block';
+  constact.style.display = 'none';
+});
+btnClose.addEventListener('click', function () {
+  form.style.display = 'none';
+  constact.style.display = 'block';
+});
+},{}],"assets/javascript/main.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
-},{"../scss/main.scss":"assets/scss/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./form-submit");
+},{"../scss/main.scss":"assets/scss/main.scss","./form-submit":"assets/javascript/form-submit.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -227,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36469" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

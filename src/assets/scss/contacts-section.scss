@@ -22,6 +22,7 @@ section.contacts-section .znak {
 }
 
 section.contacts-section .contacts {
+  display: block;
   position: absolute;
   background: rgba(200, 200, 200, .2);
   top: 150px;
@@ -51,9 +52,48 @@ section.contacts-section .contacts {
   }
 }
 
-section.contacts-section .text-buttom {
+/*форма отправки*/
+section.contacts-section .contacts-form {
+  display: none;
   position: absolute;
-  z-index: 51;
+  background: rgba(200, 200, 200, .2);
+  top: 150px;
+  right: 0;
+  width: 680px;
+  height: 500px;
+  z-index: 1;
+  padding: 55px 0 0 55px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+
+  input {
+    width: 520px;
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 0px;
+  }
+  textarea {
+    /* = Убираем скролл */
+    overflow: auto;
+  
+    /* = Убираем увеличение */
+    resize: none;
+    width: 520px;
+    height: 200px;
+  
+    /* = Добавим фон, рамку, отступ*/
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px 0 0 0;
+    padding: 10px 0 10px 10px;
+  }
+}
+
+section.contacts-section .text {
+  position: absolute;
+  z-index: 1;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   left: 0;
@@ -70,4 +110,40 @@ section.contacts-section .text-buttom {
   }
 }
 
+section.contacts-section .button-submit {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  width: 300px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  text-align: center;
+  
+  &:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+  &:active { background: rgb(152,15,0); } /* при нажатии */
+}
 
+section.contacts-section .button-close {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 200px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #272e38; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  text-align: center;
+  
+  &:hover { background: #384455; } /* при наведении курсора мышки */
+  &:active { background:#404b5a; } /* при нажатии */
+}

@@ -47,7 +47,20 @@
       <section id="contacts" class="contacts-section">
         <h2> КОНТАКТЫ </h2>
         <div class="znak"></div>
-        <div class="contacts">
+        <div id="form" class="contacts-form">
+          <h3><strong>Ваше сообщение в компанию АСПРО</strong></h3>
+          <form id="form2" action="/" method="post">   
+            <p><input type="text" name="name" id="name" size="20" placeholder="Телефон или email" /><p>
+            <p><textarea rows="10" cols="45" name="text" placeholder="Введите текст"></textarea></p>
+          </form>
+          <div id="btn-close" class="button-close">
+            Закрыть            
+          </div>
+          <div id="btn-submit" class="button-submit">
+            Отправить
+          </div>
+        </div>
+        <div id="contact" class="contacts">
           <h3><strong>OOO "Cтроительная Компания АСПРО"</strong></h3>
           <div class="line">ИНН 9723097657 ОГРН 1207700050755</div>
           <div class="line">Банк ПАО ВТБ Филиал №7701 г.Москва</div>
@@ -56,8 +69,11 @@
           <div class="line-bottom"><b>тел.</b>
             <i>+7 (499) 964-46-70</i>&nbsp;&nbsp;&nbsp;<b>почта:</b> <i>info@sk-aspro.ru</i>
           </div>
+          <div id="btn-open-form" class="button-submit">
+            Написать сообщение
+          </div>
         </div>
-        <div class="text-buttom">
+        <div class="text">
           Важным критерием надежности, как для покупателей, так и для партнеров,
           является качество, в соответствии с заявленным по проекту, и соблюдение 
           технологии и сроков строительства.
