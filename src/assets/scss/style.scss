@@ -1,5 +1,6 @@
-@import 'normalize.css';
-@import 'bootstrap/dist/css/bootstrap-grid.css';
+// @import 'normalize.css';
+// @import 'bootstrap/dist/css/bootstrap-grid.css';
+// @import 'bootstrap/dist/css/bootstrap.css';
 @import './sections/main.scss';
 @import './sections-media/main.scss';
 @import './sections/contacts.scss';
@@ -8,8 +9,28 @@
 @import './sections/customer.scss';
 @import './sections/suppliers.scss';
 
+
 html {
   scroll-behavior: smooth;
+}
+
+img.d-block {
+  height: 480px;
+}
+
+h5{
+  background-color: red;
+  font-weight: 600; 
+}
+
+img.img-thumbnail {
+  width: 180px;
+  height: 240px;
+}
+
+img.max {
+  width: 100%;
+  height: 100%;
 }
 
 section {
