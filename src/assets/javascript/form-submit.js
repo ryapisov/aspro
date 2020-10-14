@@ -2,7 +2,7 @@
 const btn = document.querySelector('#btn-open-form')
 const btnClose = document.querySelector('#btn-close')
 const form = document.querySelector('#form')
-const constact = document.querySelector('#contact')
+const constact = document.querySelector('#contacts')
 
 
 btn.addEventListener('click', ()=>{

@@ -1,5 +1,5 @@
-section.main-section {
-  background-color: #fff;
+.main-section {
+ // background-color: #eee;
   overflow: hidden;
 }
 
@@ -7,8 +7,17 @@ section.main-section .header {
   position: absolute;
   background-color: #fff;
   width: 100%;
-  height: 160px;
+  height: 100px;
   z-index: 2;
+}
+@media (max-width: 720px) {
+  section.main-section .header {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    z-index: 2;
+  }
 }
 
 section.main-section .logo {
@@ -22,60 +31,132 @@ section.main-section .logo {
   background-size: 100%;
   z-index: 10;
 }
+@media (max-width: 720px) {
+  section.main-section .logo {
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    background: url(../images/aspro_min.png) no-repeat;
+    background-size: 100%;
+    z-index: 10;
+  }
+}
 
 section.main-section .banner {
   position: absolute;
   background: url(../images/banner_min.jpg) no-repeat;
   background-size: 100%;
-  top: 100px;
+  top: 45px;
   left:0;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
+@media (max-width: 720px) {
+  section.main-section .banner {
+    position: absolute;
+    background: url(../images/banner_min.jpg) no-repeat;
+    background-size: 100%;
+    top: 60px;
+    left:0;
+   // min-width: 500px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
 
 section.main-section .upper-triangle {
   position: absolute;
-  top: 160px;
+  top: 96px;
   right: 0px;
   border-right: 992px solid #fff;
   border-top: 0px solid transparent;
   border-bottom: 250px solid transparent;
   z-index: 2;
 }
+@media (max-width: 720px) {
+  section.main-section .upper-triangle {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    border-right: 992px solid #fff;
+    border-top: 0px solid transparent;
+    border-bottom: 250px solid transparent;
+    z-index: 2;
+  }
+}
 
 section.main-section .lower-triangle {
   position: absolute;
+  top: 415px;
   left: 0px;
-  top: 466px;
   border-left: 992px solid #fff;
   border-top: 250px solid transparent;
   border-bottom: 0px solid transparent;
   z-index: 2;
 }
+@media (max-width: 720px) {
+  section.main-section .lower-triangle {
+    position: absolute;
+    left: 0px;
+    top: 335px;
+    border-left: 992px solid #fff;
+    border-top: 250px solid transparent;
+    border-bottom: 0px solid transparent;
+    z-index: 2;
+  }
+}
+
 section.main-section .right-triangle {
   position: absolute;
-  top: 157px;
+  top: 102px;
   right: 0px;
   border-right: 460px solid #9a0007;
-  border-top: 125px solid transparent;
-  border-bottom: 110px solid transparent;
+  border-top: 120px solid transparent;
+  border-bottom: 113px solid transparent;
   z-index: 3;
 }
+@media (max-width: 720px) {
+  section.main-section .right-triangle {
+    position: absolute;
+    top: 95px;
+    right: 0px;
+    border-right: 340px solid #9a0007;
+    border-top: 104px solid transparent;
+    border-bottom: 85px solid transparent;
+    z-index: 3;
+  }
+}
+
 
 section.main-section .right-triangle-opacity {
   position: absolute;
-  top: 177px;
+  top: 122px;
   right: 0px;
   border-right: 380px solid rgba(200, 200, 200, .3);
   border-top: 105px solid transparent;
   border-bottom: 90px solid transparent;
   z-index: 4;
 }
+@media (max-width: 720px) {
+  section.main-section .right-triangle-opacity {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    border-right: 300px solid rgba(200, 200, 200, .3);
+    border-top: 90px solid transparent;
+    border-bottom: 70px solid transparent;
+    z-index: 4;
+  }
+}
 
 section.main-section .left-triangle {
   position: absolute;
-  top: 330px;
+  top: 263px;
   left: 0px;
   border-left: 560px solid #272e38;
   border-top: 142px solid transparent;
@@ -86,19 +167,19 @@ section.main-section .left-triangle {
 section.main-section .long-line{
   position: absolute;
   right: 0;
-  top: 650px;
-  width: 636px;
+  top: 590px;
+  width: 625px;
   transform: skewY(14deg);
-  border-bottom: 30px solid #9a0007;
+  border-bottom: 25px solid #9a0007;
   /* угол на конце линии*/
-  border-left: 36px solid transparent;
+  border-left: 32px solid transparent;
   z-index: 2;
 }
 
 section.main-section .short-line {
   position: absolute;
   right: 0;
-  top: 714px;
+  top: 646px;
   width: 460px;
   transform: skewY(14deg);
   border-bottom: 18px solid #272e38;
@@ -112,15 +193,16 @@ section.main-section .contact {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #fff;
-  top: 420px;
+  top: 350px;
   left: 40px;
   z-index: 4;
   h1{
     font-weight: 700;
     transform: skew(-15deg, 0deg);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
   & .address{
+    display: block;
     margin-bottom: 60px;
   }
 
@@ -152,19 +234,36 @@ section.main-section .contact {
   }
 }
 
+section.main-section .about {
+  position: absolute;
+  line-height: 1.5;
+  top:720px;
+  left: 90px;
+  width: 640px;
+  height: 100px;
+  font-family: 'Play', sans-serif;
+  font-size: 18px;
+  z-index: 41;
+  & span {
+    font-weight: 700;
+   // font-style: italic;
+  }
+}
+
 section.main-section .menu {
   position: absolute;
-  top: 230px;
+  top: 160px;
   right: 0;
-  width: 200px;
+  width: 190px;
   text-transform: uppercase; 
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   z-index: 100;
   & ul {}
   & li {
-    // list-style-type: none;
+    list-style-type: none;
     padding-bottom: 10px;
+    font-weight: 600;
   }
   & li::before {
     //content: "";

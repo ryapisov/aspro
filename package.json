@@ -13,6 +13,8 @@
     "sass": "^1.26.11"
   },
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "dist": "^0.1.2",
     "normalize.css": "^8.0.1"
   }
 }

@@ -25,7 +25,7 @@ section.contacts-section .contacts {
   display: block;
   position: absolute;
   background: rgba(200, 200, 200, .2);
-  top: 150px;
+  top: 100px;
   right: 0;
   width: 680px;
   height: 500px;
@@ -57,7 +57,7 @@ section.contacts-section .contacts-form {
   display: none;
   position: absolute;
   background: rgba(200, 200, 200, .2);
-  top: 150px;
+  top: 100px;
   right: 0;
   width: 680px;
   height: 500px;
@@ -94,17 +94,17 @@ section.contacts-section .contacts-form {
 section.contacts-section .text {
   position: absolute;
   z-index: 1;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  top: 720px;
   left: 0;
-  bottom: 0;
-  height: 300px;
-  padding: 90px;
+  padding-left: 90px;
+  padding-right: 90px;
   line-height: 1.8;
   &::before{
     content:'';
     background: url(../images/check-mark-box.svg) no-repeat;
-    margin-right: 28px;
+    margin-right: 24px;
     background-size: 100%;
     padding: 18px;
   }

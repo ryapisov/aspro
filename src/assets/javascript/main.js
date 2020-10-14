@@ -1,3 +1,3 @@
-import '../scss/main.scss'
+import '../scss/style.scss'
 import './form-submit'
 import './partners'
