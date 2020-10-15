@@ -768,6 +768,10 @@ img.max {
   height: 100%;
 }
 
+.color {
+  background-color: #eee;
+}
+
 section {
   height: 800px;
   min-height: 100vh;
