@@ -1,0 +1,156 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container.wrap {
+  margin: 25px auto;
+  -webkit-box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
+  box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
+}
+
+.section {
+  overflow: hidden !important;
+  position: relative;
+  min-height: 100vh;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+h1.caption {
+  font-size: 2rem;
+  font-family: 'Play', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 -15px;
+  padding: 0.6em 0;
+  background-color: #eee;
+}
+
+h3.caption {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.6em 0;
+}
+
+/* Section Main */
+.main{
+}
+
+/* Section About */
+.about{
+}
+
+/* Section Customers */
+.customers{
+}
+
+/* Section  Suppliers */
+.suppliers{
+}
+
+/* Section: Contacts */
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts-body{
+  height: 450px;
+  overflow: hidden;
+  font-family: 'Play', sans-serif;
+  &__image{
+    min-width: 200px;
+    background: url(../images/znak.png) no-repeat;
+    background-size: 100%;
+  }
+
+  &__title{
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  &__line{
+    font-size: 1.2rem;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__communication{
+    margin-top: 25px;
+  }
+
+  &__submitform{
+    display: none;
+  }
+
+  &__requisites{}
+}
+
+label {
+  font-size: 1.2rem !important;
+  padding-bottom: 8px;
+}
+
+input, textarea{
+  font-size: 1.2rem !important;
+  border-radius: 0 !important;
+}
+
+.btn.btn-danger{
+  color: #fff;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 0.4em 1.8em;
+  background: rgb(212,75,56);
+  border: 1px solid rgb(212,75,56);
+  &:hover{
+    color: #fff;
+    opacity: .8;
+  }
+}
+
+.btn.btn-primary{
+  color: #fff;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 0.4em 1.8em;
+  background: rgb(39, 46, 56);
+  border: 1px solid rgb(39, 46, 56);
+  &:hover{
+    color: #fff;
+    opacity: .8;
+  }
+}
+
+.contacts-footer{
+  &__text{
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+  }
+  &__text::before{
+    content:'';
+    background: url(../images/check-mark-box.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 18px;
+    padding: 16px;
+  }
+}
+
+@import './desktop/width-992.scss';
+@import './tablet/width-768.scss';
+@import './mobile/width-576.scss';
+
+// @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+// @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+// @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+// @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+// @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+// @media (min-width:1281px) { /* hi-res laptops and desktops */ }

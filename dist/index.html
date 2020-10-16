@@ -23,8 +23,92 @@
 <link rel="stylesheet" href="/main.cea8d406.css"></head>
 
 <body>  
-  <main class="container shadow">
-    <!-- Main section -->
+  <main class="container wrap" id="main">
+    <section class="section">
+      <div class="col nopadding">
+         <a href="#suppliers">заказчики</a>
+         <a href="#contacts">контакт</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="col-md-12">
+        <h1 class="text-center caption">о компании</h1>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <div class="col-md-12">
+        <h1 class="text-center caption">заказчики</h1>
+      </div>
+    </section>
+
+    <section class="section suppliers" id="suppliers">
+      <div class="col-md-12">
+        <h1 class="text-center caption">поставщики</h1>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <h1 class="text-center caption">контакты</h1>
+      <div class="contacts-body row mt-4">
+        <div class="contacts-body__image offset-md-1 col-4 d-none d-md-block"></div>
+        <div class="contacts-body__requisites col-12 col-md-6" id="requisites">
+          <div class="contacts-body__title"><b>ООО "Cтроительная Компания АСПРО"</b></div>
+          <div class="contacts-body__line">ИНН 9723097657&nbsp;&nbsp;ОГРН 1207700050755</div>
+          <div class="contacts-body__line">Банк ПАО ВТБ Филиал №7701 г.Москва</div>
+          <div class="contacts-body__line">БИК 044525745</div>
+          <div class="contacts-body__line">109382, г.Москва, ул. Люблинская, д.141</div>
+          <div class="contacts-body__communication">
+            <div class="contacts-body__line">
+             <b>Отдел по работе с клиентами:&nbsp;&nbsp;оф. 424</b>
+            </div>
+            <div class="contacts-body__line">
+              <b>тел.</b>&nbsp;+7 (499) 964-46-70&nbsp;&nbsp;
+              <b>почта:</b>&nbsp;&nbsp;info@sk-aspro.ru
+            </div>
+          </div>
+          <div class="d-flex mt-5 nopadding justify-content-sm-center justify-content-md-end">
+            <a class="btn btn-danger" id="btn-open-form">Написать сообщение</a>
+          </div>
+        </div>
+
+        <div class="contacts-body__submitform col-12 col-md-6" id="submitform">
+          <form action="/" method="post" class="form" id="form">
+            <div class="form-group">
+              <label for="email-form">Мы обязательно с вами свяжемся!</label>
+              <input type="email" class="form-control" id="email-form" placeholder="Ваш email">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="" rows="7" placeholder="Сообщение"></textarea>
+              </div>
+            <div class="d-flex justify-content-between">
+              <a id="btn-close" class="btn btn-primary">закрыть</a>
+              <button type="submit" class="btn btn-danger">отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="contacts-footer row ml-1 mr-1 mb-5 mt-5">
+        <div class="contacts-footer__text col-md-10 offset-md-1">
+          Важным критерием высокой оценки нашей работы является качество и 
+          надежность, как для заказчиков, так и для поставщиков, проявляемое
+          в выполнении работ строго в соответствии с проектом, соблюдение 
+          технологии и сроков строительства.
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!----------------------------------------------------------------------------------------------------->
+
+  <!-- <main class="container shadow">
+  
     <section class="row main-section mt-3" id="main">
       <div class="col-md-12 nopadding header"></div>
       <div class="col-md-12 nopadding logo"></div>
@@ -60,7 +144,6 @@
       </div>
     </section>
 
-    <!-- О компании -->
     <section class="row about-section" id="about">
       <div class="col-md-12">
         <h2 class="title">О компании</h2>
@@ -112,62 +195,58 @@
         </p>
 
         Получены положительные отзывы от 
-        благодарных заказчиков и довольных подрядчиков. <p></p>
+        благодарных заказчиков и довольных подрядчиков. </p>
         <div class="text-center">
-        <img src="/1-min.8c56678a.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m1">
-        <img src="/2-min.8db0fc9c.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m2">
-        <img src="/3-min.c9667156.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m3">
-        <img src="/4-min.33916697.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m4">
-        <img src="/5-min.4a5353b9.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m5">
+        <img src="assets/images/mini/1-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m1" />
+        <img src="assets/images/mini/2-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m2" />
+        <img src="assets/images/mini/3-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m3" />
+        <img src="assets/images/mini/4-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m4" />
+        <img src="assets/images/mini/5-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m5" />
         </div>
 
-        <!-- модальное окно -->
+     
         <div class="modal fade bd-example-modal-lg" id="m1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="/1-max.565696ed.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal">
+              <img src="assets/images/max/1-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
             </div>
           </div>
         </div>
 
-         <!-- модальное окно -->
+      
          <div class="modal fade bd-example-modal-lg" id="m2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="/2-max.0667a4e6.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal">
+              <img src="assets/images/max/2-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
             </div>
           </div>
         </div>
 
-         <!-- модальное окно -->
          <div class="modal fade bd-example-modal-lg" id="m3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="/3-max.c0762175.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal">
+              <img src="assets/images/max/3-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
             </div>
           </div>
         </div>
 
-         <!-- модальное окно -->
-         <div class="modal fade bd-example-modal-lg" id="m4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      
+        <div class="modal fade bd-example-modal-lg" id="m4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="/4-max.c99142f5.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal">
+              <img src="assets/images/max/4-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
             </div>
           </div>
         </div>
 
-         <!-- модальное окно -->
-         <div class="modal fade bd-example-modal-lg" id="m5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  
+        <div class="modal fade bd-example-modal-lg" id="m5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="/5-max.baadb1ad.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal">
+              <img src="assets/images/max/5-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal" />
             </div>
           </div>
         </div>
-
-
-
 
       </div>
     </section>
@@ -222,9 +301,9 @@
         </div>
 
         <p>
-          <br>
+          <br/>
           
-        </p></div>
+        </div>
     </section>
 
     <section class="row contacts-section mb-3">
@@ -234,8 +313,8 @@
         <div id="form" class="contacts-form">
           <h3><strong>Ваше сообщение в компанию АСПРО</strong></h3>
           <form id="form2" action="/" method="post">   
-            <p><input type="text" name="name" id="name" size="20" placeholder="Телефон или email"></p><p>
-            </p><p><textarea rows="10" cols="45" name="text" placeholder="Введите текст"></textarea></p>
+            <p><input type="text" name="name" id="name" size="20" placeholder="Телефон или email" /><p>
+            <p><textarea rows="10" cols="45" name="text" placeholder="Введите текст"></textarea></p>
           </form>
           <div id="btn-close" class="button-close">
             Закрыть            
@@ -265,7 +344,10 @@
         </div>
       </div>
     </section>
-  </main>
+  </main> -->
+
+  <!----------------------------------------------------------------------------------------------------->
+
 </body>
 
 </html>
