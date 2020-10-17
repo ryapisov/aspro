@@ -39,23 +39,54 @@ h3.caption {
   padding: 0.6em 0;
 }
 
-/* Section Main */
+/* Section: Main главная*/
 .main{
 }
+.main-body{
+}
+.main-footer{
+}
 
-/* Section About */
+/* Section: About о компании*/
 .about{
 }
-
-/* Section Customers */
-.customers{
+.about-body{
+}
+.about-footer{
 }
 
-/* Section  Suppliers */
+/* Section: Customers заказчики */
+.customers{
+  & img{
+    width: 100%;
+    max-height: 500px;
+    min-height: 295px;
+  }
+}
+.customers-header{
+  &__text{
+    font-size: 1.2rem;
+  }
+}
+.customers-body{
+}
+.customers-footer{
+}
+
+/* Section: Suppliers поставщики */
 .suppliers{
 }
+.suppliers-header{
+  &__text{
+    font-size: 1.2rem;
+  }
+}
+.suppliers-body{
+}
+.suppliers-footer{
+}
 
-/* Section: Contacts */
+/* Section: Contacts контакты */
 .contacts{
   display: flex;
   flex-direction: column;
@@ -72,7 +103,6 @@ h3.caption {
     width: 100%;
   }
 }
-
 .contacts-body{
   height: 450px;
   overflow: hidden;
@@ -101,7 +131,6 @@ h3.caption {
     }
   }
 }
-
 .contacts-footer{
   &__text{
     font-family: 'Play', sans-serif;
@@ -117,6 +146,7 @@ h3.caption {
   }
 }
 
+/**/
 label {
   font-size: 1.2rem !important;
   padding-bottom: 14px;

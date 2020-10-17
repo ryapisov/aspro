@@ -39,11 +39,25 @@ h3.caption {
   padding: 0.6em 0;
 }
 
-/* Section Main */
-/* Section About */
-/* Section Customers */
-/* Section  Suppliers */
-/* Section: Contacts */
+/* Section: Main главная*/
+/* Section: About о компании*/
+/* Section: Customers заказчики */
+.customers img {
+  width: 100%;
+  max-height: 500px;
+  min-height: 295px;
+}
+
+.customers-header__text {
+  font-size: 1.2rem;
+}
+
+/* Section: Suppliers поставщики */
+.suppliers-header__text {
+  font-size: 1.2rem;
+}
+
+/* Section: Contacts контакты */
 .contacts {
   display: flex;
   flex-direction: column;
@@ -96,6 +110,7 @@ h3.caption {
   padding: 16px;
 }
 
+/**/
 label {
   font-size: 1.2rem !important;
   padding-bottom: 14px;
@@ -145,9 +160,18 @@ input, textarea {
     display: block;
   }
 
+  .contacts-footer {
+    margin-top: 28px;
+  }
   .contacts-footer__text {
     font-family: "Play", sans-serif;
     font-size: 1rem;
+  }
+  .contacts-footer__text::before {
+    content: "";
+    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+    background-size: 80%;
+    padding-left: 10px;
   }
 }
 

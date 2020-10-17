@@ -29,9 +29,16 @@
   }
 
   .contacts-footer{
+    margin-top: 28px;
     &__text{
       font-family: 'Play', sans-serif;
       font-size: 1.0rem;
+    }
+    &__text::before{
+      content:'';
+      background: url(../images/check-mark-box.svg) no-repeat;
+      background-size: 80%;
+      padding-left: 10px;
     }
   }
 }
