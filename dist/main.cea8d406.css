@@ -49,6 +49,15 @@ h3.caption {
   flex-direction: column;
   justify-content: space-between;
 }
+.contacts h3 {
+  font-size: 1.5rem;
+}
+.contacts__btns {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 .contacts-body {
   height: 450px;
@@ -57,58 +66,22 @@ h3.caption {
 }
 .contacts-body__image {
   min-width: 200px;
-  background: url(/znak.326511ea.png) no-repeat;
+  background: url(/znak.326511ea.png) no-repeat center;
   background-size: 100%;
 }
-.contacts-body__title {
-  font-size: 1.5rem;
-  margin-bottom: 18px;
+.contacts-body__requisites {
+  position: relative;
 }
-.contacts-body__line {
-  font-size: 1.2rem;
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-.contacts-body__communication {
-  margin-top: 25px;
-}
-.contacts-body__submitform {
+.contacts-body__submit-form {
+  position: relative;
   display: none;
 }
-label {
-  font-size: 1.2rem !important;
-  padding-bottom: 14px;
+.contacts-body__list {
+  list-style-type: none;
 }
-
-input, textarea {
-  font-size: 1.2rem !important;
-  border-radius: 0 !important;
-}
-
-.btn.btn-danger {
-  color: #fff;
-  border-radius: 0;
+.contacts-body__list li {
+  margin-left: -20px;
   font-size: 1.2rem;
-  padding: 0.4em 1.8em;
-  background: #d44b38;
-  border: 1px solid #d44b38;
-}
-.btn.btn-danger:hover {
-  color: #fff;
-  opacity: 0.8;
-}
-
-.btn.btn-primary {
-  color: #fff;
-  border-radius: 0;
-  font-size: 1.2rem;
-  padding: 0.4em 1.8em;
-  background: #272e38;
-  border: 1px solid #272e38;
-}
-.btn.btn-primary:hover {
-  color: #fff;
-  opacity: 0.8;
 }
 
 .contacts-footer__text {
@@ -123,47 +96,58 @@ input, textarea {
   padding: 16px;
 }
 
+label {
+  font-size: 1.2rem !important;
+  padding-bottom: 14px;
+}
+
+input, textarea {
+  font-size: 1.2rem !important;
+  border-radius: 0 !important;
+}
+
+.btn {
+  color: #fff !important;
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 0.4em 1.8em;
+}
+.btn.btn-danger {
+  background: #d44b38;
+  border: 1px solid #d44b38;
+}
+.btn.btn-primary {
+  background: #272e38;
+  border: 1px solid #272e38;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
 /* для отображения мобильной версии  http://www.responsinator.com */
 /* больше 576 */
 /* меньше 576 */
 @media (max-width: 576px) {
-  .container.wrap {
-    margin: 0 auto;
+  .contacts h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
   }
 
-  label {
-    text-align: center;
+  .contacts-body__list {
+    list-style-type: none;
+  }
+  .contacts-body__list li {
+    margin-left: -20px;
+    font-size: 1rem;
+  }
+  .contacts-body__list span {
     display: block;
-  }
-
-  .contacts-body__title {
-    font-size: 1rem;
-    margin-bottom: 18px;
-    text-align: center;
-  }
-  .contacts-body__line {
-    font-size: 1rem;
-    padding: 0 15px;
-    white-space: pre-line;
-  }
-  .contacts-body__submitform {
-    display: none;
-    padding: 30px;
-  }
-  .contacts-body__communication {
-    margin-top: 0px;
   }
 
   .contacts-footer__text {
     font-family: "Play", sans-serif;
     font-size: 1rem;
-  }
-  .contacts-footer__text::before {
-    content: "";
-    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
-    background-size: 100%;
-    margin-right: 18px;
-    padding: 16px;
   }
 }
 

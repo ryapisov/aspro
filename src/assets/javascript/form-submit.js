@@ -1,7 +1,7 @@
 
 const btn = document.querySelector('#btn-open-form')
 const btnClose = document.querySelector('#btn-close')
-const form = document.querySelector('#submitform')
+const form = document.querySelector('#submit-form')
 const requisites = document.querySelector('#requisites')
 
 

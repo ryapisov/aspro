@@ -7,35 +7,24 @@
 
 /* меньше 576 */
 @media (max-width: 576px) {
-  .container.wrap {
-    margin: 0 auto;
-  }
-
-  label{
-    text-align: center;
-    display: block;
+  .contacts{
+    & h3{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
   }
 
   .contacts-body{
-    &__title{
-      font-size: 1.0rem;
-      margin-bottom: 18px;
-      text-align: center;
-    }
-
-    &__line{
-      font-size: 1.0rem;
-      padding: 0 15px;
-      white-space:pre-line;
-    }
-
-    &__submitform{
-      display: none;
-      padding:  30px;
-    }
-
-    &__communication{
-      margin-top: 0px;
+    &__list{
+      list-style-type: none;
+      & li{
+        margin-left: -20px;
+        font-size: 1.0rem;
+      }
+      & span{
+        display: block;
+      }
     }
   }
 
@@ -43,13 +32,6 @@
     &__text{
       font-family: 'Play', sans-serif;
       font-size: 1.0rem;
-    }
-    &__text::before{
-      content:'';
-      background: url(../images/check-mark-box.svg) no-repeat;
-      background-size: 100%;
-      margin-right: 18px;
-      padding: 16px;
     }
   }
 }

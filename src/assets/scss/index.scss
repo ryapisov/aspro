@@ -60,38 +60,61 @@ h3.caption {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  & h3{
+    font-size: 1.5rem;
+  }
+
+  &__btns{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .contacts-body{
   height: 450px;
   overflow: hidden;
   font-family: 'Play', sans-serif;
+
   &__image{
     min-width: 200px;
-    background: url(../images/znak.png) no-repeat;
+    background: url(../images/znak.png) no-repeat center; 
     background-size: 100%;
   }
-
-  &__title{
-    font-size: 1.5rem;
-    margin-bottom: 18px;
+  
+  &__requisites{
+    position: relative;
   }
 
-  &__line{
-    font-size: 1.2rem;
-    padding-left: 20px;
-    margin-bottom: 10px;
-  }
-
-  &__communication{
-    margin-top: 25px;
-  }
-
-  &__submitform{
+  &__submit-form{
+    position: relative;
     display: none;
   }
 
-  &__requisites{}
+  &__list{
+    list-style-type: none;
+    & li{
+      margin-left: -20px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.contacts-footer{
+  &__text{
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+  }
+
+  &__text::before{
+    content:'';
+    background: url(../images/check-mark-box.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 18px;
+    padding: 16px;
+  }
 }
 
 label {
@@ -104,45 +127,24 @@ input, textarea{
   border-radius: 0 !important;
 }
 
-.btn.btn-danger{
-  color: #fff;
+.btn{
+  color: #fff !important;
   border-radius: 0;
   font-size: 1.2rem;
   padding: 0.4em 1.8em;
-  background: rgb(212,75,56);
-  border: 1px solid rgb(212,75,56);
+  &.btn-danger{
+    background: rgb(212,75,56);
+    border: 1px solid rgb(212,75,56);
+  }
+  &.btn-primary{
+    background: rgb(39, 46, 56);
+    border: 1px solid rgb(39, 46, 56);
+  }
   &:hover{
-    color: #fff;
     opacity: .8;
   }
 }
 
-.btn.btn-primary{
-  color: #fff;
-  border-radius: 0;
-  font-size: 1.2rem;
-  padding: 0.4em 1.8em;
-  background: rgb(39, 46, 56);
-  border: 1px solid rgb(39, 46, 56);
-  &:hover{
-    color: #fff;
-    opacity: .8;
-  }
-}
-
-.contacts-footer{
-  &__text{
-    font-family: 'Play', sans-serif;
-    font-size: 1.2rem;
-  }
-  &__text::before{
-    content:'';
-    background: url(../images/check-mark-box.svg) no-repeat;
-    background-size: 100%;
-    margin-right: 18px;
-    padding: 16px;
-  }
-}
 
 @import './desktop/width-992.scss';
 @import './tablet/width-768.scss';

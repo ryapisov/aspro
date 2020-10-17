@@ -50,48 +50,49 @@
     </section>
 
     <section class="section contacts" id="contacts">
-      <h1 class="text-center caption">контакты</h1>
-      <div class="contacts-body row mt-4">
-        <div class="contacts-body__image offset-md-1 col-4 d-none d-md-block"></div>
+      <h1 class="text-center caption mb-4">контакты</h1>
+      <div class="contacts-body row mb-4 justify-content-center">
+        <div class="contacts-body__image col-4 d-none d-md-block"></div>
+
         <div class="contacts-body__requisites col-12 col-md-6" id="requisites">
-          <div class="contacts-body__title"><b>ООО "Cтроительная Компания АСПРО"</b></div>
-          <div class="contacts-body__line">ИНН 9723097657&nbsp;&nbsp;ОГРН 1207700050755</div>
-          <div class="contacts-body__line">Банк ПАО ВТБ Филиал №7701 г.Москва</div>
-          <div class="contacts-body__line">БИК 044525745</div>
-          <div class="contacts-body__line">109382, г.Москва, ул. Люблинская, д.141</div>
-          <div class="contacts-body__communication">
-            <div class="contacts-body__line">
-             <b>Отдел по работе с клиентами:&nbsp;&nbsp;оф. 424</b>
-            </div>
-            <div class="contacts-body__line">
-              <b>тел.</b>&nbsp;+7 (499) 964-46-70&nbsp;&nbsp;
-              <b>почта:</b>&nbsp;&nbsp;info@sk-aspro.ru
-            </div>
-          </div>
-          <div class="d-flex mt-5  justify-content-center justify-content-md-end">
+          <h3 class="mb-4 mt-4">
+            <strong>ООО "Cтроительная Компания АСПРО"</strong>
+          </h3>
+          <ul class="contacts-body__list">
+            <li class="pb-1">ИНН 9723097657&nbsp;&nbsp;ОГРН 1207700050755</li>
+            <li class="pb-1">Банк ПАО ВТБ Филиал №7701 г.Москва</li>
+            <li class="pb-1">БИК 044525745</li>
+            <li class="pb-1">109382, г.Москва, ул. Люблинская, д.141</li>
+            <li class="pb-1 mt-3"><b>Отдел по работе с клиентами:&nbsp;&nbsp;оф. 424</b></li>
+            <li class="pb-1">
+             <span><strong>тел.</strong>&nbsp;+7 (499) 964-46-70&nbsp;&nbsp;</span> 
+             <span><strong>почта:</strong>&nbsp;&nbsp;info@sk-aspro.ru</span> 
+            </li>
+          </ul>
+          <div class="contacts__btns d-flex justify-content-center justify-content-md-end pl-4 pr-4">
             <a class="btn btn-danger" id="btn-open-form">Написать сообщение</a>
           </div>
         </div>
-
-        <div class="contacts-body__submitform col-12 col-md-6" id="submitform">
-          <form action="/" method="post" class="form" id="form">
+        <!--OR-->
+        <div class="contacts-body__submit-form col-12 col-md-6" id="submit-form">
+          <form action="/" method="post" class="form p-3" id="form">
             <div class="form-group">
-              <label for="email-form">Мы обязательно с вами свяжемся!</label>
-              <input type="email" class="form-control" id="email-form" placeholder="Ваш email">
+           
+              <input type="email" class="form-control" id="email" placeholder="Ваш email">
             </div>
             <div class="form-group">
               <textarea class="form-control" id="" rows="7" placeholder="Сообщение"></textarea>
-              </div>
-            <div class="d-flex justify-content-between">
+            </div>
+            <div class="contacts__btns d-flex justify-content-between pl-4 pr-4">
               <a id="btn-close" class="btn btn-primary">закрыть</a>
               <button type="submit" class="btn btn-danger">отправить</button>
             </div>
           </form>
         </div>
       </div>
-      
-      <div class="contacts-footer row ml-1 mr-1 mb-5 mt-5">
-        <div class="contacts-footer__text col-md-10 offset-md-1">
+    
+      <div class="contacts-footer row pt-4 pl-3 pr-3 mb-5 justify-content-center">
+        <div class="contacts-footer__text col-md-10">
           Важным критерием высокой оценки нашей работы является качество и 
           надежность, как для заказчиков, так и для поставщиков, проявляемое
           в выполнении работ строго в соответствии с проектом, соблюдение 
