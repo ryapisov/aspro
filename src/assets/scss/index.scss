@@ -49,8 +49,45 @@ h3.caption {
 
 /* Section: About о компании*/
 .about{
+  &::before{
+    content:'';
+    background: url(../images/men.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:60px;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 .about-body{
+  &__text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding: 2rem;
+    background-color:rgb(238, 238, 238, .9);
+    min-height: 200px;
+    z-index: 0;
+  }
+
+  &__text-right{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    padding: 2rem;
+    min-height: 500px;
+    z-index: 0;
+    border-radius: 50px 0px 0px 0px;
+  }
+
+  .bg-danger{
+    background: rgba(196, 70, 54, 0.8) !important;
+  }
 }
 .about-footer{
 }

@@ -41,6 +41,43 @@ h3.caption {
 
 /* Section: Main главная*/
 /* Section: About о компании*/
+.about::before {
+  content: "";
+  background: url(/men.a1ff0a09.jpg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 60px;
+  left: -50px;
+  width: 110%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about-body__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  padding: 2rem;
+  background-color: rgba(238, 238, 238, 0.9);
+  min-height: 200px;
+  z-index: 0;
+}
+.about-body__text-right {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  padding: 2rem;
+  min-height: 500px;
+  z-index: 0;
+  border-radius: 50px 0px 0px 0px;
+}
+.about-body .bg-danger {
+  background: rgba(196, 70, 54, 0.8) !important;
+}
+
 /* Section: Customers заказчики */
 .customers img {
   width: 100%;
@@ -144,9 +181,42 @@ input, textarea {
 }
 
 /* для отображения мобильной версии  http://www.responsinator.com */
-/* больше 576 */
 /* меньше 576 */
 @media (max-width: 576px) {
+  .about::before {
+    content: "";
+    display: none;
+    background: url(/men.a1ff0a09.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .about-body__text-right {
+    color: #fff;
+    margin-top: 0px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 1.8rem;
+    min-height: 500px;
+    z-index: 0;
+  }
+  .about-body__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 1rem;
+    background-color: rgba(238, 238, 238, 0.9);
+    min-height: 200px;
+    z-index: 0;
+  }
+
   .customers-header__text {
     font-size: 1rem;
   }
@@ -190,5 +260,6 @@ input, textarea {
     padding-left: 10px;
   }
 }
+/* больше 576 */
 
 /*# sourceMappingURL=/main.cea8d406.css.map */

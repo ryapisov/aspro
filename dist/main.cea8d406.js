@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/form-submit.js":[function(require,module,exports) {
+},{"./../images/men.jpg":[["men.a1ff0a09.jpg","assets/images/men.jpg"],"assets/images/men.jpg"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/form-submit.js":[function(require,module,exports) {
 var btn = document.querySelector('#btn-open-form');
 var btnClose = document.querySelector('#btn-close');
 var form = document.querySelector('#submit-form');
@@ -267,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43491" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35147" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
