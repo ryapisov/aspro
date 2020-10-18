@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/men.png":[["men.c7b4d78f.png","assets/images/men.png"],"assets/images/men.png"],"./../images/cap.png":[["cap.a824c9c0.png","assets/images/cap.png"],"assets/images/cap.png"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"./../images/men.jpg":[["men.a1ff0a09.jpg","assets/images/men.jpg"],"assets/images/men.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/form-submit.js":[function(require,module,exports) {
+},{"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/men-min.png":[["men-min.23d6b7fd.png","assets/images/men-min.png"],"assets/images/men-min.png"],"./../images/cap-min.png":[["cap-min.06a62f9c.png","assets/images/cap-min.png"],"assets/images/cap-min.png"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/form-submit.js":[function(require,module,exports) {
 var btn = document.querySelector('#btn-open-form');
 var btnClose = document.querySelector('#btn-close');
 var form = document.querySelector('#submit-form');
@@ -267,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45745" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38969" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

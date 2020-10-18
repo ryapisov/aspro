@@ -3,6 +3,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 .container.wrap {
   margin: 25px auto;
   -webkit-box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
@@ -152,12 +153,88 @@ h3.caption {
   }
 
   &__text{
+    font-family: 'Play', sans-serif;
     position: absolute;
-    top: 665px;
+    top: 685px;
     left: 145px;
     width: 540px;
     font-size: 1.1rem;
     z-index: 3;
+  }
+
+  &__contact{
+    position: absolute;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    top: 360px;
+    left: 40px;
+    z-index: 4;
+    h1{
+      font-weight: 700;
+      transform: skew(-15deg, 0deg);
+      margin-bottom: 6px;
+    }
+    & .address{
+      display: block;
+      margin-bottom: 60px;
+    }
+  
+    & a{
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      margin-bottom: 14px;
+      margin-left: 20px;
+    }
+  
+    & a.phone::before {
+      content: "";
+      background: url(../images/phone.svg) no-repeat;
+      background-size: 100%;
+      padding: 20px 22px 0 0;
+    }
+  
+    & a.email::before {
+      content: "";
+      background: url(../images/email.svg) no-repeat;
+      background-size: 100%;
+      padding: 0px 22px 0 0;
+    }
+  
+    & a span {
+      margin-left: 22px;
+    }
+  }
+  &__menu{
+    position: absolute;
+    top: 155px;
+    right: 0;
+    width: 190px;
+    text-transform: uppercase; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    z-index: 100;
+    & ul {}
+    & li {
+      list-style-type: none;
+      padding-bottom: 10px;
+      font-weight: 600;
+    }
+    & li::before {
+      //content: "";
+    }
+  
+    & a {
+      font-family: 'Play', sans-serif;
+      color: #fff;
+     // text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        font-weight: 700;
+      }
+    }
   }
 }
 .main-body{
@@ -169,7 +246,7 @@ h3.caption {
 .about{
   &::before{
     content:'';
-    background: url(../images/men.png) no-repeat;
+    background: url(../images/men-min.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top:44px;
@@ -238,7 +315,7 @@ h3.caption {
   &::before{
     content:'';
     position: absolute;
-    background:url(../images/cap.png) no-repeat;
+    background:url(../images/cap-min.png) no-repeat;
     background-size: 100%;
     top: 44px;
     left: 0;
@@ -252,6 +329,7 @@ h3.caption {
 
   a{
     font-family: 'Play', sans-serif;
+    color: red;
   }
 }
 .suppliers-header{
