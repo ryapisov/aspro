@@ -7,6 +7,26 @@
 
 /* меньше 576 */
 @media (max-width: 576px) {
+
+  .customers-header{
+    &__text{
+      font-size: 1.0rem;
+    }
+  }
+
+  .customers-footer{
+    &__text{
+      font-size: 1.0rem;
+    }
+  }
+  
+
+  .suppliers-header{
+    &__text{
+      font-size: 1.0rem;
+    }
+  }
+
   .contacts{
     & h3{
       text-align: center;

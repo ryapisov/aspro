@@ -52,6 +52,10 @@ h3.caption {
   font-size: 1.2rem;
 }
 
+.customers-footer__text {
+  font-size: 1.2rem;
+}
+
 /* Section: Suppliers поставщики */
 .suppliers-header__text {
   font-size: 1.2rem;
@@ -143,6 +147,18 @@ input, textarea {
 /* больше 576 */
 /* меньше 576 */
 @media (max-width: 576px) {
+  .customers-header__text {
+    font-size: 1rem;
+  }
+
+  .customers-footer__text {
+    font-size: 1rem;
+  }
+
+  .suppliers-header__text {
+    font-size: 1rem;
+  }
+
   .contacts h3 {
     text-align: center;
     margin-top: 20px;
