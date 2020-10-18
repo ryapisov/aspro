@@ -2,6 +2,10 @@
 
 /* меньше 576 */
 @media (max-width: 576px) {
+  .container.wrap {
+    margin: 0px auto;
+  }
+
   .about{
     &::before{
       content:'';
