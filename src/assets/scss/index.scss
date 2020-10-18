@@ -246,6 +246,13 @@ h3.caption {
     height: 100%;
   }
 
+  & .bg-primary{
+    background-color: #272e38 !important;
+  }
+
+  a{
+    font-family: 'Play', sans-serif;
+  }
 }
 .suppliers-header{
   &__text{

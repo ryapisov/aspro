@@ -216,6 +216,12 @@ h3.caption {
   width: 100%;
   height: 100%;
 }
+.suppliers .bg-primary {
+  background-color: #272e38 !important;
+}
+.suppliers a {
+  font-family: "Play", sans-serif;
+}
 
 .suppliers-header__text {
   height: 270px;
