@@ -87,6 +87,15 @@ h2 {
 }
 
 @media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    font-family: "Play", sans-serif;
+    margin: 25px auto;
+    -webkit-box-shadow: 2px -2px 10px 1px black;
+    -moz-box-shadow: 2px -2px 10px 1px black;
+    box-shadow: 2px -2px 10px 1px black;
+  }
+
   section.main {
     overflow: hidden;
   }
@@ -101,13 +110,13 @@ h2 {
     height: 100%;
     z-index: -1;
   }
-  section.main header {
+  section.main .header {
     position: relative;
     width: 100%;
-    height: 95px;
+    height: 70px;
     background-color: #fff;
   }
-  section.main header::before {
+  section.main .header::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -122,65 +131,65 @@ h2 {
   section.main .triangles-upper-lower::before {
     content: "";
     position: absolute;
-    top: 95px;
+    top: 70px;
     right: 0px;
     border-right: 992px solid #fff;
     border-top: 0px solid transparent;
-    border-bottom: 240px solid transparent;
+    border-bottom: 280px solid transparent;
     z-index: 2;
   }
   section.main .triangles-upper-lower::after {
     content: "";
     position: absolute;
-    top: 415px;
+    top: 390px;
     left: 0px;
     border-left: 992px solid #fff;
-    border-top: 250px solid transparent;
+    border-top: 280px solid transparent;
     border-bottom: 0px solid transparent;
     z-index: 2;
   }
   section.main .triangles-right-left::before {
     content: "";
     position: absolute;
-    top: 95px;
+    top: 70px;
     right: 0px;
-    border-right: 460px solid #9a0007;
-    border-top: 120px solid transparent;
-    border-bottom: 112px solid transparent;
+    border-right: 470px solid #9a0007;
+    border-top: 140px solid transparent;
+    border-bottom: 130px solid transparent;
     z-index: 3;
   }
   section.main .triangles-right-left::after {
     content: "";
     position: absolute;
-    top: 263px;
+    top: 250px;
     left: 0px;
-    border-left: 560px solid #272e38;
-    border-top: 142px solid transparent;
-    border-bottom: 315px solid transparent;
+    border-left: 550px solid #272e38;
+    border-top: 155px solid transparent;
+    border-bottom: 340px solid transparent;
     z-index: 3;
   }
   section.main .lines-long-short::before {
     content: "";
     position: absolute;
     right: 0;
-    top: 594px;
-    width: 625px;
-    transform: skewY(14deg);
+    top: 590px;
+    width: 620px;
+    transform: skewY(16deg);
     border-bottom: 25px solid #9a0007;
     /* угол на конце линии*/
-    border-left: 32px solid transparent;
+    border-left: 27px solid transparent;
     z-index: 2;
   }
   section.main .lines-long-short::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 646px;
-    width: 460px;
-    transform: skewY(14deg);
+    top: 655px;
+    width: 400px;
+    transform: skewY(16deg);
     border-bottom: 18px solid #272e38;
     /* угол на конце линии*/
-    border-left: 20px solid transparent;
+    border-left: 18px solid transparent;
     z-index: 2;
   }
   section.main .text {
@@ -189,8 +198,9 @@ h2 {
     top: 685px;
     left: 145px;
     width: 540px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     z-index: 3;
+    line-height: 1.5rem;
   }
   section.main .contact {
     position: absolute;
@@ -235,237 +245,7 @@ h2 {
   }
   section.main .menu {
     position: absolute;
-    top: 155px;
-    right: 0;
-    width: 190px;
-    text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    z-index: 100;
-  }
-  section.main .menu li {
-    list-style-type: none;
-    padding-bottom: 10px;
-    font-weight: 600;
-  }
-  section.main .menu a {
-    font-family: "Play", sans-serif;
-    color: #fff;
-    cursor: pointer;
-  }
-  section.main .menu a:hover {
-    font-weight: 700;
-  }
-
-  section.about::before {
-    content: "";
-    background: url(/men-min.23d6b7fd.png) no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 35px;
-    left: -20px;
-    width: 680px;
-    height: 100%;
-    z-index: -1;
-  }
-
-  section.customers .carousel-inner img {
-    height: 560px !important;
-  }
-
-  section.suppliers {
-    position: relative;
-  }
-  section.suppliers::before {
-    content: "";
-    position: absolute;
-    background: url(/cap-min.06a62f9c.png) no-repeat;
-    background-size: 100%;
-    top: 50%;
-    left: 50%;
-    margin-left: -250px;
-    margin-top: -300px;
-    width: 500px;
-    height: 600px;
-    z-index: -1;
-  }
-  section.suppliers .img-thumbnail.mini {
-    width: 150px;
-  }
-
-  section.contacts .holder {
-    min-height: 450px;
-  }
-  section.contacts .image {
-    background: url(/znak.326511ea.png) no-repeat center;
-    background-size: 100%;
-  }
-  section.contacts .form {
-    display: none;
-  }
-  section.contacts .requisites ul {
-    list-style-type: none;
-  }
-  section.contacts .requisites li {
-    font-size: 1.2rem;
-  }
-  section.contacts .btns {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  section.main {
-    overflow: hidden;
-  }
-  section.main::before {
-    content: "";
-    background: url(/banner_min.b6017a5a.jpg) no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  section.main header {
-    position: relative;
-    width: 100%;
-    height: 95px;
-    background-color: #fff;
-  }
-  section.main header::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -150px;
-    background: url(/aspro_min.bb1e0de8.png) no-repeat;
-    background-size: 100%;
-    width: 300px;
-    height: 100px;
-    z-index: 3;
-  }
-  section.main .triangles-upper-lower::before {
-    content: "";
-    position: absolute;
-    top: 95px;
-    right: 0px;
-    border-right: 992px solid #fff;
-    border-top: 0px solid transparent;
-    border-bottom: 240px solid transparent;
-    z-index: 2;
-  }
-  section.main .triangles-upper-lower::after {
-    content: "";
-    position: absolute;
-    top: 415px;
-    left: 0px;
-    border-left: 992px solid #fff;
-    border-top: 250px solid transparent;
-    border-bottom: 0px solid transparent;
-    z-index: 2;
-  }
-  section.main .triangles-right-left::before {
-    content: "";
-    position: absolute;
-    top: 95px;
-    right: 0px;
-    border-right: 460px solid #9a0007;
-    border-top: 120px solid transparent;
-    border-bottom: 112px solid transparent;
-    z-index: 3;
-  }
-  section.main .triangles-right-left::after {
-    content: "";
-    position: absolute;
-    top: 263px;
-    left: 0px;
-    border-left: 560px solid #272e38;
-    border-top: 142px solid transparent;
-    border-bottom: 315px solid transparent;
-    z-index: 3;
-  }
-  section.main .lines-long-short::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 594px;
-    width: 625px;
-    transform: skewY(14deg);
-    border-bottom: 25px solid #9a0007;
-    /* угол на конце линии*/
-    border-left: 32px solid transparent;
-    z-index: 2;
-  }
-  section.main .lines-long-short::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 646px;
-    width: 460px;
-    transform: skewY(14deg);
-    border-bottom: 18px solid #272e38;
-    /* угол на конце линии*/
-    border-left: 20px solid transparent;
-    z-index: 2;
-  }
-  section.main .text {
-    font-family: "Play", sans-serif;
-    position: absolute;
-    top: 685px;
-    left: 145px;
-    width: 540px;
-    font-size: 1.1rem;
-    z-index: 3;
-  }
-  section.main .contact {
-    position: absolute;
-    font-family: "Play", sans-serif;
-    font-size: 18px;
-    color: #fff;
-    top: 360px;
-    left: 40px;
-    z-index: 4;
-  }
-  section.main .contact h1 {
-    font-weight: 700;
-    transform: skew(-15deg, 0deg);
-    margin-bottom: 6px;
-  }
-  section.main .contact .address {
-    display: block;
-    margin-bottom: 60px;
-  }
-  section.main .contact a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    margin-bottom: 14px;
-    margin-left: 20px;
-  }
-  section.main .contact a.phone::before {
-    content: "";
-    background: url(/phone.8e2935c7.svg) no-repeat;
-    background-size: 100%;
-    padding: 20px 22px 0 0;
-  }
-  section.main .contact a.email::before {
-    content: "";
-    background: url(/email.25bac19c.svg) no-repeat;
-    background-size: 100%;
-    padding: 0px 22px 0 0;
-  }
-  section.main .contact a span {
-    margin-left: 22px;
-  }
-  section.main .menu {
-    position: absolute;
-    top: 155px;
+    top: 150px;
     right: 0;
     width: 190px;
     text-transform: uppercase;
