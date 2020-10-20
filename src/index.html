@@ -25,12 +25,13 @@
 <body>  
   <main class="container wrap">
 
-    <section class="section main" id="main">
-      <div class="main-header"></div>
-      <div class="main__triangles-upper-lower"></div>
-      <div class="main__triangles-right-left"></div>
-      <div class="main__lines-long-short"></div>
-      <div class="main__menu">
+    <section class="main" id="main">
+     <div class="header"></div>
+      <div class="triangles-upper-lower"></div>
+      <div class="triangles-right-left"></div>
+      <div class="lines-long-short"></div>
+
+      <div class="menu">
         <ul>
           <li><a href="#about">о компании</a></li>
           <li><a href="#suppliers">поставщики</a></li>
@@ -38,24 +39,27 @@
           <li><a href="#contacts">контакты</a></li>
         </ul>
       </div>
-      <div class="main__contact">
+
+      <div class="contact">
         <h1>ООО "СК&nbsp;&nbsp;АСПРО"</h1>
         <span class="address">109382, г.Москва, ул. Люблинская, д.141</span>
         <a href="#tel" class="phone"><span>+7(499) 964-46-70</span></a>
         <a href="#email" class="email"><span>info@sk-aspro.ru</span></a>
       </div>
-      <div class="main__text">
+
+      <p class="text">
         На сегодняшний день ООО «Строительная Компания АСПРО» (ООО «СК АСПРО») - 
         это динамично развивающаяся компания. Мы с оптимизмом смотрим в будущее. 
         Пройдя с честью не простой, для малого бизнеса, период пандемии 2020,
         мы сохранили заработные платы сотрудников и все договорённости со всеми партнёрами.  
-      </div>
+      </p>
+    
     </section>
 
-    <section class="section about" id="about">
-      <h1 class="text-center caption">о компании</h1>
-      <div class="about-body row">
-        <div class="about-body__text-right col-12 bg-danger offset-md-6 col-md-6">
+    <section class="about" id="about">
+      <h2>о компании</h2>
+      <div class="row">
+        <p class="col-12 offset-md-6 col-md-6 bg-red p-4">
           Наша компания была создана командой единомышленников, 
           имеющих многолетний опыт работы в строительстве и в 
           смежных отраслях. Объединив опыт возведения крупных 
@@ -70,31 +74,33 @@
           производственной системы более замкнутого цикла, было принято 
           решение выйти на рынок услуг в сфере строительства под новым, 
           объединенным флагом. 
-        </div>
-        <div class="about-body__text col-12 col-md-12 mb-4">
+        </p>
+      </div>
+      <div class="row bottom">
+        <p class="col-md-10 offset-md-1 bg-blue p-4">
           Коллектив ООО «СК АСПРО» — это люди, объединенные общей идеологией.
           Для нас особенно важны специалисты, имеющие свое мнение и умеющие его аргументировать. 
           Мы приветствуем конструктивные споры и отстаивание своей позиции. С момента принятия  
           решения  мы единой командой беремся за его реализацию, и этот командный подход и является 
           определяющим рост, успех и развитие нашей компании.
-        </div>
+        </p>
       </div>
     </section>
 
-    <section class="section customers" id="customers">
-      <h1 class="text-center caption">заказчики</h1>
-
-      <div class="customers-header row justify-content-center mt-4 mb-4">
-        <div class="customers-header__text col-12 col-md-10">
+    <section class="customers" id="customers">
+      <h2>заказчики</h2>
+      <div class="row justify-content-center mt-5 mb-5">
+        <p class="col-12 col-md-10">
           С февраля 2020 года, наша компания прошла большой путь. 
-          Реализованы точно в срок и с высоким качеством, десятки 
-          объектов строительства и реконструкции. Основными заказчиками 
-          в этот период  для нас стали <b>«X5 RETAILGROUP»</b>,  
-          <b>«АэропортДомодедово»</b>, <b>«ГлавноеУправлениеОбустройстваВойск»</b>. 
-        </div>
-      </div>
+          Реализованы точно в срок и с высоким качеством, десятки объектов 
+          строительства и реконструкции. Основными заказчиками 
+          в этот период  для нас стали 
+          <strong>«АэропортДомодедово»</strong>, 
+          <strong>«ГлавноеУправлениеОбустройстваВойск»</strong>. 
+        </p>
+      </div> 
 
-      <div class="customers-body carousel slide" id="carouselExampleCaptions" data-ride="carousel">
+      <div class="carousel slide" id="carouselExampleCaptions" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -135,14 +141,13 @@
     
     </section>
 
-    <section class="section suppliers" id="suppliers">
-      <h1 class="text-center caption">поставщики</h1>
-
-      <div class="suppliers-header row justify-content-center mt-3 mb-3">
-        <div class="suppliers-header__text col-12 col-md-10">
+    <section class="suppliers" id="suppliers">
+      <h2>поставщики</h2>
+      <div class="row justify-content-center mt-5">
+        <p class="col-10">
           Мы гордимся своими партнёрским отношениями со многими крупными
           поставщиками материалов и услуг в сфере строительства 
-          таких как: <br/><br/>
+          таких как:<br/><br/>
           <a href="#">ООО «СтройхолдингТрэйд»</a> <br/>
           <a href="#">ООО «ЗЭРГУД»</a>  <br/>
           <a href="#">ООО «НЕД Центр»</a>  <br/>
@@ -151,24 +156,22 @@
           <a href="#">ООО «ТД ЭлектроТехМонтаж»</a> <br/>
           <a href="#">ООО «ПластикаОкон»</a> <br/>
           <a href="#">ООО «СвободныеТехнологии»</a><br/>
-        </div>
-        <div class="suppliers-header__text col-12 col-md-10 mt-5">
-          <br/><br/><br/><br/><br/><br/><br/>
-          <strong>Получены положительные отзывы от благодарных 
-            заказчиков и довольных подрядчиков.</strong>
-        </div>
+        </p>
       </div>
-      
-      <div class="suppliers-body row">
-        <div class="col-12 bg-primary p-3"> 
 
-          <div class="text-center" style="cursor: pointer;">
-            <img src="assets/images/mini/1-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m1" />
-            <img src="assets/images/mini/2-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m2" />
-            <img src="assets/images/mini/3-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m3" />
-            <img src="assets/images/mini/4-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m4" />
-            <img src="assets/images/mini/5-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m5" />
-          </div>
+    
+      <div class="bottom" style="width:100%;">
+        <p class="text-center">
+          <strong>Получены положительные отзывы от благодарныхзаказчиков и довольных подрядчиков.</strong>
+        </p>
+        <div class="bg-blue text-center p-4" style="cursor:pointer;"> 
+          <img src="assets/images/mini/1-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m1" />
+          <img src="assets/images/mini/2-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m2" />
+          <img src="assets/images/mini/3-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m3" />
+          <img src="assets/images/mini/4-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m4" />
+          <img src="assets/images/mini/5-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m5" />
+          <img src="assets/images/mini/6-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m6" />
+          <img src="assets/images/mini/7-min.jpg" alt="..." class="img-thumbnail mini" data-toggle="modal" data-target="#m7" />
         </div>
       </div>
 
@@ -207,344 +210,80 @@
             </div>
           </div>
         </div>
-    </section>
-
-    <section class="section contacts" id="contacts">
-      <h1 class="text-center caption mb-4">контакты</h1>
-
-      <div class="contacts-body row mb-4 justify-content-center">
-        <div class="contacts-body__image col-4 d-none d-md-block"></div>
-
-        <div class="contacts-body__requisites col-12 col-md-6" id="requisites">
-          <h3 class="mb-4 mt-4">
-            <strong>ООО "Cтроительная Компания АСПРО"</strong>
-          </h3>
-          <ul class="contacts-body__list">
-            <li class="pb-1">ИНН 9723097657&nbsp;&nbsp;ОГРН 1207700050755</li>
-            <li class="pb-1">Банк ПАО ВТБ Филиал №7701 г.Москва</li>
-            <li class="pb-1">БИК 044525745</li>
-            <li class="pb-1">109382, г.Москва, ул. Люблинская, д.141</li>
-            <li class="pb-2 mt-3"><b>Отдел по работе с клиентами:&nbsp;&nbsp;оф. 424</b></li>
-            <li class="pb-1">
-             <span><strong>тел.</strong>&nbsp;+7 (499) 964-46-70&nbsp;&nbsp;</span> 
-             <span><strong>почта:</strong>&nbsp;&nbsp;info@sk-aspro.ru</span> 
-            </li>
-          </ul>
-          <div class="contacts__btns d-flex justify-content-center justify-content-md-end pl-4 pr-4">
-            <a class="btn btn-danger" id="btn-open-form">Написать сообщение</a>
-          </div>
-        </div>
-        <!--OR-->
-        <div class="contacts-body__submit-form col-12 col-md-6" id="submit-form">
-          <form  action="/" method="post" class="form p-3" id="form">
-            <div class="form-group">
-           
-              <input type="email" class="form-control" id="email" placeholder="Ваш email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="" rows="7" placeholder="Сообщение"></textarea>
-            </div>
-            <div class="contacts__btns d-flex justify-content-between pl-4 pr-4">
-              <a id="btn-close" class="btn btn-primary">закрыть</a>
-              <button type="submit" class="btn btn-danger">отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    
-      <div class="contacts-footer row pt-4 pl-3 pr-3 mb-5 justify-content-center">
-        <div class="contacts-footer__text col-md-10">
-          Важным критерием высокой оценки нашей работы является качество и 
-          надежность, как для заказчиков, так и для поставщиков, проявляемое
-          в выполнении работ строго в соответствии с проектом, соблюдение 
-          технологии и сроков строительства.
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-
-
-  <!----------------------------------------------------------------------------------------------------->
-
-  <!-- <main class="container shadow">
-  
-    <section class="row main-section mt-3" id="main">
-      <div class="col-md-12 nopadding header"></div>
-      <div class="col-md-12 nopadding logo"></div>
-      <div class="col-md-12 nopadding banner"></div>
-      <div class="col-md-12 nopadding upper-triangle"></div>
-      <div class="col-md-12 nopadding lower-triangle"></div>
-      <div class="col-md-12 nopadding right-triangle"></div>
-      <div class="col-md-12 nopadding right-triangle-opacity"></div>
-      <div class="col-md-12 nopadding left-triangle"></div>
-      <div class="col-md-12 nopadding long-line"></div>
-      <div class="col-md-12 nopadding short-line"></div>
-      <div class="col-md-12 about">
-        На сегодняшний день <span>ООО «Строительная Компания АСПРО»</span>
-        (ООО «СК АСПРО»)  - это динамично развивающаяся компания. 
-        Мы с оптимизмом смотрим в будущее. Пройдя с честью не простой, 
-        для малого бизнеса, период пандемии 2020, мы сохранили
-        заработные платы сотрудников и все договорённости со всеми 
-        партнёрами.  
-      </div>
-      <div class="col-md-12 nopadding contact">
-        <h1>ООО "СК&nbsp;&nbsp;АСПРО"</h1>
-        <span class="address">109382, г.Москва, ул. Люблинская, д.141</span>
-        <a href="#tel" class="phone"><span>+7(499) 964-46-70</span></a>
-        <a href="#email" class="email"><span>info@sk-aspro.ru</span></a>
-      </div>
-      <div class="col-md-12 nopadding menu">
-        <ul>
-          <li><a href="#about">о компании</a></li>
-          <li><a href="#suppliers">поставщики</a></li>
-          <li><a href="#customers">заказчики</a></li>
-          <li><a href="#contacts">контакты</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="row about-section" id="about">
-      <div class="col-md-12">
-        <h2 class="title">О компании</h2>
-        <div class="img"></div>
-        <div class="text-1">Наша компания была создана командой единомышленников, 
-        имеющих многолетний опыт работы в строительстве и в 
-        смежных отраслях. Объединив опыт возведения крупных 
-        объектов строительства (таких как 
-        <b>Загорская ГАЭС</b>, 
-        <b>ЖК «Алые паруса»</b>, 
-        <b>ЖК «Воробьёвы горы»</b>, 
-        <b>«Олимпийская деревня Новогорск»</b> 
-        и многих других), зная «изнутри» технологию изготовления многих 
-        строительных материалов, имея опыт сотрудничества с заказчиками 
-        не только московскими, но и региональными, с целью формирования 
-        производственной системы более замкнутого цикла, было принято 
-        решение выйти на рынок услуг в сфере строительства под новым, 
-        объединенным флагом. 
-        </div>
-        <div class="text-2">
-          Коллектив ООО «СК АСПРО» — это люди, объединенные общей идеологией. 
-          Для нас особенно важны специалисты, 
-          имеющие свое мнение и умеющие его аргументировать. Мы приветствуем 
-          конструктивные споры и отстаивание своей позиции. После утверждения 
-          плана действий единой командой беремся за его реализацию, и этот 
-          командный подход и является определяющим рост, успех и развитие 
-          нашей компании.
-        </div>
-        <div class="text-4">
-          Коллектив ООО «СК АСПРО» — это люди, объединенные общей идеологией. 
-          Для нас особенно важны специалисты, имеющие свое мнение и умеющие его 
-          аргументировать. Мы приветствуем конструктивные споры и отстаивание своей 
-          позиции. С момента принятия  решения  мы единой командой беремся за его
-          реализацию, и этот командный подход и является определяющим рост, успех и 
-          развитие нашей компании.
-        </div>
-      </div>
-    </section>
-
-    <section class="row suppliers-section color" id="suppliers">
-      <div class="col-md-12">
-        <h2 class="title">Поставщики</h2>
-        <p> Мы гордимся своими партнёрским отношениями со многими крупными
-        поставщиками материалов и услуг в сфере строительства 
-        (таких как ООО «СтройхолдингТрэйд», ООО «ЗЭРГУД»  ООО «НЕД Центр»,  
-        ООО «Климатическая компания», ООО «ПРО ВОСТОК, 
-        ООО «ТД ЭЛЕКТРОТЕХМОНТАЖ»,ООО «Пластика Окон»,
-        ООО «Свободные технологии»)
-        </p>
-
-        Получены положительные отзывы от 
-        благодарных заказчиков и довольных подрядчиков. </p>
-        <div class="text-center">
-        <img src="assets/images/mini/1-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m1" />
-        <img src="assets/images/mini/2-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m2" />
-        <img src="assets/images/mini/3-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m3" />
-        <img src="assets/images/mini/4-min.jpg" alt="..." class="img-thumbnail" data-toggle="modal" data-target="#m4" />
-        <img src="assets/ima   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://static.tildacdn.com/tild6634-3839-4131-b630-323233626230/DOMODEDOVO_AIRPORT_M.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Аэропорт Домодедово</h5>
-                <p></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://pbs.twimg.com/media/DKocNwSXoAADpnk.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Главное Управление Обустройства Войск</h5>
-                <p></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://storage.yandexcloud.net/master-conomy-media/media/uploads/AnalyticsArticle/0b63a056430d46e3b5640f3af93b9c45.jpeg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>X5 RETAIL GROUP</h5>
-                <p></p>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-     
-        <div class="modal fade bd-example-modal-lg" id="m1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal fade bd-example-modal-lg" id="m6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
-              <img src="assets/images/max/1-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
+              <img src="assets/images/max/6-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal" />
             </div>
           </div>
         </div>
-
+        <div class="modal fade bd-example-modal-lg" id="m7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <img src="assets/images/max/7-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal" />
+            </div>
+          </div>
+        </div>
       
-         <div class="modal fade bd-example-modal-lg" id="m2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="assets/images/max/2-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
-            </div>
-          </div>
-        </div>
-
-         <div class="modal fade bd-example-modal-lg" id="m3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="assets/images/max/3-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
-            </div>
-          </div>
-        </div>
-
-      
-        <div class="modal fade bd-example-modal-lg" id="m4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="assets/images/max/4-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal"/>
-            </div>
-          </div>
-        </div>
-
-  
-        <div class="modal fade bd-example-modal-lg" id="m5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <img src="assets/images/max/5-max.jpg" alt="..." class="img-thumbnail max" data-dismiss="modal" />
-            </div>
-          </div>
-        </div>
-
-      </div>
     </section>
 
-    <section class="row customers-section" id="customers">
-      <div class="col-md-12">
-        <h2 class="title">Заказчики</h2>
-        <p>С февраля 2020 года, наша компания прошла большой путь. 
-        Реализованы точно в срок и с высоким качеством, десятки 
-        объектов строительства и реконструкции. Основными заказчиками 
-        в этот период  для нас стали <b>«X5 RETAILGROUP»</b>,  
-        <b>«Аэропорт Домодедово»</b>, <b>«Главное Управление Обустройства Войск»</b>. 
-        </p>
+    <section class="contacts" id="contacts">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <h2>контакты</h2>
+        <div class="row justify-content-center holder ml-1 mr-1">
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://static.tildacdn.com/tild6634-3839-4131-b630-323233626230/DOMODEDOVO_AIRPORT_M.png" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Аэропорт Домодедово</h5>
-                <p></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://pbs.twimg.com/media/DKocNwSXoAADpnk.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Главное Управление Обустройства Войск</h5>
-                <p></p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://storage.yandexcloud.net/master-conomy-media/media/uploads/AnalyticsArticle/0b63a056430d46e3b5640f3af93b9c45.jpeg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>X5 RETAIL GROUP</h5>
-                <p></p>
-              </div>
-            </div>
+          <div class="col-md-4 image">
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
 
-        <p>
-          <br/>
+          <div class="col-md-7 form" id="form">
+            <form  action="/" method="post" class="">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Ваш email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="" rows="10" placeholder="Сообщение"></textarea>
+              </div>
+              <div class="btns d-flex justify-content-between pl-4 pr-4">
+                <a id="btn-close" class="btn btn-primary">закрыть</a>
+                <button type="submit" class="btn btn-danger">отправить</button>
+              </div>
+            </form>
+          </div>
           
-        </div>
-    </section>
+          <!--or-->
+          <div class="col-md-7 requisites" id="requisites">
+            <ul class="m-0">
+              <li class="pb-4"><span class="h4"><strong>ООО "Cтроительная Компания АСПРО"</strong></span></li>
+              <li class="pl-3 pb-3">ИНН 9723097657&nbsp;&nbsp;ОГРН 1207700050755</li>
+              <li class="pl-3 pb-3">Банк ПАО ВТБ Филиал №7701 г.Москва</li>
+              <li class="pl-3 pb-3">БИК 044525745</li>
+              <li class="pl-3 pb-3">109382, г.Москва, ул. Люблинская, д.141</li>
+              <li class="pl-3 mt-4 pb-1"><b>Отдел по работе с клиентами:&nbsp;&nbsp;оф. 424</b></li>
+              <li class="pl-3">
+                <span><strong>тел.</strong>&nbsp;+7 (499) 964-46-70&nbsp;&nbsp;</span> 
+                <span><strong>почта:</strong>&nbsp;&nbsp;info@sk-aspro.ru</span> 
+              </li>
+            </ul>
+            <div class="btns d-flex justify-content-center justify-content-md-end pl-4 pr-4">
+              <a class="btn btn-danger" id="btn-open-form">Написать сообщение</a>
+            </div>
+          </div>
 
-    <section class="row contacts-section mb-3">
-      <div class="col-md-12">
-        <h2 class="title">Контакты</h2>
-        <div class="znak"></div>
-        <div id="form" class="contacts-form">
-          <h3><strong>Ваше сообщение в компанию АСПРО</strong></h3>
-          <form id="form2" action="/" method="post">   
-            <p><input type="text" name="name" id="name" size="20" placeholder="Телефон или email" /><p>
-            <p><textarea rows="10" cols="45" name="text" placeholder="Введите текст"></textarea></p>
-          </form>
-          <div id="btn-close" class="button-close">
-            Закрыть            
-          </div>
-          <div id="btn-submit" class="button-submit">
-            Отправить
-          </div>
         </div>
-        <div class="contacts" id="contacts">
-          <h3><strong>OOO "Cтроительная Компания АСПРО"</strong></h3>
-          <div class="line">ИНН 9723097657 ОГРН 1207700050755</div>
-          <div class="line">Банк ПАО ВТБ Филиал №7701 г.Москва</div>
-          <div class="line">БИК 044525745</div>
-          <div class="line">109382, г.Москва, ул. Люблинская, д.141, оф.424</div>
-          <div class="line-bottom"><b>тел.</b>
-            <i>+7 (499) 964-46-70</i>&nbsp;&nbsp;&nbsp;<b>почта:</b> <i>info@sk-aspro.ru</i>
-          </div>
-          <div id="btn-open-form" class="button-submit">
-            Написать сообщение
-          </div>
+
+        <div class="row justify-content-center mb-5 ml-1 mr-1">
+          <p class="col-md-11 icon-check">
+            Важным критерием высокой оценки нашей работы является качество и 
+            надежность, как для заказчиков, так и для поставщиков, проявляемое
+            в выполнении работ строго в соответствии с проектом, соблюдение 
+            технологии и сроков строительства.
+          </p>
         </div>
-        <div class="text">
-          Важным критерием высокой оценки нашей работы является качество и надежность, 
-          как для заказчиков, так и для поставщиков, проявляемое в выполнении работ 
-          строго в соответствии с проектом, соблюдение технологии и сроков 
-          строительства.
-        </div>
+
       </div>
     </section>
-  </main> -->
-
-  <!----------------------------------------------------------------------------------------------------->
+    
+  </main>
 
 </body>
 
