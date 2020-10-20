@@ -93,6 +93,8 @@ h2 {
   color: #fff;
 }
 
-
 @import './desktop/style.scss';
 @import './desktop/style.max.scss';
+@import './tablet/style.scss';
+@import './mobile/style.scss';
+@import './mobile/style.mini.scss';

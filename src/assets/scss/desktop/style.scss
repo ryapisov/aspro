@@ -1,6 +1,5 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-
   section.main{
     overflow: hidden;
     &::before{
@@ -32,7 +31,7 @@
         z-index: 3;
       }
     }
-
+ 
     & .triangles-upper-lower{
       &::before{
         content:'';
@@ -190,10 +189,10 @@
         }
       }
     }
-
-  }
-
-  section.about{
+ 
+   }
+ 
+   section.about{
     &::before{
       content:'';
       background: url(../images/men-min.png) no-repeat;
@@ -205,15 +204,15 @@
       height: 100%;
       z-index: -1;
     }
-  }
-
-  section.customers{
+   }
+ 
+   section.customers{
     .carousel-inner img{
       height: 560px !important;
     }
-  }
-
-  section.suppliers{
+   }
+ 
+   section.suppliers{
     position: relative;
     &::before{
       content:'';
@@ -228,16 +227,17 @@
       height: 600px;
       z-index: -1;
     }
-
+ 
     .img-thumbnail.mini{
       width: 150px;
     }
-  }
-
-  section.contacts{
+   }
+ 
+   section.contacts{
     .holder{
       min-height: 450px;
     }
+ 
     & .image{
       background: url(../images/znak.png) no-repeat center; 
       background-size: 100%;
@@ -260,5 +260,7 @@
       bottom: 0;
       width: 100%;
     }
-  }
+   }
+ 
+ 
 }
