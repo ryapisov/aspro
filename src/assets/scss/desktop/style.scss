@@ -230,7 +230,6 @@
    .holder{
      min-height: 450px;
    }
-
    & .image{
      background: url(../images/znak.png) no-repeat center; 
      background-size: 100%;
@@ -239,13 +238,8 @@
      display: none;
    }
    & .requisites{
-     & ul {
-       list-style-type: none;
-     }
-     & li{
-      // margin-left: -15px;
-       font-size: 1.2rem;
-     }
+     display: block;
+     padding-left: 30px;
    }
    & .btns{
      position: absolute;

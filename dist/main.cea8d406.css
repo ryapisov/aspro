@@ -313,11 +313,9 @@ h2 {
   section.contacts .form {
     display: none;
   }
-  section.contacts .requisites ul {
-    list-style-type: none;
-  }
-  section.contacts .requisites li {
-    font-size: 1.2rem;
+  section.contacts .requisites {
+    display: block;
+    padding-left: 30px;
   }
   section.contacts .btns {
     position: absolute;
