@@ -88,7 +88,7 @@ h2 {
 .bottom {
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 690px;
 }
 
 .bg-blue {
@@ -336,7 +336,9 @@ h2 {
   }
 
   .bottom {
-    height: 220px;
+    position: absolute;
+    left: 0;
+    top: 570px;
   }
 
   section.main {
