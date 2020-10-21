@@ -46,6 +46,9 @@ p {
   &.large{
     font-size: 1.2rem;
   }
+  &.bold{
+    font-weight: 600;
+  }
 }
 
 // form

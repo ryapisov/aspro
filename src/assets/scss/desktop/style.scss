@@ -155,30 +155,19 @@
    }
    & .menu{
      position: absolute;
-     top: 150px;
+     top: 140px;
      right: 0;
-     width: 190px;
+     width: 180px;
      text-transform: uppercase; 
-     font-family: 'Open Sans', sans-serif;
      font-size: 0.95rem;
      z-index: 100;
-     & ul {}
-     & li {
-       list-style-type: none;
-       padding-bottom: 10px;
-       font-weight: 600;
-     }
-     & li::before {
-       //content: "";
-     }
-   
+    // letter-spacing: 0.05rem;
      & a {
-       font-family: 'Play', sans-serif;
        color: #fff;
-      // text-decoration: none;
-       cursor: pointer;
        &:hover{
-         font-weight: 700;
+         cursor: pointer;
+         font-size: 0.94rem;
+         color: rgb(240, 196, 196);
        }
      }
    }

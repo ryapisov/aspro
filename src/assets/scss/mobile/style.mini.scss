@@ -1,5 +1,134 @@
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
+@media (max-width: 575px) { 
+  
+  // wrapper
+  .container{
+    min-width: 412px;
+    font-family: 'Play', sans-serif;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  }
 
+  // down =
+  .bottom{
+    position: absolute;
+    left: 0;
+    top: 570px;
+  }
 
+  section.main{
+    overflow: hidden;
+    &::before{
+      content:'';
+      background: url(../images/banner_min.jpg) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    & .header{
+      position: relative;
+      width: 100%;
+      height: 120px;
+      background-color: rgb(255, 255, 255);
+      &::before{
+        content:'';
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -140px;
+        background: url(../images/aspro_min.png) no-repeat;
+        background-size: 100%;
+        width: 280px;
+        height: 96px;
+        z-index: 3;
+      }
+    }
+
+    & .triangles-upper-lower{
+      &::before{
+        display: none;
+      }
+      &::after{
+        content:'';
+        position: absolute;
+        top: 380px;
+        left: 0px;
+        height: 150px;
+        width: 100%;
+        background-color: rgba(39, 46, 56, 1);
+        z-index: 2;
+      }
+    }
+
+    & .triangles-right-left{
+      display: none;
+    }
+
+    & .lines-long-short{
+      display: none;
+    }
+
+    & .contact{
+      position: absolute;
+      font-size: 1.1rem;
+      top: 405px;
+      left: 25px;
+      z-index: 4;
+      & .company{
+        display: none;
+      }
+
+      & .address{
+        display: block;
+        font-size: 1.05rem;
+      }
+    
+      & a{
+        font-size: 1.25rem;
+        display: block;
+        color: #fff;
+        margin-bottom: 14px;
+      }
+    
+      & a.phone::before {
+        content: "";
+        background: url(../images/mobile.svg) no-repeat;
+        background-size: 100%;
+        padding: 0px 22px 0 0;
+        margin-right:10px;
+        color: #fff;
+        margin-left: 0px;
+      }
+    
+      & a.email::before {
+        content: "";
+        background: url(../images/email.svg) no-repeat;
+        background-size: 100%;
+        padding: 0px 22px 0 0;
+        margin-right: 10px;
+      //  margin-left: 20px;
+      }
+    
+    }
+    & .menu {
+      background: #9a0007;
+      display: flex;
+      justify-content: space-around;
+      & a{
+        color: #fff;
+        font-size: 1.0rem;
+        &:hover{
+          cursor: pointer;
+          color: #eee;
+        }
+      }
+
+    }
+  }
  }

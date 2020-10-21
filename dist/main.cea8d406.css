@@ -44,6 +44,9 @@ p.medium {
 p.large {
   font-size: 1.2rem;
 }
+p.bold {
+  font-weight: 600;
+}
 
 input, textarea {
   border-radius: 0 !important;
@@ -245,26 +248,20 @@ h2 {
   }
   section.main .menu {
     position: absolute;
-    top: 150px;
+    top: 140px;
     right: 0;
-    width: 190px;
+    width: 180px;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
     font-size: 0.95rem;
     z-index: 100;
   }
-  section.main .menu li {
-    list-style-type: none;
-    padding-bottom: 10px;
-    font-weight: 600;
-  }
   section.main .menu a {
-    font-family: "Play", sans-serif;
     color: #fff;
-    cursor: pointer;
   }
   section.main .menu a:hover {
-    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.94rem;
+    color: #f0c4c4;
   }
 
   section.about::before {
@@ -327,7 +324,7 @@ h2 {
 /* для отображения мобильной версии  http://www.responsinator.com */
 @media (min-width: 576px) and (max-width: 767px) {
   .container {
-    max-width: 576px;
+    width: 576px;
     font-family: "Play", sans-serif;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -473,26 +470,138 @@ h2 {
   }
   section.main .menu {
     position: absolute;
-    top: 75px;
+    top: 65px;
     right: 0;
-    width: 170px;
+    width: 120px;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
     font-size: 0.9rem;
+    letter-spacing: 0.04rem;
     z-index: 100;
   }
-  section.main .menu li {
-    list-style-type: none;
-    padding-bottom: 10px;
-    font-weight: 600;
-  }
   section.main .menu a {
-    font-family: "Play", sans-serif;
     color: #fff;
   }
   section.main .menu a:hover {
     cursor: pointer;
-    font-weight: 700;
+    font-size: 0.9rem;
+    color: #f0c4c4;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    min-width: 412px;
+    font-family: "Play", sans-serif;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .bottom {
+    position: absolute;
+    left: 0;
+    top: 570px;
+  }
+
+  section.main {
+    overflow: hidden;
+  }
+  section.main::before {
+    content: "";
+    background: url(/banner_min.b6017a5a.jpg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  section.main .header {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+  }
+  section.main .header::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -140px;
+    background: url(/aspro_min.bb1e0de8.png) no-repeat;
+    background-size: 100%;
+    width: 280px;
+    height: 96px;
+    z-index: 3;
+  }
+  section.main .triangles-upper-lower::before {
+    display: none;
+  }
+  section.main .triangles-upper-lower::after {
+    content: "";
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    background-color: #272e38;
+    z-index: 2;
+  }
+  section.main .triangles-right-left {
+    display: none;
+  }
+  section.main .lines-long-short {
+    display: none;
+  }
+  section.main .contact {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 405px;
+    left: 25px;
+    z-index: 4;
+  }
+  section.main .contact .company {
+    display: none;
+  }
+  section.main .contact .address {
+    display: block;
+    font-size: 1.05rem;
+  }
+  section.main .contact a {
+    font-size: 1.25rem;
+    display: block;
+    color: #fff;
+    margin-bottom: 14px;
+  }
+  section.main .contact a.phone::before {
+    content: "";
+    background: url(/mobile.89298dad.svg) no-repeat;
+    background-size: 100%;
+    padding: 0px 22px 0 0;
+    margin-right: 10px;
+    color: #fff;
+    margin-left: 0px;
+  }
+  section.main .contact a.email::before {
+    content: "";
+    background: url(/email.25bac19c.svg) no-repeat;
+    background-size: 100%;
+    padding: 0px 22px 0 0;
+    margin-right: 10px;
+  }
+  section.main .menu {
+    background: #9a0007;
+    display: flex;
+    justify-content: space-around;
+  }
+  section.main .menu a {
+    color: #fff;
+    font-size: 1rem;
+  }
+  section.main .menu a:hover {
+    cursor: pointer;
+    color: #eee;
   }
 }
 
