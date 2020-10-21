@@ -23,8 +23,8 @@ section {
 }
 
 p {
-  font-size: 1.2rem;
   line-height: 2.2rem;
+  z-index: 3;
 }
 p.icon-check::before {
   content: "";
@@ -33,6 +33,16 @@ p.icon-check::before {
   margin-right: 16px;
   padding: 14px;
   font-size: 0.6rem;
+}
+p.small {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+p.medium {
+  font-size: 1.1rem;
+}
+p.large {
+  font-size: 1.2rem;
 }
 
 input, textarea {
@@ -196,33 +206,23 @@ h2 {
     border-left: 18px solid transparent;
     z-index: 2;
   }
-  section.main .text {
-    font-family: "Play", sans-serif;
-    position: absolute;
-    top: 685px;
-    left: 145px;
-    width: 540px;
-    font-size: 1rem;
-    z-index: 3;
-    line-height: 1.5rem;
-  }
   section.main .contact {
     position: absolute;
     font-family: "Play", sans-serif;
     font-size: 18px;
     color: #fff;
-    top: 360px;
+    top: 370px;
     left: 40px;
     z-index: 4;
   }
   section.main .contact h1 {
     font-weight: 700;
-    transform: skew(-15deg, 0deg);
-    margin-bottom: 6px;
+    transform: skew(-12deg, 0deg);
+    margin-bottom: 0px;
   }
   section.main .contact .address {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   section.main .contact a {
     display: block;

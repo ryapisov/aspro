@@ -26,8 +26,8 @@ section {
 
 // text
 p {
-  font-size: 1.2rem;
   line-height: 2.2rem;
+  z-index: 3;
   &.icon-check::before{
     content:'';
     background: url(../images/check-mark-box.svg) no-repeat;
@@ -35,6 +35,16 @@ p {
     margin-right: 16px;
     padding: 14px;
     font-size: 0.6rem;
+  }
+  &.small{
+    font-size: 1.0rem;
+    line-height: 1.5rem;
+  }
+  &.medium{
+    font-size: 1.1rem;
+  }
+  &.large{
+    font-size: 1.2rem;
   }
 }
 
@@ -76,7 +86,8 @@ h2 {
   color: #fff;
 }
 
-// down
+
+// down =
 .bottom{
   position: absolute;
   left: 0;

@@ -116,33 +116,22 @@
      }
    }
  
-   & .text{
-     font-family: 'Play', sans-serif;
-     position: absolute;
-     top: 685px;
-     left: 145px;
-     width: 540px;
-     font-size: 1.0rem;
-     z-index: 3;
-     line-height: 1.5rem;
-   }
- 
    & .contact{
      position: absolute;
      font-family: 'Play', sans-serif;
      font-size: 18px;
      color: #fff;
-     top: 360px;
+     top: 370px;
      left: 40px;
      z-index: 4;
      h1{
        font-weight: 700;
-       transform: skew(-15deg, 0deg);
-       margin-bottom: 6px;
+       transform: skew(-12deg, 0deg);
+       margin-bottom: 0px;
      }
      & .address{
        display: block;
-       margin-bottom: 60px;
+       margin-bottom: 50px;
      }
    
      & a{
