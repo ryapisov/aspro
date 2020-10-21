@@ -68,6 +68,11 @@ input, textarea {
   opacity: 0.8;
 }
 
+h1 {
+  font-weight: 700;
+  transform: skew(-12deg, 0deg);
+}
+
 h2 {
   font-family: "Play", sans-serif;
   text-align: center;
@@ -208,43 +213,35 @@ h2 {
   }
   section.main .contact {
     position: absolute;
-    font-family: "Play", sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #fff;
     top: 370px;
     left: 40px;
     z-index: 4;
   }
-  section.main .contact h1 {
-    font-weight: 700;
-    transform: skew(-12deg, 0deg);
-    margin-bottom: 0px;
-  }
   section.main .contact .address {
-    display: block;
     margin-bottom: 50px;
   }
   section.main .contact a {
     display: block;
     color: #fff;
-    cursor: pointer;
     margin-bottom: 14px;
-    margin-left: 20px;
   }
   section.main .contact a.phone::before {
     content: "";
     background: url(/phone.8e2935c7.svg) no-repeat;
     background-size: 100%;
     padding: 20px 22px 0 0;
+    margin-right: 22px;
+    margin-left: 20px;
   }
   section.main .contact a.email::before {
     content: "";
     background: url(/email.25bac19c.svg) no-repeat;
     background-size: 100%;
     padding: 0px 22px 0 0;
-  }
-  section.main .contact a span {
-    margin-left: 22px;
+    margin-right: 22px;
+    margin-left: 20px;
   }
   section.main .menu {
     position: absolute;
