@@ -1,7 +1,197 @@
 /* для отображения мобильной версии  http://www.responsinator.com */
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (min-width: 576px) and (max-width: 767px) { 
+  // wrapper
+  .container{
+    max-width: 576px;
+    font-family: 'Play', sans-serif;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  }
 
+  .bottom{
+    height: 220px;
+  }
 
- }
+  section.main{
+    overflow: hidden;
+    &::before{
+      content:'';
+      background: url(../images/banner_min.jpg) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 30px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    & .header{
+      position: relative;
+      width: 100%;
+      height: 110px;
+      background-color: rgb(255, 255, 255);
+      &::before{
+        content:'';
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        background: url(../images/aspro_min.png) no-repeat;
+        background-size: 100%;
+        width: 280px;
+        height: 96px;
+        z-index: 3;
+      }
+    }
+ 
+    & .triangles-upper-lower{
+      &::before{
+        content:'';
+        position: absolute;
+        top: 110px;
+        right: 0px;
+        border-right: 576px solid rgb(255, 255, 255);
+        border-top: 0px solid transparent;
+        border-bottom: 130px solid transparent;
+        z-index: 2;
+      }
+      &::after{
+        content:'';
+        position: absolute;
+        top: 260px;
+        left: 0px;
+        border-left: 576px solid #fff;
+        border-top: 130px solid transparent;
+        border-bottom: 0px solid transparent;
+        z-index: 2;
+      }
+    }
+  
+    & .triangles-right-left{
+      &::before{
+        content:'';
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        border-right: 390px solid #9a0007;
+        border-top: 115px solid transparent;
+        border-bottom: 85px solid transparent;
+        z-index: 3;
+      }
+      &::after{
+        content:'';
+        position: absolute;
+        top: 270px;
+        left: 0px;
+        border-left: 579px solid #272e38;
+        border-top: 128px solid transparent;
+        border-bottom: 140px solid transparent;
+        z-index: 3;
+      }
+    }
+  
+    & .lines-long-short{
+      &::before{
+        content:'';
+        position: absolute;
+        right: 0;
+        top: 460px;
+        width: 205px;
+        transform: skewY(16deg);
+        border-bottom: 25px solid rgba(154, 0, 7, 1);
+        /* угол на конце линии*/
+        border-left: 45px solid transparent;
+        z-index: 2;
+      }
+      &::after{
+        content:'';
+        position: absolute;
+        right: 0;
+        top: 505px;
+        width: 140px;
+        transform: skewY(16deg);
+        border-bottom: 18px solid rgba(39, 46, 56, 1);
+        /* угол на конце линии*/
+        border-left: 22px solid transparent;
+        z-index: 2;
+      }
+    }
+  
+    & .contact{
+      position: absolute;
+      font-size: 1.1rem;
+      color: #fff;
+      top: 365px;
+      left: 25px;
+      z-index: 4;
+     
+      & .company{
+        display: none;
+      }
+
+      & .address{
+     // display: none;
+        display: block;
+        margin-bottom: 12px;
+      }
+    
+      & a{
+        font-size: 1.2rem;
+        // display: block;
+        color: #fff;
+        margin-bottom: 14px;
+      }
+    
+      & a.phone::before {
+        content: "";
+        background: url(../images/mobile.svg) no-repeat;
+        background-size: 100%;
+        padding: 0px 22px 0 0;
+        margin-right:10px;
+      // margin-left: 0px;
+      }
+    
+      & a.email::before {
+        content: "";
+        background: url(../images/email.svg) no-repeat;
+        background-size: 100%;
+        padding: 0px 22px 0 0;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+    
+    }
+    & .menu{
+      position: absolute;
+      top: 75px;
+      right: 0;
+      width: 170px;
+      text-transform: uppercase; 
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.90rem;
+      z-index: 100;
+      & ul {}
+      & li {
+        list-style-type: none;
+        padding-bottom: 10px;
+        font-weight: 600;
+      }
+      & li::before {
+        //content: "";
+      }
+    
+      & a {
+        font-family: 'Play', sans-serif;
+        color: #fff;
+        &:hover{
+          cursor: pointer;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+}

@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/men-min.png":[["men-min.23d6b7fd.png","assets/images/men-min.png"],"assets/images/men-min.png"],"./../images/cap-min.png":[["cap-min.06a62f9c.png","assets/images/cap-min.png"],"assets/images/cap-min.png"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
+},{"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/men-min.png":[["men-min.23d6b7fd.png","assets/images/men-min.png"],"assets/images/men-min.png"],"./../images/cap-min.png":[["cap-min.06a62f9c.png","assets/images/cap-min.png"],"assets/images/cap-min.png"],"./../images/znak.png":[["znak.326511ea.png","assets/images/znak.png"],"assets/images/znak.png"],"./../images/mobile.svg":[["mobile.89298dad.svg","assets/images/mobile.svg"],"assets/images/mobile.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/index.scss");
@@ -234,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34787" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39679" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
