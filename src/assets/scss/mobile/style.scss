@@ -2,7 +2,6 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) { 
-  // wrapper
   .container{
     width: 576px;
     font-family: 'Play', sans-serif;
@@ -12,13 +11,18 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
   }
  
-  // down =
-  .bottom{
-    position: absolute;
-    left: 0;
-    top: 570px;
+  .sm{
+    &-small{
+      font-size: 0.95rem;
+    }
+    &-medium{
+      font-size: 1.0rem;
+      line-height: 1.0rem;
+    }
+    &-large{
+      font-size: 1.4rem;
+    }
   }
-
 
   section.main{
     overflow: hidden;
@@ -57,7 +61,7 @@
         position: absolute;
         top: 110px;
         right: 0px;
-        border-right: 576px solid rgb(255, 255, 255);
+        border-right: 576px solid rgba(255, 255, 255, 1);
         border-top: 0px solid transparent;
         border-bottom: 130px solid transparent;
         z-index: 2;
@@ -115,77 +119,95 @@
         position: absolute;
         right: 0;
         top: 505px;
-        width: 140px;
+        width: 100px;
         transform: skewY(16deg);
         border-bottom: 18px solid rgba(39, 46, 56, 1);
         /* угол на конце линии*/
-        border-left: 22px solid transparent;
+        border-left: 28px solid transparent;
         z-index: 2;
       }
     }
   
     & .contact{
       position: absolute;
-      font-size: 1.1rem;
-      color: #fff;
-      top: 365px;
+      top: 330px;
       left: 25px;
       z-index: 4;
-     
-      & .company{
-        display: none;
-      }
-
-      & .address{
-     // display: none;
-        display: block;
-        margin-bottom: 12px;
-      }
-    
-      & a{
-        font-size: 1.2rem;
-        // display: block;
+      &-company{
         color: #fff;
-        margin-bottom: 14px;
+        font-size: 1.40rem;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 0.001em;
       }
-    
-      & a.phone::before {
+      &-address{
+        color: #fff;
+        font-size: 1.0rem;
+        margin-bottom: 1.6em;
+      }
+      &-phone{
+        display: inline-block;
+        color: #fff;
+        font-size: 1.0rem;
+        margin-bottom: 1em;
+        margin-right: 20px;
+        margin-left: 15px;
+      }
+      &-email{
+        display: inline-block;
+        color: #fff;
+        font-size: 1.0rem;
+      }
+      & .icon-phone::before{
         content: "";
-        background: url(../images/mobile.svg) no-repeat;
+        background: url(../images/phone.svg) no-repeat;
         background-size: 100%;
-        padding: 0px 22px 0 0;
-        margin-right:10px;
-      // margin-left: 0px;
+        padding-top: 16px;
+        padding-left: 20px;
+        margin-right: 10px;
       }
-    
-      & a.email::before {
+      & .icon-email::before{
         content: "";
         background: url(../images/email.svg) no-repeat;
         background-size: 100%;
-        padding: 0px 22px 0 0;
+        padding-top: 0px;
+        padding-left: 20px;
         margin-right: 10px;
-        margin-left: 20px;
       }
-    
-    }
-    & .menu{
-      position: absolute;
-      top: 65px;
-      right: 0;
-      width: 120px;
-      text-transform: uppercase; 
-      font-size: 0.90rem;
-      letter-spacing: 0.04rem;
-      z-index: 100;
-      & a {
+      & a{
         color: #fff;
         &:hover{
-          cursor: pointer;
-          font-size: 0.90rem;
-          color: rgb(240, 196, 196);
+          color: rgb(216, 208, 208);
         }
       }
     }
-  }
 
+    & .menu{
+      position: absolute;
+      right: 40px;
+      top: 88px;
+      z-index: 100;
+      &-item{
+        font-weight: bold;
+        font-size: 0.80rem;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+      }
+      & a{
+        color: #fff;
+        &:hover{
+          cursor: pointer;
+          color: #eee;
+        }
+      }
+    }
+  
+    & .text{
+      position: absolute;
+      font-size: 1.1rem;
+      bottom: 10px;
+      top: 600px;
+    }
+
+  }
 }
