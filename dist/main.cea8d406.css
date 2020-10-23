@@ -17,7 +17,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: auto -15px;
-  min-height: 850px;
+  min-height: 770px;
 }
 section.first {
   position: relative;
@@ -27,6 +27,7 @@ section.first {
 h3.title {
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
   padding: 2px 0;
   background-color: rgba(39, 46, 56, 0.7);
 }
@@ -293,6 +294,13 @@ input, textarea {
     font-size: 1.3rem;
     background-color: rgba(238, 238, 238, 0.9);
   }
+
+  section.customers .text-top {
+    font-size: 1.3rem;
+  }
+  section.customers .carousel img {
+    max-height: 550px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -495,6 +503,13 @@ input, textarea {
     font-size: 1rem;
     background-color: rgba(238, 238, 238, 0.9);
   }
+
+  section.customers .text-top {
+    font-size: 1.1rem;
+  }
+  section.customers .carousel img {
+    max-height: 485px;
+  }
 }
 /* для отображения мобильной версии  http://www.responsinator.com */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -695,6 +710,13 @@ input, textarea {
     font-size: 1.1rem;
     background-color: rgba(238, 238, 238, 0.9);
   }
+
+  section.customers .text-top {
+    font-size: 1.1rem;
+  }
+  section.customers .carousel img {
+    max-height: 380px;
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -847,6 +869,13 @@ input, textarea {
   section.about .text-bottom {
     font-size: 1.1rem;
     background-color: rgba(238, 238, 238, 0.9);
+  }
+
+  section.customers .text-top {
+    font-size: 1.1rem;
+  }
+  section.customers .carousel img {
+    max-height: 550px;
   }
 }
 

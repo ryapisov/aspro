@@ -216,5 +216,14 @@
       background-color: rgba(238, 238, 238, .9);
     }
   }
+
+  section.customers{
+    .text-top{
+      font-size: 1.1rem;
+    }
+    .carousel img{
+      max-height: 485px;
+    }
+  }
   
 } 
