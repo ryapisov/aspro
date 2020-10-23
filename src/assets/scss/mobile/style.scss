@@ -11,19 +11,6 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
   }
  
-  .sm{
-    &-small{
-      font-size: 0.95rem;
-    }
-    &-medium{
-      font-size: 1.0rem;
-      line-height: 1.0rem;
-    }
-    &-large{
-      font-size: 1.4rem;
-    }
-  }
-
   section.main{
     overflow: hidden;
     &::before{
@@ -210,4 +197,22 @@
     }
 
   }
+
+  section.about{
+    &::before{
+      content:'';
+      display: none;
+    }
+    .text-top{
+      font-size: 1.1rem;
+      line-height: 1.7;
+      background-color: rgba(154, 0, 7, 0.7);
+      color: #fff;
+    }
+    .text-bottom{
+      font-size: 1.1rem;
+      background-color: rgba(238, 238, 238, .9);
+    }
+  }
+
 }

@@ -27,6 +27,7 @@ section.first {
 h3.title {
   margin: 0;
   text-align: center;
+  padding: 2px 0;
   background-color: rgba(39, 46, 56, 0.7);
 }
 
@@ -98,18 +99,6 @@ input, textarea {
     -webkit-box-shadow: 2px -2px 10px 1px black;
     -moz-box-shadow: 2px -2px 10px 1px black;
     box-shadow: 2px -2px 10px 1px black;
-  }
-
-  .lg-small {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  .lg-medium {
-    font-size: 1.12rem;
-    line-height: 1.7rem;
-  }
-  .lg-large {
-    font-size: 2.2rem;
   }
 
   section.main {
@@ -282,6 +271,28 @@ input, textarea {
     top: 685px;
     left: 0;
   }
+
+  section.about::before {
+    content: "";
+    background: url(/men-min.23d6b7fd.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35px;
+    left: -60px;
+    width: 590px;
+    height: 100%;
+    z-index: -1;
+  }
+  section.about .text-top {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    background-color: rgba(154, 0, 7, 0.7);
+    color: #fff;
+  }
+  section.about .text-bottom {
+    font-size: 1.3rem;
+    background-color: rgba(238, 238, 238, 0.9);
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -290,18 +301,6 @@ input, textarea {
     -webkit-box-shadow: 2px -2px 10px 1px rgba(0, 0, 0, 0);
     -moz-box-shadow: 2px -2px 10px 1px rgba(0, 0, 0, 0);
     box-shadow: 2px -2px 10px 1px rgba(0, 0, 0, 0);
-  }
-
-  .md-small {
-    font-size: 0.95rem;
-    line-height: 1rem;
-  }
-  .md-medium {
-    font-size: 1.05rem;
-    line-height: 1.7rem;
-  }
-  .md-large {
-    font-size: 2rem;
   }
 
   section.main {
@@ -474,6 +473,28 @@ input, textarea {
     top: 75vh;
     left: 0;
   }
+
+  section.about::before {
+    content: "";
+    background: url(/men-min.23d6b7fd.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    width: 380px;
+    height: 100%;
+    z-index: -1;
+  }
+  section.about .text-top {
+    font-size: 1rem;
+    line-height: 1.7;
+    background-color: rgba(154, 0, 7, 0.7);
+    color: #fff;
+  }
+  section.about .text-bottom {
+    font-size: 1rem;
+    background-color: rgba(238, 238, 238, 0.9);
+  }
 }
 /* для отображения мобильной версии  http://www.responsinator.com */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -484,17 +505,6 @@ input, textarea {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-
-  .sm-small {
-    font-size: 0.95rem;
-  }
-  .sm-medium {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  .sm-large {
-    font-size: 1.4rem;
   }
 
   section.main {
@@ -670,6 +680,21 @@ input, textarea {
     bottom: 10px;
     top: 600px;
   }
+
+  section.about::before {
+    content: "";
+    display: none;
+  }
+  section.about .text-top {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    background-color: rgba(154, 0, 7, 0.7);
+    color: #fff;
+  }
+  section.about .text-bottom {
+    font-size: 1.1rem;
+    background-color: rgba(238, 238, 238, 0.9);
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -807,6 +832,21 @@ input, textarea {
     font-size: 1.1rem;
     bottom: 10px;
     top: 560px;
+  }
+
+  section.about::before {
+    content: "";
+    display: none;
+  }
+  section.about .text-top {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    background-color: rgba(154, 0, 7, 0.7);
+    color: #fff;
+  }
+  section.about .text-bottom {
+    font-size: 1.1rem;
+    background-color: rgba(238, 238, 238, 0.9);
   }
 }
 
