@@ -301,6 +301,34 @@ input, textarea {
   section.customers .carousel img {
     max-height: 550px;
   }
+
+  section.suppliers::before {
+    content: "";
+    background: url(/cap-min.06a62f9c.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 400px;
+    height: 460px;
+    margin-left: -200px;
+    z-index: -1;
+  }
+  section.suppliers .text-top {
+    font-size: 1.3rem;
+  }
+  section.suppliers .list {
+    font-size: 1.25rem;
+  }
+  section.suppliers .list-item {
+    display: block;
+    color: rgba(154, 0, 7, 0.9);
+    margin-bottom: 8px;
+  }
+  section.suppliers .text {
+    font-size: 1.15rem;
+    background-color: white;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -510,6 +538,34 @@ input, textarea {
   section.customers .carousel img {
     max-height: 485px;
   }
+
+  section.suppliers::before {
+    content: "";
+    background: url(/cap-min.06a62f9c.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 400px;
+    height: 460px;
+    margin-left: -200px;
+    z-index: -1;
+  }
+  section.suppliers .text-top {
+    font-size: 1.3rem;
+  }
+  section.suppliers .list {
+    font-size: 1.25rem;
+  }
+  section.suppliers .list-item {
+    display: block;
+    color: rgba(154, 0, 7, 0.9);
+    margin-bottom: 8px;
+  }
+  section.suppliers .text {
+    font-size: 1.15rem;
+    background-color: white;
+  }
 }
 /* для отображения мобильной версии  http://www.responsinator.com */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -717,6 +773,34 @@ input, textarea {
   section.customers .carousel img {
     max-height: 380px;
   }
+
+  section.suppliers::before {
+    content: "";
+    background: url(/cap-min.06a62f9c.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 400px;
+    height: 460px;
+    margin-left: -200px;
+    z-index: -1;
+  }
+  section.suppliers .text-top {
+    font-size: 1.3rem;
+  }
+  section.suppliers .list {
+    font-size: 1.25rem;
+  }
+  section.suppliers .list-item {
+    display: block;
+    color: rgba(154, 0, 7, 0.9);
+    margin-bottom: 8px;
+  }
+  section.suppliers .text {
+    font-size: 1.15rem;
+    background-color: white;
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -876,6 +960,34 @@ input, textarea {
   }
   section.customers .carousel img {
     max-height: 550px;
+  }
+
+  section.suppliers::before {
+    content: "";
+    background: url(/cap-min.06a62f9c.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    width: 400px;
+    height: 460px;
+    margin-left: -200px;
+    z-index: -1;
+  }
+  section.suppliers .text-top {
+    font-size: 1.3rem;
+  }
+  section.suppliers .list {
+    font-size: 1.25rem;
+  }
+  section.suppliers .list-item {
+    display: block;
+    color: rgba(154, 0, 7, 0.9);
+    margin-bottom: 8px;
+  }
+  section.suppliers .text {
+    font-size: 1.15rem;
+    background-color: white;
   }
 }
 

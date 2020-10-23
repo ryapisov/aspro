@@ -64,8 +64,37 @@
           <b>ЖК «Алые паруса»</b>, 
           <b>ЖК «Воробьёвы горы»</b>, 
           <b>«Олимпийская деревня Новогорск»</b> 
-          и многих других), зная «изнутри» технологию изготовления многих 
-          строительных материалов, имея опыт сотрудничества с заказчиками 
+          и многих других), зная «изнутри» технологию изгото section.suppliers{
+    &::before{
+      content:'';
+      background: url(../images/cap-min.png) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      width: 400px;
+      height: 460px;
+     
+      margin-left: -200px;
+      z-index: -1;
+    }
+    .text-top{
+      font-size: 1.3rem;
+    }
+    .list{
+      font-size: 1.25rem;
+      &-item{
+        display: block;
+        color: rgba(154, 0, 7, 0.9);
+        margin-bottom: 8px;
+      }
+    }
+    .text{
+      font-size: 1.15rem;
+      background-color: white;
+    }
+
+  }с заказчиками 
           не только московскими, но и региональными, с целью формирования 
           производственной системы более замкнутого цикла, было принято 
           решение выйти на рынок услуг в сфере строительства под новым, 

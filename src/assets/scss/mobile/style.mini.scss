@@ -172,4 +172,36 @@
     }
   }
 
+  section.suppliers{
+    &::before{
+      content:'';
+      background: url(../images/cap-min.png) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 55px;
+      left: 50%;
+      width: 400px;
+      height: 460px;
+     
+      margin-left: -200px;
+      z-index: -1;
+    }
+    .text-top{
+      font-size: 1.3rem;
+    }
+    .list{
+      font-size: 1.25rem;
+      &-item{
+        display: block;
+        color: rgba(154, 0, 7, 0.9);
+        margin-bottom: 8px;
+      }
+    }
+    .text{
+      font-size: 1.15rem;
+      background-color: white;
+    }
+
+  }
+  
  }
