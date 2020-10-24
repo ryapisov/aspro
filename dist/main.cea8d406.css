@@ -530,7 +530,7 @@ section.first {
   }
 
   section.customers .text-top {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   section.customers .carousel img {
     max-height: 485px;
@@ -539,20 +539,20 @@ section.first {
   section.suppliers::before {
     content: "";
     background: url(/cap-min.06a62f9c.png) no-repeat;
-    background-size: 100%;
+    background-size: 95%;
     position: absolute;
-    top: 55px;
+    top: 65px;
     left: 50%;
     width: 400px;
-    height: 460px;
+    height: 400px;
     margin-left: -200px;
     z-index: -1;
   }
   section.suppliers .text-top {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   section.suppliers .list {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   section.suppliers .list-item {
     display: block;
@@ -560,7 +560,7 @@ section.first {
     margin-bottom: 8px;
   }
   section.suppliers .text {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     background-color: white;
   }
 
@@ -587,21 +587,25 @@ section.first {
     padding: 14px;
     font-size: 0.6rem;
   }
+  section.contacts span {
+    display: block;
+  }
   section.contacts .list-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-bottom: 1rem;
   }
   section.contacts .h2 {
-    font-size: 1.6rem;
+    padding-top: 15px;
+    font-size: 1.1rem;
     font-weight: bold;
   }
   section.contacts .text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     height: 300px;
   }
   section.contacts .header {
-    height: 100px;
+    height: 45px;
   }
 }
 /* для отображения мобильной версии  http://www.responsinator.com */

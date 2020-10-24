@@ -219,7 +219,7 @@
 
   section.customers{
     .text-top{
-      font-size: 1.1rem;
+      font-size: 1.0rem;
     }
     .carousel img{
       max-height: 485px;
@@ -230,21 +230,21 @@
     &::before{
       content:'';
       background: url(../images/cap-min.png) no-repeat;
-      background-size: 100%;
+      background-size: 95%;
       position: absolute;
-      top: 55px;
+      top: 65px;
       left: 50%;
       width: 400px;
-      height: 460px;
+      height: 400px;
      
       margin-left: -200px;
       z-index: -1;
     }
     .text-top{
-      font-size: 1.3rem;
+      font-size: 1.0rem;
     }
     .list{
-      font-size: 1.25rem;
+      font-size: 1.0rem;
       &-item{
         display: block;
         color: rgba(154, 0, 7, 0.9);
@@ -252,7 +252,7 @@
       }
     }
     .text{
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       background-color: white;
     }
 
@@ -284,26 +284,29 @@
     }
     .requisites{
     }
+    span{
+      display: block;
+    }
     .list{
       &-item{
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         padding-bottom: 1rem;
       }
     }
 
     .h2{
-      font-size: 1.6rem;
+      padding-top: 15px;
+      font-size: 1.1rem;
       font-weight: bold;
     }
 
     .text{
-      font-size: 1.2rem;
+      font-size: 1.0rem;
       line-height: 2.0rem;
       height: 300px;
     }
-
     .header{
-      height: 100px;
+      height: 45px;
     }
 
   }
