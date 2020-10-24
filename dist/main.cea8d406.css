@@ -563,6 +563,46 @@ section.first {
     font-size: 1.15rem;
     background-color: white;
   }
+
+  section.contacts input, section.contacts textarea {
+    border-radius: 0 !important;
+    font-size: 1rem;
+  }
+  section.contacts .contact-form {
+    height: 450px;
+    background-color: #eee;
+  }
+  section.contacts .form {
+    display: none;
+  }
+  section.contacts .image {
+    background: url(/logo_znak.1476fe72.png) no-repeat center center;
+    background-size: 315px;
+  }
+  section.contacts .icon-check::before {
+    content: "";
+    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 16px;
+    padding: 14px;
+    font-size: 0.6rem;
+  }
+  section.contacts .list-item {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  section.contacts .h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  section.contacts .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 300px;
+  }
+  section.contacts .header {
+    height: 100px;
+  }
 }
 /* для отображения мобильной версии  http://www.responsinator.com */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -798,6 +838,46 @@ section.first {
     font-size: 1.15rem;
     background-color: white;
   }
+
+  section.contacts input, section.contacts textarea {
+    border-radius: 0 !important;
+    font-size: 1rem;
+  }
+  section.contacts .contact-form {
+    height: 450px;
+    background-color: #eee;
+  }
+  section.contacts .form {
+    display: none;
+  }
+  section.contacts .image {
+    background: url(/logo_znak.1476fe72.png) no-repeat center center;
+    background-size: 315px;
+  }
+  section.contacts .icon-check::before {
+    content: "";
+    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 16px;
+    padding: 14px;
+    font-size: 0.6rem;
+  }
+  section.contacts .list-item {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  section.contacts .h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  section.contacts .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 300px;
+  }
+  section.contacts .header {
+    height: 100px;
+  }
 }
 @media (max-width: 575px) {
   .container {
@@ -985,6 +1065,46 @@ section.first {
   section.suppliers .text {
     font-size: 1.15rem;
     background-color: white;
+  }
+
+  section.contacts input, section.contacts textarea {
+    border-radius: 0 !important;
+    font-size: 1rem;
+  }
+  section.contacts .contact-form {
+    height: 450px;
+    background-color: #eee;
+  }
+  section.contacts .form {
+    display: none;
+  }
+  section.contacts .image {
+    background: url(/logo_znak.1476fe72.png) no-repeat center center;
+    background-size: 315px;
+  }
+  section.contacts .icon-check::before {
+    content: "";
+    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 16px;
+    padding: 14px;
+    font-size: 0.6rem;
+  }
+  section.contacts .list-item {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  section.contacts .h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  section.contacts .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 300px;
+  }
+  section.contacts .header {
+    height: 100px;
   }
 }
 
