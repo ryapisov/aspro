@@ -24,69 +24,29 @@ section {
   }
 }
 
-h3.title{
+.title{
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
   padding: 2px 0;
   background-color:rgba(39, 46, 56, .7);
-}
-
-// фон
-.bg-dark{
-  background-color:rgb(39, 46, 56);
-  color: #fff;
-}
-.bg-red{
-  background-color: rgb(154, 0, 7);
-  color: #fff;
-}
-.bg-grey{
-  background-color:rgba(39, 46, 56, .5);
   color: #fff;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-.italic{
-  transform: skew(-12deg, 0deg);
-}
-.bold{
-  font-weight: 600;
-}
-.red{
-  color: rgb(154, 0, 7);
-}
-.dark{
-  color:rgb(39, 46, 56);
-}
-.white{
-  color:rgb(255, 255, 255);
-}
-
-
-//иконки
-.icon-check::before{
-  content:'';
-  background: url(../images/check-mark-box.svg) no-repeat;
-  background-size: 100%;
-  margin-right: 16px;
-  padding: 14px;
-  font-size: 0.6rem;
-}
-
-input, textarea{
-  border-radius: 0 !important;
-}
-
-// кнопки
 .btn{
   color: #fff !important;
   border-radius: 0;
   padding: 0.4em 1.8em;
+  font-size: 1.1rem;
   &:hover{
     opacity: .8;
+  }
+  &.red{
+    background-color: rgba(154, 0, 7, 1) !important;
+  }
+  &.dark{
+    background-color:rgba(39, 46, 56, 1) !important; 
   }
 }
 

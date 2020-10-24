@@ -24,73 +24,30 @@ section.first {
   height: 100vh;
 }
 
-h3.title {
+.title {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
   padding: 2px 0;
   background-color: rgba(39, 46, 56, 0.7);
-}
-
-.bg-dark {
-  background-color: #272e38;
   color: #fff;
-}
-
-.bg-red {
-  background-color: #9a0007;
-  color: #fff;
-}
-
-.bg-grey {
-  background-color: rgba(39, 46, 56, 0.5);
-  color: #fff;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.italic {
-  transform: skew(-12deg, 0deg);
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.red {
-  color: #9a0007;
-}
-
-.dark {
-  color: #272e38;
-}
-
-.white {
-  color: white;
-}
-
-.icon-check::before {
-  content: "";
-  background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
-  background-size: 100%;
-  margin-right: 16px;
-  padding: 14px;
-  font-size: 0.6rem;
-}
-
-input, textarea {
-  border-radius: 0 !important;
 }
 
 .btn {
   color: #fff !important;
   border-radius: 0;
   padding: 0.4em 1.8em;
+  font-size: 1.1rem;
 }
 .btn:hover {
   opacity: 0.8;
+}
+.btn.red {
+  background-color: #9a0007 !important;
+}
+.btn.dark {
+  background-color: #272e38 !important;
 }
 
 @media (min-width: 992px) {
@@ -307,7 +264,7 @@ input, textarea {
     background: url(/cap-min.06a62f9c.png) no-repeat;
     background-size: 100%;
     position: absolute;
-    top: 55px;
+    top: 80px;
     left: 50%;
     width: 400px;
     height: 460px;
@@ -328,6 +285,46 @@ input, textarea {
   section.suppliers .text {
     font-size: 1.15rem;
     background-color: white;
+  }
+
+  section.contacts input, section.contacts textarea {
+    border-radius: 0 !important;
+    font-size: 1rem;
+  }
+  section.contacts .contact-form {
+    height: 450px;
+    background-color: #eee;
+  }
+  section.contacts .form {
+    display: none;
+  }
+  section.contacts .image {
+    background: url(/logo_znak.1476fe72.png) no-repeat center center;
+    background-size: 315px;
+  }
+  section.contacts .icon-check::before {
+    content: "";
+    background: url(/check-mark-box.e3d4c1b3.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 16px;
+    padding: 14px;
+    font-size: 0.6rem;
+  }
+  section.contacts .list-item {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  section.contacts .h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  section.contacts .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    height: 300px;
+  }
+  section.contacts .header {
+    height: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
