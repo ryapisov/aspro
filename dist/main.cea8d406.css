@@ -1112,6 +1112,9 @@ section.first {
     padding: 14px;
     font-size: 0.6rem;
   }
+  section.contacts span {
+    display: block;
+  }
   section.contacts .list-item {
     font-size: 1rem;
     padding-bottom: 1rem;
