@@ -64,6 +64,8 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
+/dist
+/build
 /.pnp
 .pnp.js
 /000
