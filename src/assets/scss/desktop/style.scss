@@ -8,7 +8,6 @@
     -moz-box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
     box-shadow: 2px -2px 10px 1px rgba(0,0,0,1);
   }
-
   section.main{
     overflow: hidden;
     &::before{
@@ -192,7 +191,6 @@
     }
  
   }
-
   section.about{
     &::before{
       content:'';
@@ -216,7 +214,6 @@
       background-color: rgba(238, 238, 238, .9);
     }
   }
-
   section.customers{
     .text-top{
       font-size: 1.3rem;
@@ -225,7 +222,6 @@
       max-height: 550px;
     }
   }
-
   section.suppliers{
     &::before{
       content:'';
@@ -269,7 +265,7 @@
       display: none;
     }
     .image{
-      background: url(../images/logo_znak.png) no-repeat center center;
+      background: url(../images/aspro_znak.png) no-repeat center center;
       background-size: 315px;
     } 
     .icon-check::before{
@@ -281,6 +277,7 @@
       font-size: 0.6rem;
     }
     .requisites{
+
     }
     .list{
       &-item{
@@ -288,22 +285,17 @@
         padding-bottom: 1rem;
       }
     }
-
     .h2{
       font-size: 1.6rem;
       font-weight: bold;
     }
-
     .text{
       font-size: 1.2rem;
       line-height: 2.0rem;
       height: 300px;
     }
-
     .header{
       height: 100px;
     }
-
   }
-
 }
