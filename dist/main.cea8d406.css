@@ -232,7 +232,7 @@ section.first {
 
   section.about::before {
     content: "";
-    background: url(/men-min.23d6b7fd.png) no-repeat;
+    background: url(/men.c7b4d78f.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 35px;
@@ -509,7 +509,7 @@ section.first {
 
   section.about::before {
     content: "";
-    background: url(/men-min.23d6b7fd.png) no-repeat;
+    background: url(/men.c7b4d78f.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 35px;
