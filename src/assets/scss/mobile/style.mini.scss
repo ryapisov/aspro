@@ -7,7 +7,6 @@
     -moz-box-shadow: 0 0 0 0 rgba(0,0,0,0);
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
   }
-
  
   section.main{
     overflow: hidden;
@@ -96,7 +95,7 @@
       }
       & .icon-phone::before{
         content: "";
-        background: url(../images/phone.svg) no-repeat;
+        background: url(../images/icons/phone.svg) no-repeat;
         background-size: 100%;
         padding-top: 14px;
         padding-left: 20px;
@@ -104,7 +103,7 @@
       }
       & .icon-email::before{
         content: "";
-        background: url(../images/email.svg) no-repeat;
+        background: url(../images/icons/email.svg) no-repeat;
         background-size: 100%;
         padding-top: 0px;
         padding-left: 20px;
@@ -186,7 +185,7 @@
     &::before{
       content:'';
       display: none;
-      background: url(../images/cap-min.png) no-repeat;
+      background: url(../images/women.png) no-repeat;
       background-size: 80%;
       position: absolute;
       top: 55px;
@@ -237,7 +236,7 @@
     } 
     .icon-check::before{
       content:'';
-      background: url(../images/check-mark-box.svg) no-repeat;
+      background: url(../images/icons/check.svg) no-repeat;
       background-size: 100%;
       margin-right: 16px;
       padding: 14px;

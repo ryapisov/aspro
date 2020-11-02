@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/phone.svg":[["phone.8e2935c7.svg","assets/images/phone.svg"],"assets/images/phone.svg"],"./../images/email.svg":[["email.25bac19c.svg","assets/images/email.svg"],"assets/images/email.svg"],"./../images/men-min.png":[["men-min.23d6b7fd.png","assets/images/men-min.png"],"assets/images/men-min.png"],"./../images/cap-min.png":[["cap-min.06a62f9c.png","assets/images/cap-min.png"],"assets/images/cap-min.png"],"./../images/logo_znak.png":[["logo_znak.1476fe72.png","assets/images/logo_znak.png"],"assets/images/logo_znak.png"],"./../images/check-mark-box.svg":[["check-mark-box.e3d4c1b3.svg","assets/images/check-mark-box.svg"],"assets/images/check-mark-box.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
+},{"./../images/banner_min.jpg":[["banner_min.b6017a5a.jpg","assets/images/banner_min.jpg"],"assets/images/banner_min.jpg"],"./../images/aspro_min.png":[["aspro_min.bb1e0de8.png","assets/images/aspro_min.png"],"assets/images/aspro_min.png"],"./../images/icons/phone.svg":[["phone.90975775.svg","assets/images/icons/phone.svg"],"assets/images/icons/phone.svg"],"./../images/icons/email.svg":[["email.54457993.svg","assets/images/icons/email.svg"],"assets/images/icons/email.svg"],"./../images/men-min.png":[["men-min.23d6b7fd.png","assets/images/men-min.png"],"assets/images/men-min.png"],"./../images/women.png":[["women.3875ba87.png","assets/images/women.png"],"assets/images/women.png"],"./../images/logo_znak.png":[["logo_znak.1476fe72.png","assets/images/logo_znak.png"],"assets/images/logo_znak.png"],"./../images/icons/check.svg":[["check.7d1be6bd.svg","assets/images/icons/check.svg"],"assets/images/icons/check.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/javascript/main.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/index.scss");
@@ -234,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36799" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
