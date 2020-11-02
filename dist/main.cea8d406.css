@@ -64,7 +64,7 @@ section.first {
   }
   section.main::before {
     content: "";
-    background: url(/banner_min.b6017a5a.jpg) no-repeat;
+    background: url(/banner.11e2c9bd.jpg) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 30px;
@@ -85,7 +85,7 @@ section.first {
     top: 20px;
     left: 50%;
     margin-left: -150px;
-    background: url(/aspro_min.bb1e0de8.png) no-repeat;
+    background: url(/aspro.8313e593.png) no-repeat;
     background-size: 100%;
     width: 300px;
     height: 100px;
@@ -341,7 +341,7 @@ section.first {
   }
   section.main::before {
     content: "";
-    background: url(/banner_min.b6017a5a.jpg) no-repeat;
+    background: url(/banner.11e2c9bd.jpg) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 30px;
@@ -362,7 +362,7 @@ section.first {
     top: 10px;
     left: 50%;
     margin-left: -140px;
-    background: url(/aspro_min.bb1e0de8.png) no-repeat;
+    background: url(/aspro.8313e593.png) no-repeat;
     background-size: 100%;
     width: 280px;
     height: 100px;
@@ -628,7 +628,7 @@ section.first {
   }
   section.main::before {
     content: "";
-    background: url(/banner_min.b6017a5a.jpg) no-repeat;
+    background: url(/banner.11e2c9bd.jpg) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 30px;
@@ -648,7 +648,7 @@ section.first {
     position: absolute;
     top: 10px;
     left: 20px;
-    background: url(/aspro_min.bb1e0de8.png) no-repeat;
+    background: url(/aspro.8313e593.png) no-repeat;
     background-size: 100%;
     width: 280px;
     height: 96px;
@@ -908,7 +908,7 @@ section.first {
   }
   section.main::before {
     content: "";
-    background: url(/banner_min.b6017a5a.jpg) no-repeat;
+    background: url(/banner.11e2c9bd.jpg) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 150px;
@@ -929,7 +929,7 @@ section.first {
     top: 5px;
     left: 50%;
     margin-left: -140px;
-    background: url(/aspro_min.bb1e0de8.png) no-repeat;
+    background: url(/aspro.8313e593.png) no-repeat;
     background-size: 100%;
     width: 280px;
     height: 96px;

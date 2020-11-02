@@ -13,7 +13,7 @@
     overflow: hidden;
     &::before{
       content:'';
-      background: url(../images/banner_min.jpg) no-repeat;
+      background: url(../images/banner.jpg) no-repeat;
       background-size: 100%;
       position: absolute;
       top: 30px;
@@ -33,7 +33,7 @@
         top: 10px;
         left: 50%;
         margin-left: -140px;
-        background: url(../images/aspro_min.png) no-repeat;
+        background: url(../images/aspro.png) no-repeat;
         background-size: 100%;
         width: 280px;
         height: 100px;
