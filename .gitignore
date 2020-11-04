@@ -65,7 +65,7 @@ $RECYCLE.BIN/
 # dependencies
 /node_modules
 /dist
-/arhive/
+/arhive
 /version_1.0.2
 /version_1.0.3
 /build
