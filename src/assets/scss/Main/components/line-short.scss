@@ -1,0 +1,20 @@
+@mixin line-short(
+  $skew:15deg, 
+  $width:100px, 
+  $size:25px,
+  $tip:20px, 
+  $top:100px,
+  $color: #272e38
+){
+  .line-short{
+    position:absolute;
+    top:$top;
+    right:0;
+    max-width:$width;
+    width:100%;
+    transform: skewY($skew);
+    border-bottom: $size solid $color;
+    border-left: $tip solid transparent;
+    z-index: 3;
+  }
+}

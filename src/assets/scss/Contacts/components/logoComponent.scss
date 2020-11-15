@@ -1,0 +1,15 @@
+@mixin logoComponent(
+  $logo:null,
+  $d-none:false,
+  $width:400px
+  ){
+
+  .logo{
+    @if $d-none {display: none;}
+    background: url($logo) 50% 50% no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: $width;
+    margin-right:30px;
+  }
+}

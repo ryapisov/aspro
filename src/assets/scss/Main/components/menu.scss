@@ -1,0 +1,29 @@
+@mixin menu(
+  $top:0px,  
+  $right:0px, 
+  $h-line:2.0rem,
+  $f-size:1.0rem,
+  $color:#fff,
+  $d-none:false
+){
+  .menu{
+    @if $d-none == true { display: none; }
+    position: absolute;
+    top:$top;
+    right:$right;
+    opacity: 0.8;
+    z-index:100;
+  }
+  .menu a{
+    color: $color;
+    display: block;
+    font-weight: bold;
+    font-size:$f-size;
+    line-height:$h-line;
+    text-transform: uppercase;
+    &:hover{
+      cursor: pointer;
+      color: rgb(172, 172, 172);
+    }
+  }
+}

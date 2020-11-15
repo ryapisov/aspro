@@ -1,0 +1,33 @@
+@mixin textComponent(
+  $color:null,
+  $bg-color:null,
+  $width:100%,
+  $f-size:1rem,
+  $h-line:1.8rem,
+  $pt:10px,
+  $pr:10px,
+  $pb:10px,
+  $pl:10px,
+  $mt:0px,
+  $mr:0px,
+  $mb:0px,
+  $ml:0px
+){
+  .text{
+    text-align: justify;
+    margin-top:$mt;
+    margin-right:$mr;
+    margin-bottom:$mb;
+    margin-left:$ml;
+    color:$color;
+    background:$bg-color;
+    width:$width;
+    font-size: $f-size;
+    line-height: $h-line;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+  }
+  
+}

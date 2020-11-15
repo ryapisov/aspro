@@ -1,0 +1,17 @@
+@mixin triangle-lower(
+  $a:100px,
+  $b:50px, 
+  $c:50px, 
+  $top:0px,
+  $color: #fff
+ ){
+  .triangle-lower{
+    position: absolute;
+    top: $top;
+    left: 0;
+    border-left: $a solid $color;
+    border-top: $c solid transparent;
+    border-bottom: $b solid transparent;
+    z-index: 0;
+  }
+}

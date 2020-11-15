@@ -66,6 +66,7 @@ $RECYCLE.BIN/
 /node_modules
 /dist
 /arhive
+/src_
 /version_1.0.2
 /version_1.0.3
 /version_1.0.4

@@ -1,0 +1,44 @@
+@mixin textComponent(
+  $color:null,
+  $bg-color:null,
+  $width:100%,
+  $icon:null,
+  $f-size:1.1rem,
+  $h-line:1.8rem,
+  $pt:0px,
+  $pr:0px,
+  $pb:0px,
+  $pl:0px,
+  $mt:0px,
+  $mr:0px,
+  $mb:0px,
+  $ml:0px,
+  $d-icon:false
+){
+  .text{
+    &::before{
+      content:'';
+      @if $d-icon { display:$d-icon; }
+      background: url($icon) no-repeat;
+      background-size:30px;
+      margin-right: 10px;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+    text-align: justify;
+    margin-top:$mt;
+    margin-right:$mr;
+    margin-bottom:$mb;
+    margin-left:$ml;
+    color:$color;
+    background:$bg-color;
+    width:$width;
+    font-size: $f-size;
+    line-height: $h-line;
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+  }
+  
+}

@@ -1,0 +1,17 @@
+@mixin rectangle(
+  $top:0,
+  $height:10px,
+  $color:#fff
+){
+  .rectangle{
+    position: absolute;
+    background:$color;
+    position: absolute;
+    height:$height;
+    width:100%;
+    left:0;
+    top:$top;
+    z-index:1;
+  }
+}
+

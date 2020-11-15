@@ -1,0 +1,889 @@
+
+@import './components/textComponent.scss';
+@import './components/logoBannerComponent.scss';
+@import '../mixins/media_mixin.scss';
+
+$banner: '../images/men.png';
+
+@include _2560 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 52%,
+        $f-size:1.3rem,
+        $h-line:2.5rem,
+        $mt:10px,
+        $pt:45px,
+        $pr:20px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:55px,
+        $pt:15px,
+        $pr:35px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+}
+
+@include _1440 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 52%,
+        $f-size:1.3rem,
+        $h-line:2.5rem,
+        $mt:10px,
+        $pt:45px,
+        $pr:20px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:15px,
+        $pr:35px,
+        $pb:15px,
+        $pl:35px
+      );
+  } 
+}
+
+@include _1024 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 52%,
+        $f-size:1.3rem,
+        $h-line:2.5rem,
+        $mt:10px,
+        $pt:45px,
+        $pr:20px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:15px,
+        $pr:35px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+}
+
+@include _2560 {
+}
+
+@include _1440 {
+}
+
+@include _1024 {
+
+}
+
+@include _960 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 52%,
+        $f-size:1.3rem,
+        $h-line:2.5rem,
+        $mt:10px,
+        $pt:45px,
+        $pr:20px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:15px,
+        $pr:35px,
+        $pb:15px,
+        $pl:35px
+      );
+  }
+}
+
+@include _896 {
+
+}
+
+@include _853 {
+
+}
+
+@include _846 {
+
+}
+// mobile
+@include _812 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _786 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _768 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _740 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _736 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _667 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.9rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _640 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _600 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _568 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _533{
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:20px,
+        $pb:25px,
+        $pl:20px
+      );
+  }
+}
+
+@include _480 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _452 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _425 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:2rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _393 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _375 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _360 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}
+
+@include _320 {
+  .about{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $d-none:true);
+  }
+
+  .about-top{
+   display: flex;
+   justify-content: flex-end;
+
+   @include textComponent(
+        $bg-color:rgba(154, 0, 7, 0.7),
+        $color: #fff,
+        $width: 100%,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $mt:10px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+
+  .about-bottom{
+    @include textComponent(
+        $bg-color: #eee,
+        $f-size:1.1rem,
+        $h-line:1.8rem,
+        $color: #000,
+        $mt:20px,
+        $mb:50px,
+        $pt:25px,
+        $pr:10px,
+        $pb:25px,
+        $pl:10px
+      );
+  }
+}

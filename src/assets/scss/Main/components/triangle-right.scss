@@ -1,0 +1,17 @@
+@mixin triangle-right(
+  $a:100px, 
+  $b:50px, 
+  $c:50px, 
+  $top:0px,
+  $color: #9a0007
+ ){
+  .triangle-right{
+    position: absolute;
+    top: $top;
+    right:0;
+    z-index: 2;
+    border-right: $a solid $color;
+    border-top: $b solid transparent;
+    border-bottom: $c solid transparent;
+  }
+}

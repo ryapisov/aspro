@@ -1,0 +1,907 @@
+@import './components/rectangle.scss';
+@import './components/logo.scss';
+@import './components/logo-banner.scss';
+@import './components/triangle-upper.scss';
+@import './components/triangle-lower.scss';
+@import './components/triangle-right.scss';
+@import './components/triangle-left.scss';
+@import './components/line-long.scss';
+@import './components/line-short.scss';
+@import './components/menu.scss';
+@import './components/contacts.scss';
+@import './components/text.scss';
+@import '../mixins/media_mixin.scss';
+
+$logo: '../images/aspro.png';
+$banner: '../images/banner.jpg';
+$phone: '../images/icons/phone.svg';
+$email: '../images/icons/email.svg';
+
+// 4K "2560px"
+@include _2560 {
+  .main{
+    &-top{
+      height: 680px;
+      position: relative;
+
+      @include rectangle($height:86px);
+      @include logo($logo, $top:15px, $width:300px);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:85px,$a:1024px, $b:0px , $c:252px);
+      @include triangle-lower($top:405px,$a:1024px, $b:0px, $c:252px);
+      @include triangle-right($top:85px,$a:480px, $b:118px, $c:118px );
+      @include triangle-left ($top:255px,$a:560px, $b:290px, $c:135px );
+      @include line-long($top:575px, $width:668px, $tip:40px, $skew:14deg);
+      @include line-short($top:635px, $width:500px, $tip:30px, $skew:14deg);
+      @include menu($top:140px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:338px,
+        $left:25px,
+        $company-size:2rem,
+        $adress-size:1.3rem,
+        $adress-bottom:3rem,
+        $phone-size:1.2rem,
+        $email-size:1.2rem
+      );
+    }
+
+    &-bottom{
+      @include text($pl:80px, $pb:50px,$pr:200px, $f-size:1.1rem);
+    }
+
+  }
+}
+
+// "1440px"
+@include _1440 {
+  .main{
+    &-top{
+      height: 680px;
+      position: relative;
+
+      @include rectangle($height:86px);
+      @include logo($logo, $top:15px, $width:300px);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:85px,$a:1024px, $b:0px , $c:252px);
+      @include triangle-lower($top:405px,$a:1024px, $b:0px, $c:252px);
+      @include triangle-right($top:85px,$a:480px, $b:118px, $c:118px );
+      @include triangle-left ($top:255px,$a:560px, $b:290px, $c:135px );
+      @include line-long($top:575px, $width:668px, $tip:40px, $skew:14deg);
+      @include line-short($top:635px, $width:500px, $tip:30px, $skew:14deg);
+      @include menu($top:140px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:335px,
+        $left:25px,
+        $company-size:2rem,
+        $adress-size:1.3rem,
+        $adress-bottom:3rem,
+        $phone-size:1.2rem,
+        $email-size:1.2rem
+      );
+    }
+
+    &-bottom{
+      @include text($pl:80px, $pb:50px,$pr:210px, $f-size:1.1rem);
+    }
+
+  }
+}
+
+// "1024px"
+@include _1024 {
+  .main{
+    &-top{
+      height: 680px;
+      position: relative;
+
+      @include rectangle($height:85px);
+      @include logo($logo, $top:15px, $width:300px);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:85px,$a:1024px, $b:0px , $c:252px);
+      @include triangle-lower($top:405px,$a:1024px, $b:0px, $c:252px);
+      @include triangle-right($top:85px,$a:480px, $b:118px, $c:118px );
+      @include triangle-left ($top:255px,$a:560px, $b:290px, $c:135px );
+      @include line-long($top:575px, $width:668px, $tip:40px, $skew:14deg);
+      @include line-short($top:635px, $width:500px, $tip:30px, $skew:14deg);
+      @include menu($top:140px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:330px,
+        $left:25px,
+        $company-size:2rem,
+        $adress-size:1.3rem,
+        $adress-bottom:3rem,
+        $phone-size:1.2rem,
+        $email-size:1.2rem
+      );
+    }
+
+    &-bottom{
+      @include text($pl:80px, $pb:50px,$pr:200px, $f-size:1.1rem);
+    }
+
+  }
+}
+
+@include _960 {
+  .main{
+    &-top{
+      height: 680px;
+      position: relative;
+
+      @include rectangle($height:85px);
+      @include logo($logo, $top:15px, $width:300px);
+      @include logo-banner($banner, $top:25px);
+      @include triangle-upper($top:85px,$a:1024px, $b:0px , $c:252px);
+      @include triangle-lower($top:405px,$a:1024px, $b:0px, $c:252px);
+      @include triangle-right($top:85px,$a:460px, $b:113px, $c:113px );
+      @include triangle-left ($top:255px,$a:550px, $b:290px, $c:135px );
+      @include line-long($top:572px, $width:640px, $tip:40px, $skew:14deg);
+      @include line-short($top:630px, $width:500px, $tip:30px, $skew:14deg);
+      @include menu($top:138px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:335px,
+        $left:25px,
+        $company-size:2rem,
+        $adress-size:1.3rem,
+        $adress-bottom:3rem,
+        $phone-size:1.2rem,
+        $email-size:1.2rem
+      );
+    }
+
+    &-bottom{
+      @include text($pl:80px, $pb:50px,$pr:200px, $f-size:1.1rem);
+    }
+
+  }
+}
+
+// "896px"
+@include _896 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:255px, $left:35%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:896px, $b:0px , $c:190px);
+      @include triangle-lower($top:355px,$a:896px, $b:0px, $c:225px);
+      @include triangle-right($top:2px,$a:565px, $b:118px, $c:115px );
+      @include triangle-left ($top:225px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:510px, $width:638px, $tip:45px, $skew:14deg);
+      @include line-short($top:607px, $width:180px, $tip:35px, $skew:14deg );
+      @include menu($top:55px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:300px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:40px, $pb:50px,$pr:250px);
+    }
+
+  }
+}
+
+// "853px"
+@include _853 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:240px, $left:35%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:896px, $b:0px , $c:190px);
+      @include triangle-lower($top:355px,$a:896px, $b:0px, $c:225px);
+      @include triangle-right($top:2px,$a:540px, $b:115px, $c:115px );
+      @include triangle-left ($top:225px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:502px, $width:595px, $tip:45px, $skew:14deg);
+      @include line-short($top:590px, $width:200px, $tip:35px, $skew:14deg );
+      @include menu($top:55px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:300px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:40px, $pb:50px,$pr:250px);
+    }
+
+  }
+}
+
+
+// "846"
+@include _846 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:65px);
+      @include logo($logo, $width:225px, $left:30%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:62px,$a:896px, $b:0px , $c:190px);
+      @include triangle-lower($top:355px,$a:896px, $b:0px, $c:225px);
+      @include triangle-right($top:10px,$a:565px, $b:105px, $c:117px );
+      @include triangle-left ($top:225px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:502px, $width:588px, $tip:45px, $skew:14deg);
+      @include line-short($top:590px, $width:180px, $tip:35px, $skew:14deg );
+      @include menu($top:55px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:300px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:50px, $pb:50px,$pr:210px);
+    }
+
+  }
+}
+
+//"812px"
+@include _812 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:225px, $left:31%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:896px, $b:0px , $c:190px);
+      @include triangle-lower($top:355px,$a:896px, $b:0px, $c:225px);
+      @include triangle-right($top:2px,$a:525px, $b:110px, $c:110px );
+      @include triangle-left ($top:225px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:497px, $width:557px, $tip:48px, $skew:14deg);
+      @include line-short($top:590px, $width:190px, $tip:35px, $skew:14deg );
+      @include menu($top:55px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:300px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:40px, $pb:50px,$pr:220px);
+    }
+
+  }
+}
+
+//"786px"
+@include _786 {
+  .main{
+    &-top{
+      height: 575px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:225px, $left:30%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:896px, $b:0px , $c:190px);
+      @include triangle-lower($top:355px,$a:896px, $b:0px, $c:225px);
+      @include triangle-right($top:2px,$a:525px, $b:105px, $c:110px );
+      @include triangle-left ($top:225px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:495px, $width:530px, $tip:48px, $skew:14deg);
+      @include line-short($top:575px, $width:190px, $tip:35px, $skew:14deg );
+      @include menu($top:50px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:300px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:40px, $pb:50px,$pr:220px);
+    }
+
+  }
+}
+
+// "768px"
+@include _768 {
+  .main{
+    &-top{
+      height: 640px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:195px, $left:25%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:315px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:565px, $b:100px, $c:140px );
+      @include triangle-left ($top:323px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:520px, $width:368px, $tip:45px);
+      @include line-short($top:580px, $width:205px, $tip:35px);
+      @include menu($top:50px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:390px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:90px, $pb:50px,$pr:50px);
+    }
+
+  }
+}
+
+// "740px"
+@include _740 {
+  .main{
+    &-top{
+      height: 640px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:195px, $left:25%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:315px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:560px, $b:95px, $c:140px );
+      @include triangle-left ($top:323px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:520px, $width:352px, $tip:45px);
+      @include line-short($top:580px, $width:205px, $tip:35px);
+      @include menu($top:50px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:390px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:90px, $pb:50px,$pr:50px);
+    }
+
+  }
+}
+
+// "736px"
+@include _736 {
+  .main{
+    &-top{
+      height: 640px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:200px, $left:25%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:736px, $b:0px , $c:190px);
+      @include triangle-lower($top:315px,$a:736px, $b:0px, $c:190px);
+      @include triangle-right($top:8px,$a:555px, $b:90px, $c:140px );
+      @include triangle-left ($top:322px,$a:510px, $b:200px, $c:133px );
+      @include line-long($top:515px, $width:325px, $tip:45px);
+      @include line-short($top:570px, $width:205px, $tip:35px);
+      @include menu($top:50px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:395px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:100px, $pb:50px,$pr:50px);
+    }
+  }
+}
+
+// "667px"
+@include _667 {
+  .main{
+    &-top{
+      height: 590px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:195px, $left:39%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:250px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:405px, $b:115px, $c:100px );
+      @include triangle-left ($top:258px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:478px, $width:335px, $tip:45px);
+      @include line-short($top:530px, $width:230px, $tip:35px);
+      @include menu($top:50px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:330px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:50px,$pr:20px);
+    }
+
+  }
+}
+
+// "640px"
+@include _640 {
+  .main{
+    &-top{
+      height: 590px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:195px, $left:35%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:250px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:405px, $b:110px, $c:100px );
+      @include triangle-left ($top:258px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:478px, $width:320px, $tip:45px);
+      @include line-short($top:530px, $width:230px, $tip:35px);
+      @include menu($top:45px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:330px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:40px,$pr:20px);
+    }
+
+  }
+}
+
+// "600px"
+@include _600 {
+  .main{
+    &-top{
+      height: 590px;
+      position: relative;
+      @include rectangle($height:65px);
+      @include logo($logo, $width:195px, $left:30%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:65px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:250px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:390px, $b:110px, $c:96px );
+      @include triangle-left ($top:258px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:480px, $width:295px, $tip:45px);
+      @include line-short($top:530px, $width:230px, $tip:35px);
+      @include menu($top:42px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:330px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:50px,$pr:20px);
+    }
+
+  }
+}
+
+// "568px"
+@include _568 {
+  .main{
+    &-top{
+      height: 590px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:195px, $left:28%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:58px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:240px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:405px, $b:93px, $c:100px );
+      @include triangle-left ($top:247px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:470px, $width:272px, $tip:45px);
+      @include line-short($top:520px, $width:205px, $tip:35px);
+      @include menu($top:30px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:320px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:50px,$pr:20px);
+    }
+
+  }
+}
+
+// "533px"
+@include _533 {
+  .main{
+    &-top{
+      height: 590px;
+      position: relative;
+      @include rectangle($height:68px);
+      @include logo($logo, $width:180px, $left:25%);
+      @include logo-banner($banner, $top:20px);
+      @include triangle-upper($top:68px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:240px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:405px, $b:93px, $c:100px );
+      @include triangle-left ($top:247px,$a:510px, $b:200px, $c:125px );
+      @include line-long($top:470px, $width:250px, $tip:45px);
+      @include line-short($top:520px, $width:205px, $tip:35px);
+      @include menu($top:30px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:320px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:50px,$pr:20px);
+    }
+
+  }
+}
+
+// "480px"
+@include _480 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:155px, $left:20%);
+      @include logo-banner($banner, $top:80px);
+      @include triangle-upper($top:80px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:240px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:405px, $b:93px, $c:100px );
+      @include triangle-left ($top:246px,$a:480px, $b:200px, $c:119px );
+      @include line-long($top:470px, $width:235px, $tip:45px);
+      @include line-short($top:515px, $width:205px, $tip:35px);
+      @include menu($top:30px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:320px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:50px,$pr:20px);
+    }
+
+  }
+}
+
+// "452px"
+@include _452 {
+  .main{
+    &-top{
+      height: 580px;
+      position: relative;
+      @include rectangle($height:60px);
+      @include logo($logo, $width:155px, $left:23%);
+      @include logo-banner($banner, $top:80px);
+      @include triangle-upper($top:80px,$a:768px, $b:0px , $c:190px);
+      @include triangle-lower($top:240px,$a:768px, $b:0px, $c:190px);
+      @include triangle-right($top:0px,$a:380px, $b:92px, $c:95px );
+      @include triangle-left ($top:246px,$a:480px, $b:200px, $c:119px );
+      @include line-long($top:470px, $width:210px, $tip:45px);
+      @include line-short($top:515px, $width:205px, $tip:35px);
+      @include menu($top:30px, $right:20px);
+      @include contacts(
+        $phone,
+        $email,
+        $top:320px,
+        $left:20px,
+        $company-size:1.8rem,
+        $adress-size:1.2rem,
+        $adress-bottom:2rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:20px, $pb:30px,$pr:20px);
+    }
+
+  }
+}
+
+// "425px"
+@include _425{
+  .main{
+    &-top{
+      height: 560px;
+      position: relative;
+      
+      @include rectangle($height:85px);
+      @include logo($logo, $width:180px);
+      @include logo-banner($banner, $top:65px);
+      @include triangle-upper($top:85px,$a:425px, $b:0px , $c:40px);
+      @include triangle-lower($top:270px,$a:470px, $b:0px, $c:60px);
+      @include triangle-right($top:80px,$a:425px, $b:0px, $c:40px );
+      @include triangle-left ($top:276px,$a:520px, $b:200px, $c:65px );
+      @include line-long($top:455px, $width:192px, $tip:45px);
+      @include line-short($top:505px, $tip:45px);
+      @include menu($d-none:true);
+      @include contacts(
+        $phone
+        $email,
+        $top:310px,
+        $left:25px,
+        $company-size:1.5rem,
+        $adress-size:1.1rem,
+        $adress-bottom:1.6rem,
+        $phone-size:1.1rem,
+        $email-size:1.1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:10px, $pb:50px);
+    }
+
+  }
+}
+
+// "393px"
+@include _393{
+  .main{
+    &-top{
+      height: 560px;
+      position: relative;
+      @include rectangle($height:110px);
+      @include logo($logo, $width:180px);
+      @include logo-banner($banner, $top:85px);
+      @include triangle-upper($top:110px,$a:560px, $b:0px , $c:65px);
+      @include triangle-lower($top:270px,$a:490px, $b:0px, $c:55px);
+      @include triangle-right($top:65px,$a:393px, $b:40px, $c:45px );
+      @include triangle-left ($top:276px,$a:520px, $b:200px, $c:58px );
+      @include line-long($top:452px, $width:175px, $tip:45px);
+      @include line-short($top:502px, $tip:45px);
+      @include menu($d-none:true);
+      @include contacts(
+        $phone,
+        $email,
+        $top:315px,
+        $left:25px,
+        $company-size:1.3rem,
+        $adress-size:1rem,
+        $adress-bottom:1.6rem,
+        $phone-size:1rem,
+        $email-size:1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:10px, $pb:50px);
+    }
+
+  }
+}
+
+// "375px"
+@include _375{
+  .main{
+    &-top{
+      height: 560px;
+      position: relative;
+      @include rectangle($height:15px);
+      @include logo($logo, $width:180px);
+      @include logo-banner($banner, $top:85px);
+      @include triangle-upper($top:85px,$a:375px, $b:0px , $c:40px);
+      @include triangle-lower($top:270px,$a:420px, $b:0px, $c:55px);
+      @include triangle-right($top:80px,$a:375px, $b:0px, $c:40px );
+      @include triangle-left ($top:276px,$a:520px, $b:200px, $c:65px );
+      @include line-long($top:455px, $width:160px, $tip:45px);
+      @include line-short($top:505px, $tip:45px);
+      @include menu($d-none:true);
+      @include contacts(
+        $phone,
+        $email,
+        $top:315px,
+        $left:25px,
+        $company-size:1.3rem,
+        $adress-size:1rem,
+        $adress-bottom:1.6rem,
+        $phone-size:1rem,
+        $email-size:1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:10px, $pb:50px);
+    }
+
+  }
+}
+
+// "360px"
+@include _360{
+  .main{
+    &-top{
+      height: 560px;
+      position: relative;
+      @include rectangle($height:15px);
+      @include logo($logo, $width:180px);
+      @include logo-banner($banner, $top:85px);
+      @include triangle-upper($top:85px,$a:375px, $b:0px , $c:40px);
+      @include triangle-lower($top:260px,$a:420px, $b:0px, $c:55px);
+      @include triangle-right($top:80px,$a:375px, $b:0px, $c:40px );
+      @include triangle-left ($top:266px,$a:520px, $b:200px, $c:65px );
+      @include line-long($top:455px, $width:160px, $tip:45px);
+      @include line-short($top:505px, $tip:45px);
+      @include menu($d-none:true);
+      @include contacts(
+        $phone,
+        $email,
+        $top:315px,
+        $left:25px,
+        $company-size:1.3rem,
+        $adress-size:1rem,
+        $adress-bottom:1.6rem,
+        $phone-size:1rem,
+        $email-size:1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:10px, $pb:50px, $pr:10px);
+    }
+
+  }
+}
+
+// "320px"
+@include _320{
+  .main{
+    &-top{
+      height: 530px;
+      position: relative;
+      @include rectangle($height:15px);
+      @include logo($logo, $width:180px);
+      @include logo-banner($banner, $top:85px);
+      @include triangle-upper($top:85px,$a:320px, $b:0px , $c:40px);
+      @include triangle-lower($top:245px,$a:320px, $b:0px, $c:40px);
+      @include triangle-right($top:80px,$a:320px, $b:0px, $c:40px );
+      @include triangle-left ($top:250px,$a:520px, $b:200px, $c:65px );
+      @include line-long($top:435px, $width:125px, $tip:45px);
+      @include line-short($top:480px, $tip:45px);
+      @include menu($d-none:true);
+      @include contacts(
+        $phone,
+        $email,
+        $top:295px,
+        $left:10px,
+        $company-size:1.3rem,
+        $adress-size:1rem,
+        $adress-bottom:1.6rem,
+        $phone-size:1rem,
+        $email-size:1rem,
+        $icon-none:true
+      );
+    }
+
+    &-bottom{
+      @include text($pl:10px, $pb:50px);
+    }
+
+  }
+}
+
+

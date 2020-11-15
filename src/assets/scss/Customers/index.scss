@@ -1,0 +1,548 @@
+@import './components/textComponent.scss';
+@import '../mixins/media_mixin.scss';
+
+@include _2560 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:35px,
+      $pb:15px,
+      $pl:35px
+    );
+  }
+
+  .customers-bottom{
+    & img{max-height: 600px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _1440 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:35px,
+      $pb:15px,
+      $pl:35px
+    );
+  }
+
+  .customers-bottom{
+    & img{max-height: 600px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _1024 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:35px,
+      $pb:15px,
+      $pl:35px
+    );
+  }
+
+  .customers-bottom{
+    & img{max-height: 600px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _960 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:35px,
+      $pb:15px,
+      $pl:35px
+    );
+  }
+
+  .customers-bottom{
+    & img{max-height: 600px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _896 {
+  .customers-bottom{
+    & img{height: 500px;}
+   // margin-bottom: 50px;
+  }
+}
+
+@include _853 {
+  .customers-bottom{
+    & img{height: 500px;}
+   // margin-bottom: 50px;
+  }
+}
+
+@include _846 {
+  .customers-bottom{
+    & img{height: 580px;}
+   // margin-bottom: 50px;
+  }
+}
+
+@include _812 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 580px;}
+   // margin-bottom: 50px;
+  }
+}
+
+@include _786 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 500px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _768 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{max-height: 490px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _740 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 550px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _736 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 480px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _667 {
+
+}
+
+@include _640 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 420px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _600 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 420px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _568 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 420px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _533{
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:20px,
+      $pb:15px,
+      $pl:20px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 420px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _480 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:20px,
+      $mb:20px,
+      $pt:15px,
+      $pr:10px,
+      $pb:15px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 320px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _452 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:0px,
+      $mb:20px,
+      $pt:15px,
+      $pr:10px,
+      $pb:15px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 300px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _425 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:0px,
+      $mb:20px,
+      $pt:15px,
+      $pr:10px,
+      $pb:15px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 300px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _393 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:0px,
+      $mb:20px,
+      $pt:15px,
+      $pr:10px,
+      $pb:15px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 300px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _375 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:2rem,
+      $color: #000,
+      $mt:0px,
+      $mb:20px,
+      $pt:15px,
+      $pr:10px,
+      $pb:15px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 300px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _360 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:1.8rem,
+      $color: #000,
+      $mt:-10px,
+      $mb:20px,
+      $pt:25px,
+      $pr:10px,
+      $pb:25px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 200px;}
+    margin-bottom: 50px;
+  }
+}
+
+@include _320 {
+  .customers{
+    overflow: hidden;
+    position: relative;
+  }
+
+  .customers-top{
+    @include textComponent(
+      $f-size:1.1rem,
+      $h-line:1.8rem,
+      $color: #000,
+      $mt:-10px,
+      $mb:20px,
+      $pt:25px,
+      $pr:10px,
+      $pb:25px,
+      $pl:10px
+    );
+  }
+
+  .customers-bottom{
+    & img{height: 200px;}
+    margin-bottom: 50px;
+  }
+
+}

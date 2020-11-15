@@ -1,0 +1,19 @@
+@mixin line-long(
+  $skew:15deg, 
+  $width:100px, 
+  $size:30px,
+  $tip:20px, 
+  $top:200px,
+  $color:#9a0007
+){
+  .line-long{
+    position: absolute;
+    top: $top;
+    right:0;
+    width: $width;
+    transform: skewY($skew);
+    border-bottom: $size solid $color;
+    border-left: $tip solid transparent;
+    z-index: 3;
+  }   
+}

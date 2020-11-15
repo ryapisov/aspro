@@ -1,0 +1,60 @@
+@mixin contacts(
+    $phone:null, 
+    $email:null, 
+    $top:100px,
+    $left:10px,
+    $company-size:2.4rem,
+    $adress-size:1.2rem,
+    $adress-bottom:0.8rem,
+    $phone-size:1.2rem,
+    $email-size:1.2rem,
+    $icon-none:false
+  ){
+  
+  .contacts{
+    position: absolute;
+    top:$top;
+    left:$left;
+    z-index: 4;
+    & .company{
+      color: #fff;
+      font-size: $company-size;
+      font-weight: bold;
+      font-style: italic;
+    }
+    & .address{
+      color: #fff;
+      font-size: $adress-size;
+      margin-bottom: $adress-bottom;
+    }
+    & a.phone{
+      display: block;
+      color: rgb(255, 255, 255);
+      font-size: $phone-size;
+      margin-bottom: 0.7em;
+      &::before{
+        content:'';
+        @if $icon-none == true { display: none; }
+        background: url($phone) no-repeat;
+        background-size: 100%;
+        padding-top: 24px;
+        padding-left: 25px;
+        margin-right: 18px;
+      }
+    }
+    & a.email{
+      display: block;
+      color: #fff;
+      font-size: $phone-size;
+      &::before{
+        content:'';
+        @if $icon-none == true { display: none; }
+        background: url($email) no-repeat;
+        background-size: 100%;
+        padding-left: 25px;
+        margin-right: 18px;
+      }
+      
+    }
+  }
+}

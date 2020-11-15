@@ -1,0 +1,21 @@
+@mixin text(
+    $top:10px,
+    $f-size:1rem,
+    $h-line:1.6,
+    $pr:10px,
+    $pb:10px,
+    $pl:10px,
+    $d-none:false
+  ){
+  
+  .text{
+    @if $d-none == true {display: none;}
+    text-align: justify;
+    width:100%;
+    font-size: $f-size;
+    padding-right:$pr;
+    padding-left:$pl;
+    padding-bottom:$pb;
+    z-index:5;
+  }
+}

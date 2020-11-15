@@ -1,0 +1,926 @@
+@import './components/formComponent.scss';
+@import './components/logoComponent.scss';
+@import './components/requisitesComponents.scss';
+@import './components/textComponent.scss';
+@import '../mixins/media_mixin.scss';
+
+$icon: '../images/icons/check.svg';
+$logo: '../images/aspro_znak.png';
+
+@include _2560 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent($d-none:true);
+    @include requisitesComponents($d-none:false);
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _1440 {
+  
+}
+
+@include _1024 {
+
+}
+
+@include _960 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.4rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.4rem
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _896 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _853 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _846 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _812 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.2rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.2rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _786 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.2rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.1rem,
+      $t-title: 1.2rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _768 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.1rem,
+      $t-title: 1.1rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _740 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.1rem,
+      $t-title: 1.1rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _736 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo);
+    @include formComponent(
+      $d-none:true, 
+      $width:450px,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 450px,
+      $d-none:false, 
+      $f-size:1.1rem,
+      $t-title: 1.1rem,
+      $is-inline:false
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _667 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.5rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.3rem,
+      $t-title: 1.5rem,
+      $is-inline:true,
+      $t-center:186px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _640 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.5rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.3rem,
+      $t-title: 1.5rem,
+      $is-inline:true,
+      $t-center:166px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _600 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.5rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.3rem,
+      $t-title: 1.5rem,
+      $is-inline:true,
+      $t-center:150px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _568 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 35px;
+    padding-left: 35px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.5rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.3rem,
+      $t-title: 1.5rem,
+      $is-inline:true,
+      $t-center:135px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:35px,
+        $pr:35px,
+        $pb:50px
+      );
+  }
+}
+
+@include _533{
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    height: 500px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.5rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.3rem,
+      $t-title: 1.5rem,
+      $is-inline:false,
+      $t-center:125px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:25px,
+        $pr:25px,
+        $pb:50px
+      );
+  }
+}
+
+@include _480 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -80px;
+    height: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false,
+      $t-center:115px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _452 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -80px;
+    height: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false,
+      $t-center:95px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _425 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -80px;
+    height: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.3rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.2rem,
+      $t-title: 1.3rem,
+      $is-inline:false,
+      $t-center:75px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _393 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -85px;
+    height: 420px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.0rem,
+      $t-title: 1.1rem,
+      $is-inline:false,
+      $t-center:70px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _375 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -85px;
+    height: 420px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.0rem,
+      $t-title: 1.1rem,
+      $is-inline:false,
+      $t-center:60px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _360 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -85px;
+    height: 420px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: 1.1rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.0rem,
+      $t-title: 1.1rem,
+      $is-inline:false,
+      $t-center:50px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}
+
+@include _320 {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+  }
+
+  .contact-top{
+    margin-top: -10px;
+    height: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background:#eee;
+    display: flex;
+    @include logoComponent($logo, $d-none:true);
+    @include formComponent(
+      $d-none:true, 
+      $width:100%,
+      $t-title: .95rem
+    );
+    @include requisitesComponents(
+      $width: 100%,
+      $d-none:false, 
+      $f-size:1.0rem,
+      $t-title: 0.95rem,
+      $is-inline:false,
+      $t-center:30px
+    );
+  }
+
+  .contact-bottom{
+    @include textComponent(
+        $icon:$icon,
+        $h-line:2rem,
+        $pt:10px,
+        $pl:10px,
+        $pr:10px,
+        $pb:50px
+      );
+  }
+}

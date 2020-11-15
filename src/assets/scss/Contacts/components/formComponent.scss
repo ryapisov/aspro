@@ -1,0 +1,29 @@
+@mixin  formComponent(
+  $d-none:false,
+  $width:490px,
+  $t-title: 1.5rem,
+  $isflex:true
+){
+  .form{
+    margin-top: 25px;
+    @if $d-none {display: none;}
+    width: $width;
+
+    input, textarea{
+      border-radius: 0px;
+    }
+  }
+  .form-title{
+    font-size:  $t-title;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .form-btns{
+    @if $isflex {
+      display: flex;
+    } @else {
+      display: block;
+    }
+    justify-content: space-between;
+  }
+}

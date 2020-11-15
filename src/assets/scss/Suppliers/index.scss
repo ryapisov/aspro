@@ -1,0 +1,892 @@
+@import './components/textComponent.scss';
+@import './components/logoBannerComponent.scss';
+@import '../mixins/media_mixin.scss';
+
+$banner: '../images/women.png';
+
+@include _2560 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _1440 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _1024 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _960 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _896 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _853 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _846 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-245px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 35px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+   
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:35px, 
+      $pr:35px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _812 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-375px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _786 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-375px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _768 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-355px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _740 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-355px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{
+
+  }
+}
+
+@include _736 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _667 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _640 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _600 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 20px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:20px, 
+      $pr:20px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _568 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 25px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:25px, 
+      $pr:25px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _533{
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 25px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:25px, 
+      $pr:25px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _480 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _452 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _425 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _393 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _375 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _360 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}
+
+@include _320 {
+  .suppliers{
+    overflow: hidden;
+    position: relative;
+    @include logoBannerComponent($banner, $top:-365px, $size:380px, $d-none:true);
+
+    & a{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      line-height: 2.1rem;
+      margin-left: 10px;
+    }
+
+    & .text-title{
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+      color:#272e38;
+    }
+  }
+  .suppliers-top{
+    @include textComponent(
+      $pl:10px, 
+      $pr:10px,
+      $mt:20px,
+      $f-size:1.1rem,
+      $h-line:2rem,
+    )
+  }
+  .suppliers-bottom{}
+}

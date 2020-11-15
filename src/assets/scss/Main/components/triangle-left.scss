@@ -1,0 +1,17 @@
+@mixin triangle-left (
+  $a:100px,
+  $b:50px, 
+  $c:50px, 
+  $top:0px,
+  $color:#272e38
+  ){
+  .triangle-left{
+    position: absolute;
+    top: $top;
+    left: 0px;
+    z-index: 2;
+    border-left: $a solid $color;
+    border-top: $c solid transparent;
+    border-bottom: $b solid transparent;
+  }
+}

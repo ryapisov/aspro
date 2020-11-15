@@ -1,0 +1,47 @@
+@mixin requisitesComponents(
+  $d-none:false,
+  $f-size:1.25rem,
+  $width:490px,
+  $t-title: 1.5rem,
+  $is-inline:true,
+  $t-center: null
+){
+  .requisites{
+    margin-top: 25px;
+    padding-bottom: 196px;
+    width: $width;
+    @if $d-none {display: none;}
+    & .item{
+      font-size: $f-size;
+      margin-bottom: .8rem;
+    }
+    & .items{
+      font-size: $f-size;
+      margin-top: 28px;
+      margin-bottom: 20px; //
+    }
+    & .item-bold{
+       @if $is-inline {
+        display: inline;
+      } @else {
+        display: block;
+      }
+    }
+    & a{
+      font-weight: bold;
+      margin-left: 12px;
+      color: #000;
+    }
+
+    & .btns{   
+      display: inline-block;
+      margin-left: $t-center;
+      margin-top: 18px;
+    }
+  }
+  .requisites-title{
+    font-size: $t-title;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
