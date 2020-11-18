@@ -594,7 +594,6 @@ $logo: '../images/aspro_znak.png';
     height: 500px;
     padding-right: 25px;
     padding-left: 25px;
-    margin-bottom: 500px;
     background:#eee;
     display: flex;
     @include logoComponent($logo, $d-none:true);
