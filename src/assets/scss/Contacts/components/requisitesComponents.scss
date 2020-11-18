@@ -7,8 +7,7 @@
   $t-center: null
 ){
   .requisites{
-    margin-top: 25px;
-    padding-bottom: 196px;
+    padding-top: 25px;
     width: $width;
     @if $d-none {display: none;}
     & .item{
@@ -33,7 +32,7 @@
       color: #000;
     }
 
-    & .btns{   
+    & .btns{
       display: inline-block;
       margin-left: $t-center;
       margin-top: 18px;
